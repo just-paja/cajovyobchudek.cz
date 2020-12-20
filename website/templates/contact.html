@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block body %}
+<article class="container">
+  <h1>Kde nás najdete</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <section class="row">
+        <address>
+          <a href="https://www.google.com/maps/place/%C4%8Caje+z+cel%C3%A9ho+sv%C4%9Bta/@50.5234218,14.9740458,19z/data=!4m5!3m4!1s0x0:0xa53933f4e8df769e!8m2!3d50.523574!4d14.9745729">
+            Masarykovo náměstí 1489<br />
+            295 01 Mnichovo Hradiště
+          </a>
+
+          <dl class="dl-inline">
+            <div class="dl-inline-item">
+              <dt>E-mail:</dt>
+              <dd><a href="mailto:">test@example.com</a></dd>
+            </div>
+            <div class="dl-inline-item">
+              <dt>Telefonní číslo:</dt>
+              <dd><a href="phone:+420 605 047 093">+420 605 047 093</a></dd>
+            </div>
+          </dl>
+        </address>
+
+        <h2>Podchodem</h2>
+        <p>Z náměstí podchodem...</p>
+
+        <h2>Boční uličkou</h2>
+        <p>Ze severu kolem Zahrádky...</p>
+      </section>
+      <section class="row">
+        <h2>Otevírací doba</h2>
+        <p>V tuto chvíli máme <strong>Otevřeno</strong>. Zavíráme za 23 minut.</p>
+        <ul class="business-hours-schedule">
+          <li class="business-day">
+            <strong class="business-day-name">Pondělí</strong>
+            <span class="business-hours">9:00 - 11:30</span>
+            <span class="business-hours">12:00 - 17:00</span>
+          </li>
+          <li class="business-day">
+            <strong class="business-day-name">Úterý</strong>
+            <span class="business-day-closed">Zavřeno</span>
+          </li>
+          <li class="business-day">
+            <strong class="business-day-name">Středa</strong>
+            <span class="business-hours">9:00 - 11:30</span>
+            <span class="business-hours">12:00 - 17:00</span>
+          </li>
+          <li class="business-day">
+            <strong class="business-day-name">Čtvrtek</strong>
+            <span class="business-hours">9:00 - 11:30</span>
+            <span class="business-hours">12:00 - 17:00</span>
+          </li>
+          <li class="business-day">
+            <strong class="business-day-name">Pátek</strong>
+            <span class="business-hours">9:00 - 11:30</span>
+            <span class="business-hours">12:00 - 17:00</span>
+          </li>
+          <li class="business-day">
+            <strong class="business-day-name">Sobota</strong>
+            <span class="business-hours">9:00 - 11:00</span>
+          </li>
+          <li class="business-day">
+            <strong class="business-day-name">Neděle</strong>
+            <span class="business-day-closed">Zavřeno</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <h2>Fakturační údaje</h2>
+      <dl class="dl-inline">
+        <div class="dl-inline-item">
+          <dt>IČO:</dt>
+          <dd>86554018</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <section class="row">
+    <h2>Parkování</h2>
+    <p>Zaparkovat se dá na náměstí. <a href="https://www.google.com/maps/dir//50.5229896,14.9742075/@50.5227961,14.9738817,19.33z">Naviguj</a></p>
+  </section>
+</article>
+{% endblock %}

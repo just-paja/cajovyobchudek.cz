@@ -1,5 +1,5 @@
 """
-WSGI config for cajovyobchodek project.
+WSGI config for cajovyobchudek project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cajovyobchodek.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cajovyobchudek.settings')
 
 application = get_wsgi_application()
