@@ -5,7 +5,6 @@
     - role: practical-ansible.nginx_docker
       admin_email: pavel@zak.global
       become: true
-      image_local: app.tar
       project_environment: '{{ lookup("env", "DJANGO_ENVIRONMENT") }}'
       project_name: 'cz-cajovyobchudek'
       server_names: '{{ lookup("env", "ALLOWED_HOSTS") }}'
