@@ -95,14 +95,14 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          output: type=local,dest=app.tgz
           push: false
           tags: cajovyobchudek:${{ github.sha }}
+          outputs: type=docker,dest=app.tar
       - name: Store image artifact
         uses: actions/upload-artifact@v2
         with:
           name: image-artifact
-          path: app.tgz
+          path: app.tar
 
   deploy:
     name: Deploy docker container

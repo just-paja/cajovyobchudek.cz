@@ -5,8 +5,6 @@ name = "pypi"
 
 [packages]
 django = "*"
-libsass = "*"
-django-compressor = "*"
 django-sass-processor = "*"
 sentry-sdk = "*"
 django-storages = "*"
@@ -15,6 +13,8 @@ psycopg2-binary = "*"
 gunicorn = "*"
 
 [dev-packages]
+django-compressor = "*"
+libsass = "*"
 prospector = "*"
 pytest = "*"
 pytest-cov = "*"
