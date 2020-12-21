@@ -1,7 +1,7 @@
-{% extends "base.html" %}
+{% extends "content.html" %}
 
-{% block body %}
-<article class="container">
+{% block content %}
+<article class="container main">
   <h1>Kde nás najdete</h1>
   <div class="row">
     <div class="col-md-6">
@@ -26,7 +26,7 @@
         </address>
       </section>
 
-      <section class="row">
+      <section class="row" id="oteviraci-doba">
         <h2>Otevírací doba</h2>
         <p>V tuto chvíli máme <strong>Otevřeno</strong>. Zavíráme za 23 minut.</p>
         <ul class="list-unstyled business-schedule">
@@ -80,7 +80,7 @@
           </div>
         </dl>
       </section>
-      <section>
+      <section id="parkovani">
         <h2>Parkování</h2>
         <p>Zaparkovat se dá na náměstí. <a href="https://www.google.com/maps/dir//50.5229896,14.9742075/@50.5227961,14.9738817,19.33z">Naviguj</a></p>
       </section>

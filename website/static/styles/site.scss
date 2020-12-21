@@ -4,6 +4,28 @@
   }
 }
 
+html, body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100%;
+}
+
+main, .main {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #ccc;
+}
+
+.home-banner {
+  background-image: url(../teacups-web.jpg);
+  background-size: cover;
+  text-shadow: 0 0 5px #fff;
+}
+
 .business-schedule {
   .business-day-name {
     display: inline-block;
