@@ -118,9 +118,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     environment: staging
     needs:
-      - test
-      - analyze
-      - build
+      - deploy
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
@@ -141,9 +139,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     environment: staging
     needs:
-      - test
-      - analyze
-      - build
+      - deploy
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
