@@ -1,6 +1,6 @@
 from django.utils.translation import ugettext_lazy as _
 from django.db.models import (
-    model,
+    Model,
     DateTimeField,
     PositiveIntegerField,
     TextField,
@@ -21,7 +21,7 @@ PERIODS = (
 )
 
 
-class BusinessHours(model):
+class BusinessHours(Model):
     class Meta:
         verbose_name = _('Business Hours')
         verbose_name_plural = _('Business Hours')
@@ -42,7 +42,7 @@ class BusinessHours(model):
         })
 
 
-class ClosingRules(models.Model):
+class ClosingRules(Model):
     class Meta:
         verbose_name = _('Closing Rule')
         verbose_name_plural = _('Closing Rules')
