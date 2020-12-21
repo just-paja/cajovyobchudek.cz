@@ -3,3 +3,19 @@
     display: inline;
   }
 }
+
+.business-schedule {
+  .business-day-name {
+    display: inline-block;
+    width: 4rem;
+  }
+
+  .business-hours {
+    display: inline-block;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
