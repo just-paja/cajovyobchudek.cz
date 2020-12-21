@@ -97,6 +97,8 @@ jobs:
         uses: ansible/ansible-lint-action@master
         with:
           targets: deploy.yml
+      - name: Install deploy dependencies
+        run: ansible-galaxy install -r requirements-ansible.yml
       - name: Configure SSH
         uses: shimataro/ssh-key-action@v2
         with:
