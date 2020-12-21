@@ -5,7 +5,7 @@ runs:
   using: 'composite'
   steps:
     - name: Install system dependencies
-      run: sudo apt-get install python3-dev python3-docker graphviz libgraphviz-dev pkg-config gettext
+      run: sudo apt-get install python3-dev pkg-config gettext
       shell: bash
     - name: Install dependencies
       run: pipenv install -d
