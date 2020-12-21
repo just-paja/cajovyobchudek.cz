@@ -166,6 +166,8 @@ jobs:
           python-version: 3.9
       - uses: dschep/install-pipenv-action@v1
       - uses: ./.github/actions/setup-ci
+      - name: Compile scss
+        run: pipenv run ./manage.py compilescss
       - name: Collect static files
         run: pipenv run ./manage.py collectstatic --no-input
         env:
