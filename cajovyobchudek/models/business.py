@@ -35,11 +35,11 @@ class BusinessHours(Model):
     to_hour = TimeField(_('Closing'))
 
     def __str__(self):
-        return _('Open on %(weekday)s from (%(from_hour)s - %(to_hour)s)' % {
+        return str(_('Open on %(weekday)s from (%(from_hour)s - %(to_hour)s)' % {
             'weekday': self.weekday,
             'from_hour': self.from_hour,
             'to_hour': self.to_hour,
-        })
+        }))
 
 
 class ClosingRules(Model):
@@ -53,7 +53,7 @@ class ClosingRules(Model):
     reason = TextField(_('Reason'), null=True, blank=True)
 
     def __str__(self):
-        return _('Closed from %(start)s to %(end)s' % {
+        return str(_('Closed from %(start)s to %(end)s' % {
             'start': self.start,
             'end': self.end
-        })
+        }))
