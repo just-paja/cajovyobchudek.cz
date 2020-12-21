@@ -107,7 +107,21 @@ jobs:
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - name: Deploy docker container
         env:
+          ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_STORAGE_BUCKET_NAME: ${{ secrets.AWS_STORAGE_BUCKET_NAME }}
+          AWS_S3_REGION_NAME: ${{ secrets.AWS_S3_REGION_NAME }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER }}
           DJANGO_ENVIRONMENT: staging
+          RAVEN_DSN: ${{ secrets.RAVEN_DSN }}
+          RECAPTCHA_PRIVATE_KEY: ${{ secrets.RECAPTCHA_PRIVATE_KEY }}
+          RECAPTCHA_PUBLIC_KEY: ${{ secrets.RECAPTCHA_PUBLIC_KEY }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+
         run: |
           echo -e "[web]\n${{ secrets.DEPLOY_HOST }}\n" > inventory
           ansible-playbook deploy.yml -i inventory
@@ -132,6 +146,18 @@ jobs:
       - uses: ./.github/actions/setup-ci
       - name: Migrate database
         run: pipenv run ./manage.py migrate
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_STORAGE_BUCKET_NAME: ${{ secrets.AWS_STORAGE_BUCKET_NAME }}
+          AWS_S3_REGION_NAME: ${{ secrets.AWS_S3_REGION_NAME }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DJANGO_ENVIRONMENT: staging
+          RAVEN_DSN: ${{ secrets.RAVEN_DSN }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
   static:
     name: Deploy static files
@@ -153,3 +179,14 @@ jobs:
       - uses: ./.github/actions/setup-ci
       - name: Collect static files
         run: pipenv run ./manage.py collectstatic --no-input
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_STORAGE_BUCKET_NAME: ${{ secrets.AWS_STORAGE_BUCKET_NAME }}
+          AWS_S3_REGION_NAME: ${{ secrets.AWS_S3_REGION_NAME }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DJANGO_ENVIRONMENT: staging
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
