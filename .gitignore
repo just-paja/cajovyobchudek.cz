@@ -3,3 +3,4 @@ requirements.txt
 /static
 coverage.xml
 .coverage
+*.mo
