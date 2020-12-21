@@ -109,23 +109,6 @@ if DB_NAME:
         },
     }
 
-if AWS_ACCESS_KEY_ID:
-    DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    DBBACKUP_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    DBBACKUP_STORAGE_OPTIONS = {
-        "access_key": AWS_ACCESS_KEY_ID,
-        "secret_key": AWS_SECRET_ACCESS_KEY,
-        "bucket_name": AWS_STORAGE_BUCKET_NAME,
-    }
-
-if AWS_ACCESS_KEY_ID and AWS_STORAGE_BUCKET_NAME:
-    DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    AWS_S3_OBJECT_PARAMETERS = {
-        'CacheControl': 'public,max-age=31536000'
-    }
-
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -180,6 +163,24 @@ STATICFILES_FINDERS = (
 
 RAVEN_DSN = os.environ.get('RAVEN_DSN', None)
 
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
+
+if AWS_ACCESS_KEY_ID:
+    DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    STATICFILES_STORAGE = 'sass_processor.storage.SassS3Boto3Storage'
+    DBBACKUP_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    DBBACKUP_STORAGE_OPTIONS = {
+        "access_key": AWS_ACCESS_KEY_ID,
+        "secret_key": AWS_SECRET_ACCESS_KEY,
+        "bucket_name": AWS_STORAGE_BUCKET_NAME,
+    }
+    AWS_S3_OBJECT_PARAMETERS = {
+        'CacheControl': 'public,max-age=31536000'
+    }
+
 if RAVEN_DSN:
     sentry_sdk.init(
         dsn=RAVEN_DSN,
@@ -189,7 +190,3 @@ if RAVEN_DSN:
         # django.contrib.auth) you may enable sending PII data.
         send_default_pii=True
     )
-
-LOCALE_PATHS = [
-    BASE_DIR / 'locale',
-]
