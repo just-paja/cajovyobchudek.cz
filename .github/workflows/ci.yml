@@ -20,7 +20,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - uses: dschep/install-pipenv-action@v1
       - uses: ./.github/actions/setup-ci
       - name: Test
         run: pipenv run pytest --cov-report=xml --cov-config=.coveragerc --cov="."
@@ -37,7 +36,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - uses: dschep/install-pipenv-action@v1
       - uses: ./.github/actions/setup-ci
       - name: Static code analysis
         run: pipenv run prospector -s high
@@ -54,7 +52,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - uses: dschep/install-pipenv-action@v1
       - uses: ./.github/actions/setup-ci
       - name: Compile messages
         run: pipenv run ./manage.py compilemessages
@@ -133,7 +130,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - uses: dschep/install-pipenv-action@v1
       - uses: ./.github/actions/setup-ci
       - name: Migrate database
         run: pipenv run ./manage.py migrate
@@ -168,7 +164,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - uses: dschep/install-pipenv-action@v1
       - uses: ./.github/actions/setup-ci
       - name: Compile scss
         run: pipenv run ./manage.py compilescss
