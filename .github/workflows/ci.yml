@@ -73,8 +73,8 @@ jobs:
           name: requirements
           path: requirements.txt
 
-  deploy-staging:
-    name: Deploy to staging environment
+  deploy:
+    name: Deploy docker container
     runs-on: ubuntu-20.04
     if: github.ref == 'refs/heads/master'
     environment: staging
@@ -103,59 +103,55 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           name: id_rsa
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
-      - name: Install deploy dependencies
-        run: ansible-galaxy install -r requirements-ansible.yml
-      - name: Migrate database
-        run: pipenv run ./manage.py migrate
-      - name: Collect static files
-        run: pipenv run ./manage.py collectstatic --no-input
       - name: Deploy docker container
         env:
           DJANGO_ENVIRONMENT: staging
         run: |
           echo -e "[web]\n${{ secrets.DEPLOY_HOST }}\n" > inventory
           ansible-playbook deploy.yml -i inventory
-
-  deploy-production:
-    name: Deploy to production environment
+  
+  migrate:
+    name: Migrate database
     runs-on: ubuntu-20.04
-    if: startsWith(github.ref, 'refs/tags/v')
-    environment: production
+    if: github.ref == 'refs/heads/master'
+    environment: staging
     needs:
       - test
       - analyze
       - build
     steps:
       - uses: actions/checkout@v2
-      - name: Download package dist files
-        uses: actions/download-artifact@v2
+      - uses: actions/cache@v2
         with:
-          name: dist
-          path: dist
-      - name: Download requirements
-        uses: actions/download-artifact@v2
+          path: ~/.cache/pipenv
+          key: ${{ runner.os }}-${{ hashFiles('Pipfile.lock') }}
+      - uses: actions/setup-python@v2
         with:
-          name: requirements
-      - name: Validate deploy configuration
-        uses: ansible/ansible-lint-action@master
-        with:
-          targets: deploy.yml
-      - name: Configure SSH
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_KEY }}
-          name: id_rsa
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
-      - name: Install deploy dependencies
-        run: ansible-galaxy install -r requirements-ansible.yml
+          python-version: 3.9
+      - uses: dschep/install-pipenv-action@v1
+      - uses: ./.github/actions/setup-ci
       - name: Migrate database
         run: pipenv run ./manage.py migrate
+
+  static:
+    name: Deploy static files
+    runs-on: ubuntu-20.04
+    if: github.ref == 'refs/heads/master'
+    environment: staging
+    needs:
+      - test
+      - analyze
+      - build
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pipenv
+          key: ${{ runner.os }}-${{ hashFiles('Pipfile.lock') }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - uses: dschep/install-pipenv-action@v1
+      - uses: ./.github/actions/setup-ci
       - name: Collect static files
         run: pipenv run ./manage.py collectstatic --no-input
-      - name: Deploy docker container
-        env:
-          DJANGO_ENVIRONMENT: production
-        run: |
-          echo -e "[web]\n${{ secrets.DEPLOY_HOST }}\n" > inventory
-          ansible-playbook deploy.yml -i inventory
-
