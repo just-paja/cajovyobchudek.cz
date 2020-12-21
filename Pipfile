@@ -10,6 +10,7 @@ django-compressor = "*"
 django-sass-processor = "*"
 sentry-sdk = "*"
 django-storages = "*"
+boto3 = "*"
 
 [dev-packages]
 prospector = "*"
