@@ -1,6 +1,8 @@
 db.sqlite3
 requirements.txt
+/dist
 /static
 coverage.xml
 .coverage
 *.mo
+*.egg-info
