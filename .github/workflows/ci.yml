@@ -1,0 +1,183 @@
+---
+name: Continuous integration
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - 'v*'
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pipenv
+          key: ${{ runner.os }}-${{ hashFiles('Pipfile.lock') }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - uses: dschep/install-pipenv-action@v1
+      - uses: ./.github/actions/setup-ci
+      - name: Test
+        run: pipenv run pytest --cov-report=xml --cov-config=.coveragerc --cov="."
+
+  analyze:
+    name: Run static code analysis
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pipenv
+          key: ${{ runner.os }}-${{ hashFiles('Pipfile.lock') }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - uses: dschep/install-pipenv-action@v1
+      - uses: ./.github/actions/setup-ci
+      - name: Static code analysis
+        run: pipenv run prospector -s high
+
+  build:
+    name: Build package
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pipenv
+          key: ${{ runner.os }}-${{ hashFiles('Pipfile.lock') }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - uses: dschep/install-pipenv-action@v1
+      - uses: ./.github/actions/setup-ci
+      - name: Compile messages
+        run: pipenv run ./manage.py compilemessages
+      - name: Lock requirements
+        run: pipenv lock --requirements > requirements.txt
+      - name: Compile artifacts
+        run: pipenv run python setup.py sdist
+      - name: Store package dist files
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist/
+      - name: Store requirements
+        uses: actions/upload-artifact@v2
+        with:
+          name: requirements
+          path: requirements.txt
+
+  deploy-staging:
+    name: Deploy to staging environment
+    runs-on: ubuntu-20.04
+    if: github.ref == 'refs/heads/master'
+    environment: staging
+    needs:
+      - test
+      - analyze
+      - build
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download package dist files
+        uses: actions/download-artifact@v2
+        with:
+          name: dist
+          path: dist
+      - name: Download requirements
+        uses: actions/download-artifact@v2
+        with:
+          name: requirements
+      - name: Validate deploy configuration
+        uses: ansible/ansible-lint-action@master
+        with:
+          targets: deploy.yml
+      - name: Configure SSH
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_rsa
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+      - name: Install deploy dependencies
+        run: |
+          sudo apt-get -y install python3-docker
+          ansible-galaxy install -r requirements-ansible.yml
+      - name: Deploy staging app
+        env:
+          ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_STORAGE_BUCKET_NAME: ${{ secrets.AWS_STORAGE_BUCKET_NAME }}
+          AWS_S3_REGION_NAME: ${{ secrets.AWS_S3_REGION_NAME }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DJANGO_ENVIRONMENT: production
+          RAVEN_DSN: ${{ secrets.RAVEN_DSN }}
+          RECAPTCHA_PRIVATE_KEY: ${{ secrets.RECAPTCHA_PRIVATE_KEY }}
+          RECAPTCHA_PUBLIC_KEY: ${{ secrets.RECAPTCHA_PUBLIC_KEY }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        run: |
+          echo -e "[web]\n${{ secrets.DEPLOY_HOST }}\n" > inventory
+          ansible-playbook deploy.yml -i inventory
+
+  deploy-production:
+    name: Deploy to production environment
+    runs-on: ubuntu-20.04
+    if: startsWith(github.ref, 'refs/tags/v')
+    environment: production
+    needs:
+      - test
+      - analyze
+      - build
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download package dist files
+        uses: actions/download-artifact@v2
+        with:
+          name: dist
+          path: dist
+      - name: Download requirements
+        uses: actions/download-artifact@v2
+        with:
+          name: requirements
+      - name: Validate deploy configuration
+        uses: ansible/ansible-lint-action@master
+        with:
+          targets: deploy.yml
+      - name: Configure SSH
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_rsa
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+      - name: Install deploy dependencies
+        run: |
+          sudo apt-get -y install python3-docker
+          ansible-galaxy install -r requirements-ansible.yml
+      - name: Deploy staging app
+        env:
+          ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_STORAGE_BUCKET_NAME: ${{ secrets.AWS_STORAGE_BUCKET_NAME }}
+          AWS_S3_REGION_NAME: ${{ secrets.AWS_S3_REGION_NAME }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DJANGO_ENVIRONMENT: production
+          RAVEN_DSN: ${{ secrets.RAVEN_DSN }}
+          RECAPTCHA_PRIVATE_KEY: ${{ secrets.RECAPTCHA_PRIVATE_KEY }}
+          RECAPTCHA_PUBLIC_KEY: ${{ secrets.RECAPTCHA_PUBLIC_KEY }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        run: |
+          echo -e "[web]\n${{ secrets.DEPLOY_HOST }}\n" > inventory
+          ansible-playbook deploy.yml -i inventory
+

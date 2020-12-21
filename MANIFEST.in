@@ -1,0 +1,7 @@
+recursive-include cajovyobchudek *
+recursive-include website *
+include requirements.txt
+include README.md
+include manage.py
+global-exclude *.po
+global-exclude *.pyc

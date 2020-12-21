@@ -8,8 +8,11 @@ django = "*"
 libsass = "*"
 django-compressor = "*"
 django-sass-processor = "*"
+sentry-sdk = "*"
+django-storages = "*"
 
 [dev-packages]
+prospector = "*"
 
 [requires]
 python_version = "3.9"
