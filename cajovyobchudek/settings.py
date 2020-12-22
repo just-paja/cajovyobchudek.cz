@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sass_processor',
+    'cajovyobchudek',
     'website.WebsiteConfig',
 ]
 
@@ -139,6 +140,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+TIME_ZONE = 'Europe/Prague'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.auth",
