@@ -22,13 +22,7 @@ from django.utils.translation import gettext_lazy as _
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '(p#67rzoq(9zbjh42dhv=*mkja9hav=@b4+cebjkx1fy3tv28p')
-
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(' ')
@@ -99,6 +93,7 @@ AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME', None)
 DB_NAME = os.environ.get('DB_NAME', None)
 
 if DB_NAME:
+    DEBUG = False
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
