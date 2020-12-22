@@ -1,22 +1,6 @@
 {% extends "base.html" %}
 
 {% block body %}
-<nav class="navbar navbar-expand-lg bg-light mb-3">
-  <div class="container">
-    <a class="navbar-brand" href="{% url 'website:home' %}">
-      <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-top">
-      Čaje z celého světa
-    </a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'website:contact' %}">Kontakty</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+{% include 'layout/navbar.html' %}
 {% block content %}{% endblock %}
 {% endblock %}
