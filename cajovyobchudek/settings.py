@@ -169,7 +169,7 @@ LOCALE_PATHS = [
 
 if AWS_ACCESS_KEY_ID:
     DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    STATICFILES_STORAGE = 'sass_processor.storage.SassS3Boto3Storage'
     DBBACKUP_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
     DBBACKUP_STORAGE_OPTIONS = {
         "access_key": AWS_ACCESS_KEY_ID,
