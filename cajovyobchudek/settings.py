@@ -156,6 +156,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_FINDERS = (
+    'cajovyobchudek.finders.CssFinder',
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'sass_processor.finders.CssFinder',
@@ -169,7 +170,7 @@ LOCALE_PATHS = [
 
 if AWS_ACCESS_KEY_ID:
     DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    STATICFILES_STORAGE = 'sass_processor.storage.SassS3Boto3Storage'
+    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     DBBACKUP_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
     DBBACKUP_STORAGE_OPTIONS = {
         "access_key": AWS_ACCESS_KEY_ID,
