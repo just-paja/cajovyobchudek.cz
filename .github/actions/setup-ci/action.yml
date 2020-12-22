@@ -9,6 +9,7 @@ runs:
       shell: bash
     - name: Install python dependencies
       run: sudo pip install pipenv
+      shell: bash
     - name: Install dependencies
       run: pipenv install -d
       shell: bash
