@@ -1,0 +1,30 @@
+<p>V tuto chvíli máme <strong>Otevřeno</strong>. Zavíráme za 23 minut.</p>
+
+<ul class="list-unstyled business-schedule">
+  {% for day_id, day in business_days %}
+    <li class="{% if day.empty %}text-muted {% endif %}business-day{% if day.today %} business-day-today{% endif %}">
+      <time datetime="{{ day.date.isoformat }}">
+        <span class="business-day-name">
+          {{ day.name }}
+        </span>
+        &nbsp;
+        <span class="business-day-date">
+          {{ day.date | date:"d. m." }}
+        </span>
+      </time>
+      {% for section in day.blocks %}
+        <span class="business-hours{% if section.is_active %} business-hours-active{% endif %}{% if section.is_next %} business-hours-next{% endif %}">
+          <time datetime="{{ section.start.isoformat}}">
+            {{ section.from_hour }}
+          </time>
+          -
+          <time datetime="{{ section.end.isoformat}}">
+            {{ section.to_hour }}
+          </time>
+        </span>
+       {% empty %}
+        <span class="business-day-closed">Zavřeno</span>
+      {% endfor %}
+    </li>
+  {% endfor %}
+</ul>

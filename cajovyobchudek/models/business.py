@@ -1,6 +1,6 @@
 from datetime import date, datetime, timedelta
 from django.utils.translation import gettext_lazy as _
-from django.utils.timezone import make_aware
+from django.utils.timezone import make_aware, now
 from django.db.models import (
     Model,
     DateTimeField,
@@ -19,10 +19,11 @@ WEEKDAYS = (
     (7, _('Sunday')),
 )
 
-PERIODS = (
+PERIODS = WEEKDAYS + (
     (8, _('Work days')),
     (9, _('Public holiday')),
 )
+
 
 def get_weekday_date(today, weekday):
     current_weekday = today.isoweekday()
@@ -30,6 +31,10 @@ def get_weekday_date(today, weekday):
     if current_weekday > weekday:
         distance = distance - 7
     return today - timedelta(days=distance)
+
+
+def get_block_start(block):
+    return block['start']
 
 
 class WeekDay:
@@ -48,27 +53,30 @@ class WeekDay:
     def __init__(self, weekday, name, day_date=None):
         self.weekday = weekday
         self.name = name
-        self.hour_blocks = []
+        self.blocks = []
         self.date = day_date
 
     def add_hours(self, block):
-        self.hour_blocks.append(block)
+        datetime_now = now()
+        end = make_aware(datetime.combine(self.date, block.to_hour))
+        start = make_aware(datetime.combine(self.date, block.from_hour))
+        is_active = start <= datetime_now <= end
+        self.blocks.append({
+            'end': end,
+            'from_hour': block.from_hour,
+            'start': start,
+            'to_hour': block.to_hour,
+            'is_active': is_active,
+        })
 
     @property
     def empty(self):
-        return len(self.hour_blocks) == 0
+        return len(self.blocks) == 0
 
     @property
-    def blocks(self):
-        blocks = []
-        for block in self.hour_blocks:
-            blocks.append({
-                'end': make_aware(datetime.combine(self.date, block.to_hour)),
-                'from_hour': block.from_hour,
-                'start': make_aware(datetime.combine(self.date, block.from_hour)),
-                'to_hour': block.to_hour,
-            })
-        return blocks
+    def today(self):
+        return self.date == date.today()
+
 
 class BusinessHours(Model):
     class Meta:
@@ -97,6 +105,41 @@ class BusinessHours(Model):
         for block in hours:
             weekdays[block.weekday].add_hours(block)
         return weekdays
+
+    @staticmethod
+    def get_active_business_block(weekdays_blocks):
+        return [block for block in weekdays_blocks if block['is_active']]
+
+    @staticmethod
+    def get_next_business_block(weekdays_blocks):
+        now_datetime = now()
+        next_block = None
+        for block in weekdays_blocks:
+            if now_datetime < block['start']:
+                next_block = block
+                break
+        try:
+            return next_block if next_block else weekdays_blocks[0]
+        except IndexError:
+            return None
+
+    @staticmethod
+    def get_weekdays_blocks(weekdays):
+        blocks = []
+        for day in weekdays.items():
+            blocks = blocks + day[1].blocks
+        blocks.sort(key=get_block_start)
+        return blocks
+
+    @classmethod
+    def get_closing_datetime(cls, weekdays_blocks):
+        block = cls.get_active_business_block(weekdays_blocks)
+        return block['end'] if block else None
+
+    @classmethod
+    def get_opening_datetime(cls, weekdays_blocks):
+        block = cls.get_next_business_block(weekdays_blocks)
+        return block['start'] if block else None
 
 
 class ClosingRules(Model):

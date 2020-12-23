@@ -28,36 +28,8 @@
 
       <section class="row" id="oteviraci-doba">
         <h2>Otevírací doba</h2>
-        <p>V tuto chvíli máme <strong>Otevřeno</strong>. Zavíráme za 23 minut.</p>
-
-        <ul class="list-unstyled business-schedule">
-          {% for day_id, day in business_days %}
-            <li class="{% if day.empty %}text-muted {% endif %}business-day">
-              <time datetime="{{ day.date.isoformat }}">
-                <span class="business-day-name">
-                  {{ day.name }}
-                </span>
-                &nbsp;
-                <span class="business-day-date">
-                  {{ day.date | date:"d. m." }}
-                </span>
-              </time>
-              {% for section in day.blocks %}
-                <span class="business-hours">
-                  <time datetime="{{ section.start.isoformat}}">
-                    {{ section.from_hour }}
-                  </time>
-                  -
-                  <time datetime="{{ section.end.isoformat}}">
-                    {{ section.to_hour }}
-                  </time>
-                </span>
-               {% empty %}
-                <span class="business-day-closed">Zavřeno</span>
-              {% endfor %}
-            </li>
-          {% endfor %}
-        </ul>
+        {% include 'components/business-status.html' %}
+        {% include 'components/business-hours.html' %}
       </section>
     </div>
 

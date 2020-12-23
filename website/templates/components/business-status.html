@@ -1,0 +1,9 @@
+{% if business_closing and business_opening %}
+  Zavíráme <time datetime="{{ business_closing.isoformat }}">{{ business_closing }}</time> a otevíráme <time datetime="{{ business_opening.isoformat }}">{{ business_opening }}</time>
+{% elif business_closing %}
+  Zavíráme <time datetime="{{ business_closing.isoformat }}">{{ business_closing }}</time>
+{% elif business_opening %}
+  Znovu otevřeme <time datetime="{{ business_opening.isoformat}}">{{ business_opening }}</time>
+{% else %}
+  Máme zavřeno
+{% endif %}
