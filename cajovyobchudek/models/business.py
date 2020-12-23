@@ -39,35 +39,54 @@ def get_block_start(block):
 
 class WeekDay:
     @classmethod
-    def all(cls):
+    def all(cls, closing_hours):
         items = {}
         today = date.today()
         for weekday, name in WEEKDAYS:
             items[weekday] = cls(
                 weekday,
                 name,
-                get_weekday_date(today, weekday)
+                get_weekday_date(today, weekday),
+                closing_hours
             )
         return items
 
-    def __init__(self, weekday, name, day_date=None):
+    def __init__(self, weekday, name, day_date=None, closing_hours=None):
         self.weekday = weekday
         self.name = name
         self.blocks = []
+        self.closing_hours = closing_hours if closing_hours else []
         self.date = day_date
+        self.closed_for = None
+
+    def get_closing_rule(self, block):
+        for closed in self.closing_hours:
+            if (
+                closed.start <= block['start'] <= closed.end or
+                closed.start <= block['end'] <= closed.end
+            ):
+                print("A: <%s, %s>" % (closed.start, closed.end))
+                print("B: <%s, %s>" % (block['start'], block['end']))
+                return closed
+        return None
 
     def add_hours(self, block):
         datetime_now = now()
         end = make_aware(datetime.combine(self.date, block.to_hour))
         start = make_aware(datetime.combine(self.date, block.from_hour))
         is_active = start <= datetime_now <= end
-        self.blocks.append({
+        block = {
             'end': end,
             'from_hour': block.from_hour,
             'start': start,
             'to_hour': block.to_hour,
             'is_active': is_active,
-        })
+        }
+        closing_rule = self.get_closing_rule(block)
+        if closing_rule:
+            self.closed_for = closing_rule.reason
+        else:
+            self.blocks.append(block)
 
     @property
     def empty(self):
@@ -100,15 +119,19 @@ class BusinessHours(Model):
 
     @classmethod
     def get_weekdays(cls):
+        closing_hours = ClosingRules.objects.filter(end__gt=now() - timedelta(days=7))
         hours = cls.objects.all()
-        weekdays = WeekDay.all()
+        weekdays = WeekDay.all(closing_hours)
         for block in hours:
             weekdays[block.weekday].add_hours(block)
         return weekdays
 
     @staticmethod
     def get_active_business_block(weekdays_blocks):
-        return [block for block in weekdays_blocks if block['is_active']]
+        try:
+            return next(block for block in weekdays_blocks if block['is_active'])
+        except StopIteration:
+            return None
 
     @staticmethod
     def get_next_business_block(weekdays_blocks):

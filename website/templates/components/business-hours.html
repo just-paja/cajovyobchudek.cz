@@ -1,8 +1,9 @@
-{% include 'components/business-status.html' %}
-
 <ul class="list-unstyled business-schedule">
   {% for day_id, day in business_days %}
-    <li class="{% if day.empty %}text-muted {% endif %}business-day{% if day.today %} business-day-today{% endif %}">
+    <li
+      class="{% if day.empty %}text-muted {% endif %}business-day{% if day.today %} business-day-today{% endif %}"
+      {% if day.closed_for %}title="{{ day.closed_for }}"{% endif %}
+    >
       <time datetime="{{ day.date.isoformat }}">
         <span class="business-day-name">
           {{ day.name }}
