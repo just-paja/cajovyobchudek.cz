@@ -1,5 +1,7 @@
 from cajovyobchudek.models import BusinessHours
 
+from .mapping import catalog_mapping
+
 
 def business_hours(request):
     business_days = BusinessHours.get_weekdays()
@@ -10,4 +12,9 @@ def business_hours(request):
         'business_closing': business_closing,
         'business_days': business_days.items(),
         'business_opening': business_opening,
+    }
+
+def catalog_categories(request):
+    return {
+        'catalog_categories': catalog_mapping.items(),
     }

@@ -25,8 +25,25 @@
 
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'website:catalog' %}">Nabídka</a>
+        <li class="nav-item dropdown">
+          <a
+            aria-expanded="false"
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            id="catalogDropdownLink"
+            role="button"
+          >Nabídka</a>
+          <ul class="dropdown-menu" aria-labelledby="catalogDropdownLink">
+            {% for category, item in catalog_categories %}
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="{% url 'website:catalog_category' category %}"
+                >{{ item.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'website:contact' %}">Kontakty</a>

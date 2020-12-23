@@ -4,9 +4,9 @@
 <main>
   <div class="container">
     <ul>
-      {% for url, item in catalog %}
+      {% for url, item in catalog_categories %}
         <li>
-          <a href="{% url 'website:catalog_category' category=url %}">{{item.name}}</a>
+          <a href="{% url 'website:catalog_category' url %}">{{item.name}}</a>
         </li>
       {% endfor %}
     </ul>
