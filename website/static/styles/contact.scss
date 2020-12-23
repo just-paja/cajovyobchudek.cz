@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+.address-box {
+  background: lighten($light, 15%);
+  padding: $spacer;
+  max-width: 340px;
+  @include border-radius($card-border-radius);
+
+  dl {
+    margin-bottom: 0;
+  }
+}

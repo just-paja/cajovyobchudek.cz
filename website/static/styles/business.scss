@@ -1,0 +1,23 @@
+.business-schedule {
+  .business-day-name,
+  .business-day-date {
+    display: inline-block;
+    width: 3.5rem;
+  }
+
+  .business-day-today {
+    .business-day-name,
+    .business-day-date {
+      font-weight: bold;
+    }
+  }
+
+  .business-hours {
+    display: inline-block;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
