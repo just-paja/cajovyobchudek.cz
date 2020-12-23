@@ -29,42 +29,38 @@
       <section class="row" id="oteviraci-doba">
         <h2>Otevírací doba</h2>
         <p>V tuto chvíli máme <strong>Otevřeno</strong>. Zavíráme za 23 minut.</p>
+
         <ul class="list-unstyled business-schedule">
-          <li class="business-day">
-            <strong class="business-day-name">Pondělí</strong>
-            <span class="business-hours">9:00 - 11:30</span>
-            <span class="business-hours">12:00 - 17:00</span>
-          </li>
-          <li class="text-muted business-day">
-            <strong class="business-day-name">Úterý</strong>
-            <span class="business-day-closed">Zavřeno</span>
-          </li>
-          <li class="business-day">
-            <strong class="business-day-name">Středa</strong>
-            <span class="business-hours">9:00 - 11:30</span>
-            <span class="business-hours">12:00 - 17:00</span>
-          </li>
-          <li class="business-day">
-            <strong class="business-day-name">Čtvrtek</strong>
-            <span class="business-hours">9:00 - 11:30</span>
-            <span class="business-hours">12:00 - 17:00</span>
-          </li>
-          <li class="business-day">
-            <strong class="business-day-name">Pátek</strong>
-            <span class="business-hours">9:00 - 11:30</span>
-            <span class="business-hours">12:00 - 17:00</span>
-          </li>
-          <li class="business-day">
-            <strong class="business-day-name">Sobota</strong>
-            <span class="business-hours">9:00 - 11:00</span>
-          </li>
-          <li class="text-muted business-day">
-            <strong class="business-day-name">Neděle</strong>
-            <span class="business-day-closed">Zavřeno</span>
-          </li>
+          {% for day_id, day in business_days %}
+            <li class="{% if day.empty %}text-muted {% endif %}business-day">
+              <time datetime="{{ day.date.isoformat }}">
+                <span class="business-day-name">
+                  {{ day.name }}
+                </span>
+                &nbsp;
+                <span class="business-day-date">
+                  {{ day.date | date:"d. m." }}
+                </span>
+              </time>
+              {% for section in day.blocks %}
+                <span class="business-hours">
+                  <time datetime="{{ section.start.isoformat}}">
+                    {{ section.from_hour }}
+                  </time>
+                  -
+                  <time datetime="{{ section.end.isoformat}}">
+                    {{ section.to_hour }}
+                  </time>
+                </span>
+               {% empty %}
+                <span class="business-day-closed">Zavřeno</span>
+              {% endfor %}
+            </li>
+          {% endfor %}
         </ul>
       </section>
     </div>
+
     <div class="col-md-6">
       <section>
         <h2>Fakturační údaje</h2>

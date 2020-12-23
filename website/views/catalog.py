@@ -2,6 +2,7 @@ from django.views.decorators.http import require_http_methods
 from django.http import Http404
 from django.shortcuts import render
 
+
 mapping = {
     'caj': {
         'name': 'Čaj',
@@ -17,11 +18,13 @@ mapping = {
     },
 }
 
+
 @require_http_methods(['GET'])
 def home(req):
     return render(req, 'catalog.html', {
         'catalog': mapping.items()
     })
+
 
 @require_http_methods(['GET'])
 def category(req, category_id):

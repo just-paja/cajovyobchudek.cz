@@ -1,4 +1,6 @@
+from datetime import date, datetime, timedelta
 from django.utils.translation import gettext_lazy as _
+from django.utils.timezone import make_aware
 from django.db.models import (
     Model,
     DateTimeField,
@@ -7,7 +9,7 @@ from django.db.models import (
     TimeField
 )
 
-PERIODS = (
+WEEKDAYS = (
     (1, _('Monday')),
     (2, _('Tuesday')),
     (3, _('Wednesday')),
@@ -15,11 +17,58 @@ PERIODS = (
     (5, _('Friday')),
     (6, _('Saturday')),
     (7, _('Sunday')),
-    (8, _('Weekend')),
-    (9, _('Workweek')),
-    (10, _('Public holiday')),
 )
 
+PERIODS = (
+    (8, _('Work days')),
+    (9, _('Public holiday')),
+)
+
+def get_weekday_date(today, weekday):
+    current_weekday = today.isoweekday()
+    distance = current_weekday - weekday
+    if current_weekday > weekday:
+        distance = distance - 7
+    return today - timedelta(days=distance)
+
+
+class WeekDay:
+    @classmethod
+    def all(cls):
+        items = {}
+        today = date.today()
+        for weekday, name in WEEKDAYS:
+            items[weekday] = cls(
+                weekday,
+                name,
+                get_weekday_date(today, weekday)
+            )
+        return items
+
+    def __init__(self, weekday, name, day_date=None):
+        self.weekday = weekday
+        self.name = name
+        self.hour_blocks = []
+        self.date = day_date
+
+    def add_hours(self, block):
+        self.hour_blocks.append(block)
+
+    @property
+    def empty(self):
+        return len(self.hour_blocks) == 0
+
+    @property
+    def blocks(self):
+        blocks = []
+        for block in self.hour_blocks:
+            blocks.append({
+                'end': make_aware(datetime.combine(self.date, block.to_hour)),
+                'from_hour': block.from_hour,
+                'start': make_aware(datetime.combine(self.date, block.from_hour)),
+                'to_hour': block.to_hour,
+            })
+        return blocks
 
 class BusinessHours(Model):
     class Meta:
@@ -40,6 +89,14 @@ class BusinessHours(Model):
             'from_hour': self.from_hour,
             'to_hour': self.to_hour,
         }))
+
+    @classmethod
+    def get_weekdays(cls):
+        hours = cls.objects.all()
+        weekdays = WeekDay.all()
+        for block in hours:
+            weekdays[block.weekday].add_hours(block)
+        return weekdays
 
 
 class ClosingRules(Model):

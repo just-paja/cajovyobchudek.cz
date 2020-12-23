@@ -1,11 +1,29 @@
-<nav class="navbar navbar-expand-lg bg-light mb-3">
+<nav class="navbar navbar-expand-lg bg-light navbar-light mb-3">
   <div class="container">
     <a class="navbar-brand" href="{% url 'website:home' %}">
-      <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-top">
+      <img
+        src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+        alt=""
+        width="30"
+        height="24"
+        class="d-inline-block align-top"
+      >
       Čaje z celého světa
     </a>
+    <button
+      aria-controls="navbarMenu"
+      aria-expanded="false"
+      aria-label="Rozbalit nabídku"
+      class="navbar-toggler"
+      data-bs-target="#navbarMenu"
+      data-bs-toggle="collapse"
+      role="button"
+      type="button"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="{% url 'website:catalog' %}">Nabídka</a>

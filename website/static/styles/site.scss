@@ -27,9 +27,10 @@ footer {
 }
 
 .business-schedule {
-  .business-day-name {
+  .business-day-name,
+  .business-day-date {
     display: inline-block;
-    width: 4rem;
+    width: 3.5rem;
   }
 
   .business-hours {
