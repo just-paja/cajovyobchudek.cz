@@ -80,7 +80,7 @@ function getBusinessStatusMessage(closingTime, openingTime) {
   } else if (openingTime) {
     return 'Otevřeme ' + openingTime.toLocaleString(luxon.DateTime.DATETIME_SHORT)
   }
-  return 'Máme zavřeno'
+  return 'Zrovna máme zavřeno'
 }
 
 function formatBusinessStatus(el) {
