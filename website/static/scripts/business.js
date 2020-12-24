@@ -74,13 +74,13 @@ function getBusinessStatusMessage(closingTime, openingTime) {
     }
     const relative = closingTime.diff(now, ['hours', 'minutes', 'seconds'])
     if (relative.hours > 1 || pause) {
-      return 'Dnes máme otevřeno ještě ' + getFuzzyStr(relative.values) + pause
+      return 'Dnes máme otevřeno ještě ' + getFuzzyStr(relative.values) + pause + '.'
     }
-    return 'Zavíráme za ' + getFuzzyStr(relative.values)
+    return 'Zavíráme za ' + getFuzzyStr(relative.values) + '.'
   } else if (openingTime) {
-    return 'Otevřeme ' + openingTime.toLocaleString(luxon.DateTime.DATETIME_SHORT)
+    return 'Otevřeme ' + openingTime.toLocaleString(luxon.DateTime.DATETIME_SHORT) + '.'
   }
-  return 'Zrovna máme zavřeno'
+  return 'Zrovna máme zavřeno.'
 }
 
 function formatBusinessStatus(el) {

@@ -14,6 +14,7 @@ def business_hours(request):
         'business_opening': business_opening,
     }
 
+
 def catalog_categories(request):
     return {
         'catalog_categories': catalog_mapping.items(),

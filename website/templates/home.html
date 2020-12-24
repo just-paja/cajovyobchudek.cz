@@ -1,53 +1,90 @@
 {% extends "content.html" %}
 
 {% block content %}
-<main>
-  <div class="position-relative overflow-hidden pt-5 pb-5 text-center home-banner mb-3 mb-md-5">
-    <div class="col-md-5 pt-lg-5 pb-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Čaje z celého světa</h1>
-      <p class="lead fw-normal">a taky kafe, zobání, porcelán a další věci</p>
+<main id="homeBannerCarousel" class="home carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#homeBannerCarousel" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#homeBannerCarousel" data-bs-slide-to="1"></li>
+    <li data-bs-target="#homeBannerCarousel" data-bs-slide-to="2"></li>
+    <li data-bs-target="#homeBannerCarousel" data-bs-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="position-relative overflow-hidden pt-5 pb-5 text-center home-banner with-shadow home-tea">
+        <div class="col-md-5 pt-lg-5 pb-lg-5 mx-auto my-5 home-banner-container">
+          <div class="home-banner-content">
+            <div class="home-banner-heading">
+              <h1 class="display-4 fw-normal">Čaje z celého světa</h1>
+              <p class="lead fw-normal">pro pohodové chvíle</p>
+            </div>
+            <div>
+              <a href="{% url 'website:catalog_category' 'caj' %}" class="btn btn-lg btn-primary">Prohlédnout čaj</a>
+              <a href="{% url 'website:contact' %}" class="btn btn-lg btn-secondary">Chci do obchodu</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Co teď frčí</h2>
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-header">
-                <strong>Kornout</strong>
-              </div>
-              <div class="card-body">
-                Nejoblíbenější zobání
-              </div>
+    <div class="carousel-item">
+      <div class="position-relative overflow-hidden pt-5 pb-5 text-center home-banner home-coffee">
+        <div class="col-md-5 pt-lg-5 pb-lg-5 mx-auto my-5 home-banner-container">
+          <div class="home-banner-content">
+            <div class="home-banner-heading">
+              <h1 class="display-4 fw-normal">Káva z celého světa</h1>
+              <p class="lead fw-normal">pro pohodové chvíle</p>
+            </div>
+            <div>
+              <a href="{% url 'website:catalog_category' 'kava' %}" class="btn btn-lg btn-primary">Prohlédnout kávu</a>
+              <a href="{% url 'website:contact' %}" class="btn btn-lg btn-secondary">Chci do obchodu</a>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-header">
-                <strong>Boženka</strong>
-              </div>
-              <div class="card-body">
-                Nejklasičtější zelený čaj
-              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="position-relative overflow-hidden pt-5 pb-5 text-center home-banner with-shadow home-nuts">
+        <div class="col-md-5 pt-lg-5 pb-lg-5 mx-auto my-5 home-banner-container">
+          <div class="home-banner-content">
+            <div class="home-banner-heading">
+              <h1 class="display-4 fw-normal">Zobání z celého světa</h1>
+              <p class="lead fw-normal">pro pohodové chvíle</p>
+            </div>
+            <div>
+              <a href="{% url 'website:catalog_category' 'kava' %}" class="btn btn-lg btn-secondary">Chci ořechy</a>
+              <a href="{% url 'website:catalog_category' 'kava' %}" class="btn btn-lg btn-secondary">Chci sušené ovoce</a>
+              <a href="{% url 'website:catalog_category' 'kava' %}" class="btn btn-lg btn-secondary">Chci vážené bonbóny</a>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-header">
-                <strong>Skořicové nestlafé</strong>
-              </div>
-              <div class="card-body">
-                Vánoční edice kafe
-              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="position-relative overflow-hidden pt-5 pb-5 text-center home-banner with-shadow home-porcelain">
+        <div class="col-md-5 pt-lg-5 pb-lg-5 mx-auto my-5 home-banner-container">
+          <div class="home-banner-content">
+            <div class="home-banner-heading">
+              <h1 class="display-4 fw-normal">Porcelán z Česka</h1>
+              <p class="lead fw-normal">pro pohodové chvíle</p>
+            </div>
+            <div>
+              <a href="{% url 'website:catalog_category' 'kava' %}" class="btn btn-lg btn-primary">Prohlédnout porcelán</a>
+              <a href="{% url 'website:contact' %}" class="btn btn-lg btn-secondary">Chci do obchodu</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <a class="carousel-control-prev" href="#homeBannerCarousel" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#homeBannerCarousel" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
 </main>
 {% endblock %}

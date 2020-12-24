@@ -1,0 +1,8 @@
+.illustration {
+  background-size: cover;
+  height: 400px;
+
+  &.tea {
+    background: url(../teas.jpg);
+  }
+}

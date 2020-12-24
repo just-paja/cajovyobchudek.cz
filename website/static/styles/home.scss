@@ -1,5 +1,66 @@
+@import './variables.scss';
+
+.home {
+  margin: 0;
+  display: flex;
+
+  .carousel-item {
+    height: 100%;
+  }
+}
+
 .home-banner {
-  background-image: url(../teacups-web.jpg);
   background-size: cover;
-  text-shadow: 0 0 5px #fff;
+  background-position: center center;
+  display: flex;
+  height: 100%;
+
+  .home-banner-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .home-banner-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 240px;
+  }
+  
+  .home-banner-heading {
+    margin-bottom: 2rem;
+    text-shadow: 
+      0 0 3px $black,
+      0 0 4px $black,
+      0 0 5px $black;
+  }
+
+  .btn {
+    margin-top: 0.5rem;
+  }
+
+  h1, .lead {
+    color: $white;
+  }
+
+  &.with-shadow {
+    .home-banner-heading {
+      background: radial-gradient(closest-side, $black, rgba($black, 0.5), rgba(0,0,0,0));
+    }
+  }
+
+  &.home-tea {
+    background-image: url(../home-tea-2.jpg);
+  }
+  &.home-coffee {
+    background-image: url(../home-coffee.jpg);
+  }
+  &.home-porcelain {
+    background-image: url(../home-porcelain.jpg);
+  }
+  &.home-nuts {
+    background-image: url(../home-nuts-3.jpg);
+  }
 }
