@@ -47,7 +47,7 @@ catalog_mapping = {
         'name': 'Oleje a octy',
         'template': 'oils.html',
     },
-    'porcelain': {
+    'porcelan': {
         'name': 'Porcelán',
         'template': 'porcelain.html',
     },
