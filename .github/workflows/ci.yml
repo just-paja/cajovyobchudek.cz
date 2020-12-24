@@ -67,8 +67,8 @@ jobs:
             dist/
             requirements.txt
 
-  deploy:
-    name: Deploy docker container
+  deploy-staging:
+    name: Deploy staging docker container
     runs-on: ubuntu-20.04
     if: github.ref == 'refs/heads/master'
     environment: staging
@@ -111,9 +111,9 @@ jobs:
         run: |
           echo -e "[web]\n${{ secrets.DEPLOY_HOST }}\n" > inventory
           ansible-playbook deploy.yml -i inventory
-  
-  migrate:
-    name: Migrate database
+
+  migrate-staging:
+    name: Migrate staging database
     runs-on: ubuntu-20.04
     if: github.ref == 'refs/heads/master'
     environment: staging
@@ -146,8 +146,8 @@ jobs:
           RAVEN_DSN: ${{ secrets.RAVEN_DSN }}
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
-  static:
-    name: Deploy static files
+  static-staging:
+    name: Deploy staging static files
     runs-on: ubuntu-20.04
     if: github.ref == 'refs/heads/master'
     environment: staging
@@ -181,4 +181,120 @@ jobs:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           DB_USER: ${{ secrets.DB_USER }}
           DJANGO_ENVIRONMENT: staging
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+
+  deploy-production:
+    name: Deploy production docker container
+    runs-on: ubuntu-20.04
+    if: startsWith(github.ref, 'refs/tags/v')
+    environment: production
+    needs:
+      - test
+      - analyze
+      - build
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download package dist files
+        uses: actions/download-artifact@v2
+        with:
+          name: python-artifact
+      - name: Install deploy dependencies
+        run: |
+          ansible-galaxy install -r requirements-ansible.yml
+          sudo apt-get install python3-docker
+      - name: Configure SSH
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_rsa
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+      - name: Deploy docker container
+        env:
+          ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_STORAGE_BUCKET_NAME: ${{ secrets.AWS_STORAGE_BUCKET_NAME }}
+          AWS_S3_REGION_NAME: ${{ secrets.AWS_S3_REGION_NAME }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DJANGO_ENVIRONMENT: production
+          RAVEN_DSN: ${{ secrets.RAVEN_DSN }}
+          RECAPTCHA_PRIVATE_KEY: ${{ secrets.RECAPTCHA_PRIVATE_KEY }}
+          RECAPTCHA_PUBLIC_KEY: ${{ secrets.RECAPTCHA_PUBLIC_KEY }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        run: |
+          echo -e "[web]\n${{ secrets.DEPLOY_HOST }}\n" > inventory
+          ansible-playbook deploy.yml -i inventory
+
+  migrate-production:
+    name: Migrate production database
+    runs-on: ubuntu-20.04
+    if: startsWith(github.ref, 'refs/tags/v')
+    environment: production
+    needs:
+      - test
+      - analyze
+      - build
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pipenv
+          key: ${{ runner.os }}-${{ hashFiles('Pipfile.lock') }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - uses: ./.github/actions/setup-ci
+      - name: Migrate database
+        run: pipenv run ./manage.py migrate
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_STORAGE_BUCKET_NAME: ${{ secrets.AWS_STORAGE_BUCKET_NAME }}
+          AWS_S3_REGION_NAME: ${{ secrets.AWS_S3_REGION_NAME }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DJANGO_ENVIRONMENT: production
+          RAVEN_DSN: ${{ secrets.RAVEN_DSN }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+
+  static-production:
+    name: Deploy production static files
+    runs-on: ubuntu-20.04
+    if: startsWith(github.ref, 'refs/tags/v')
+    environment: production
+    needs:
+      - test
+      - analyze
+      - build
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pipenv
+          key: ${{ runner.os }}-${{ hashFiles('Pipfile.lock') }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - uses: ./.github/actions/setup-ci
+      - name: Compile scss
+        run: pipenv run ./manage.py compilescss
+      - name: Collect static files
+        run: pipenv run ./manage.py collectstatic --no-input
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_STORAGE_BUCKET_NAME: ${{ secrets.AWS_STORAGE_BUCKET_NAME }}
+          AWS_S3_REGION_NAME: ${{ secrets.AWS_S3_REGION_NAME }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DJANGO_ENVIRONMENT: production
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
