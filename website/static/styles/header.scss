@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+header {
+  background-size: cover;
+  background-position: center center;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $white;
+
+  .header-content {
+    background: rgba($black, 0.75);
+  }
+}

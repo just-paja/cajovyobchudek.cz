@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+.contact-header {
+  background-image: url(../og/tea.jpg);
+}
+
 .address-box {
   background: lighten($light, 15%);
   padding: $spacer;

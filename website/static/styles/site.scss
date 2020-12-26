@@ -1,9 +1,5 @@
 @import "./variables.scss";
 @import "../../../vendor/bootstrap/scss/bootstrap.scss";
-@import "./home.scss";
-@import "./business.scss";
-@import "./contact.scss";
-@import "./products.scss";
 
 .dl-inline {
   dd, dt {
@@ -27,3 +23,9 @@ footer {
   background-color: #ccc;
 }
 
+@import "./header.scss";
+
+@import "./home.scss";
+@import "./business.scss";
+@import "./contact.scss";
+@import "./products.scss";

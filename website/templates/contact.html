@@ -1,55 +1,65 @@
 {% extends "content.html" %}
 
 {% block content %}
-<article class="mt-3 mt-sm-4 mt-lg-5 container main">
-  <h1>Kde nás najdete</h1>
-  <div class="row">
-    <div class="col-md-6 col-lg-5 col-xl-4">
-      <section class="row">
-        <address class="mt-3 address-box">
-          Čaje z celého světa<br />
-          Masarykovo náměstí 1489<br />
-          295 01 Mnichovo Hradiště
+<article class="main">
+  <header class="contact-header">
+    <div class="header-content py-3">
+      <div class="container">
+        <h1 class="display-3">Kde nás najdete</h1>
+        <p class="lead">Chybí vám trocha offline kontaktu? Stavte se na kus řeči.</p>
+      </div>
+    </div>
+  </header>
 
-          <dl class="mt-3 dl-inline">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6 col-lg-8">
+        <section class="row">
+          <address class="address-box">
+            Čaje z celého světa<br />
+            Masarykovo náměstí 1489<br />
+            295 01 Mnichovo Hradiště
+
+            <dl class="mt-3">
+              <div class="dl-inline-item">
+                <dt>E-mail:</dt>
+                <dd><a href="mailto:">test@example.com</a></dd>
+              </div>
+              <div class="dl-inline-item">
+                <dt>Telefonní číslo:</dt>
+                <dd><a href="phone:+420 605 047 093">+420 605 047 093</a></dd>
+              </div>
+            </dl>
+          </address>
+        </section>
+
+        <section class="row" id="oteviraci-doba">
+          <h2>Otevírací doba</h2>
+          <p class="lead">{% include 'components/business-status.html' %}</p>
+          {% include 'components/business-hours.html' %}
+        </section>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <section>
+          <h2>Fakturační údaje</h2>
+          <address>
+            Miloslava Lásková<br />
+            Lidická 1002<br />
+            29501 Mnichovo Hradiště
+          </address>
+          <dl class="dl-inline">
             <div class="dl-inline-item">
-              <dt>E-mail:</dt>
-              <dd><a href="mailto:">test@example.com</a></dd>
-            </div>
-            <div class="dl-inline-item">
-              <dt>Telefonní číslo:</dt>
-              <dd><a href="phone:+420 605 047 093">+420 605 047 093</a></dd>
+              <dt>IČO:</dt>
+              <dd>86554018</dd>
             </div>
           </dl>
-        </address>
-      </section>
-
-      <section class="row" id="oteviraci-doba">
-        <h2>Otevírací doba</h2>
-        <p class="lead">{% include 'components/business-status.html' %}</p>
-        {% include 'components/business-hours.html' %}
-      </section>
-    </div>
-
-    <div class="col-md-6">
-      <section>
-        <h2>Fakturační údaje</h2>
-        <address>
-          Miloslava Lásková<br />
-          Lidická 1002<br />
-          29501 Mnichovo Hradiště
-        </address>
-        <dl class="dl-inline">
-          <div class="dl-inline-item">
-            <dt>IČO:</dt>
-            <dd>86554018</dd>
-          </div>
-        </dl>
-      </section>
-      <section id="parkovani">
-        <h2>Parkování</h2>
-        <p>Zaparkovat se dá na náměstí. <a href="https://www.google.com/maps/dir//50.5229896,14.9742075/@50.5227961,14.9738817,19.33z">Naviguj</a></p>
-      </section>
+        </section>
+        <section id="parkovani">
+          <h2>Parkování</h2>
+          <p>Zaparkovat se dá na náměstí. <a href="https://www.google.com/maps/dir//50.5229896,14.9742075/@50.5227961,14.9738817,19.33z">Naviguj</a></p>
+        </section>
+      </div>
     </div>
   </div>
 </article>
