@@ -169,6 +169,8 @@ jobs:
       - uses: ./.github/actions/setup-ci
       - name: Compile scss
         run: pipenv run ./manage.py compilescss
+        env:
+          DEBUG: 'false'
       - name: Collect static files
         run: pipenv run ./manage.py collectstatic --no-input
         env:
@@ -285,6 +287,8 @@ jobs:
       - uses: ./.github/actions/setup-ci
       - name: Compile scss
         run: pipenv run ./manage.py compilescss
+        env:
+          DEBUG: 'false'
       - name: Collect static files
         run: pipenv run ./manage.py collectstatic --no-input
         env:
