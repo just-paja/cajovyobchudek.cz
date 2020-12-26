@@ -12,6 +12,14 @@ header {
     color: $white;
   }
 
+  @include media-breakpoint-up('lg') {
+    min-height: 480px;
+  }
+
+  @include media-breakpoint-up('xl') {
+    min-height: 540px;
+  }
+
   .header-content {
     background: rgba($black, 0.75);
   }
