@@ -67,6 +67,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'website.context_processors.business_hours',
                 'website.context_processors.catalog_categories',
+                'website.context_processors.og_properties',
             ],
         },
     },

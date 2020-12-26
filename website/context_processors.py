@@ -19,3 +19,13 @@ def catalog_categories(request):
     return {
         'catalog_categories': catalog_mapping.items(),
     }
+
+
+def og_properties(request):
+    return {
+        'site_name': 'Čaje z celého světa',
+        'page_title': 'Čaje z celého světa',
+        'page_description': 'Malý čajový obchůdek v Mnichově Hradišti, \
+který kromě čajů z celého světa prodává kávu, sušené ovoce \
+v čokoládě nebo bez, bylinky, med, medoviny, porcelán a další.',
+    }

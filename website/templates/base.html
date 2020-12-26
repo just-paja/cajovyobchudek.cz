@@ -6,7 +6,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% block meta %}{% endblock %}
-  <title>{% block title %}Čaje z celého světa{% endblock %}</title>
+  {% block og %}{% endblock %}
+  <meta property="og:title" content="{{page_title}}" />
+  <meta property="og:site_name" content="{{site_name}}" />
+  <meta property="og:description" content="{{page_description}}" />
+  <meta property="og:url" content="{{request.build_absolute_uri}}" />
+  <title>{{page_title}}</title>
   {% block scripts %}{% endblock %}
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.js"></script>
