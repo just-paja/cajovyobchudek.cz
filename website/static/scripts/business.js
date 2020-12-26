@@ -93,6 +93,15 @@ function formatBusinessStatus(el) {
   el.innerHTML = message
 }
 
+function openNewWindow(e) {
+  e.preventDefault()
+  window.open(e.currentTarget.href)
+}
+
+function formatExternalLink(el) {
+  el.addEventListener('click', openNewWindow)
+}
+
 function formatElement(selector, formatter) {
   const elements = document.querySelectorAll(selector)
   Array.prototype.map.call(elements, formatter)
@@ -101,4 +110,5 @@ function formatElement(selector, formatter) {
 document.addEventListener("DOMContentLoaded", function() {
   luxon.Settings.defaultLocale = 'cs'
   formatElement('.business-status', formatBusinessStatus)
+  formatElement('.link-ext', formatExternalLink)
 })

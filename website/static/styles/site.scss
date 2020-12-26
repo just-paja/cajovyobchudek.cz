@@ -19,8 +19,12 @@ main, .main {
   margin-bottom: 1rem;
 }
 
-footer {
-  background-color: #ccc;
+h1, h2, h3, h4, h5, strong {
+  color: $primary;
+}
+
+img {
+  max-width: 100%;
 }
 
 @import "./header.scss";

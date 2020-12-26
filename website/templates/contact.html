@@ -1,5 +1,7 @@
 {% extends "content.html" %}
 
+{% load static %}
+
 {% block content %}
 <article class="main">
   <header class="contact-header">
@@ -11,16 +13,18 @@
     </div>
   </header>
 
-  <div class="container mt-3">
+  <div class="container mt-3 mt-lg-5">
     <div class="row">
-      <div class="col-md-6 col-lg-8">
+      <div class="col-md-6">
         <section class="row">
           <address class="address-box">
-            Čaje z celého světa<br />
-            Masarykovo náměstí 1489<br />
-            295 01 Mnichovo Hradiště
+            <p class="lead">
+              <strong>Čaje z celého světa</strong><br />
+              Masarykovo náměstí 1489<br />
+              295 01 Mnichovo Hradiště
+            </p>
 
-            <dl class="mt-3">
+            <dl>
               <div class="dl-inline-item">
                 <dt>E-mail:</dt>
                 <dd><a href="mailto:">test@example.com</a></dd>
@@ -38,9 +42,7 @@
           <p class="lead">{% include 'components/business-status.html' %}</p>
           {% include 'components/business-hours.html' %}
         </section>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
+        
         <section>
           <h2>Fakturační údaje</h2>
           <address>
@@ -50,14 +52,29 @@
           </address>
           <dl class="dl-inline">
             <div class="dl-inline-item">
-              <dt>IČO:</dt>
+              <dt>IČ:</dt>
               <dd>86554018</dd>
+            </div>
+            <div class="dl-inline-item">
+              <dt>DIČ:</dt>
+              <dd>CZ86554018</dd>
             </div>
           </dl>
         </section>
+      </div>
+
+      <div class="col-md-6">
         <section id="parkovani">
           <h2>Parkování</h2>
-          <p>Zaparkovat se dá na náměstí. <a href="https://www.google.com/maps/dir//50.5229896,14.9742075/@50.5227961,14.9738817,19.33z">Naviguj</a></p>
+          <p>
+            Zaparkovat se dá na <a href="http://google.com/maps/dir/?api=1&destination=Masarykovo nám. 1489, 295 01 Mnichovo Hradiště" class="link-ext">Masarykovo náměstí</a>, pěšky od auta je to 15 metrů.
+          </p>
+          <a
+            href="http://google.com/maps/dir/?api=1&destination=Masarykovo nám. 1489, 295 01 Mnichovo Hradiště"
+            class="link-ext"
+          >
+            <img src="{% static 'illustrations/parking-map.webp' %}" alt="Mapa s parkovištěm" />
+          </a>
         </section>
       </div>
     </div>
