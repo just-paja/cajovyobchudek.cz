@@ -176,6 +176,7 @@ LOCALE_PATHS = [
 ]
 
 if AWS_ACCESS_KEY_ID:
+    STATIC_URL = 'https://%s.s3-%s.amazonaws.com/' % (AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME)
     DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
     DBBACKUP_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
