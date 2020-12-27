@@ -169,8 +169,8 @@ jobs:
       - uses: ./.github/actions/setup-ci
       - name: Collect static files
         run: |
-          pipenv run ./manage.py compress
           pipenv run ./manage.py collectstatic --no-input
+          pipenv run ./manage.py compress
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
