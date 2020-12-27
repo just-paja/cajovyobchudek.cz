@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+footer {
+  color: $white;
+
+  .footer-heading {
+    color: $navbar-dark-color;
+  }
+
+  .footer-heading {
+    @extend %heading;
+    @include font-size($h5-font-size);
+    display: block;
+  }
+}
+
