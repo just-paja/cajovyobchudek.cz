@@ -11,19 +11,38 @@ from django.db.models import (
 
 import holidays
 
+DAY_MONDAY = 1
+DAY_TUESDAY = 2
+DAY_WEDNESDAY = 3
+DAY_THURSDAY = 4
+DAY_FRIDAY = 5
+DAY_SATURDAY = 6
+DAY_SUNDAY = 7
+
 WEEKDAYS = (
-    (1, _('Monday')),
-    (2, _('Tuesday')),
-    (3, _('Wednesday')),
-    (4, _('Thursday')),
-    (5, _('Friday')),
-    (6, _('Saturday')),
-    (7, _('Sunday')),
+    (DAY_MONDAY, _('Monday')),
+    (DAY_TUESDAY, _('Tuesday')),
+    (DAY_WEDNESDAY, _('Wednesday')),
+    (DAY_THURSDAY, _('Thursday')),
+    (DAY_FRIDAY, _('Friday')),
+    (DAY_SATURDAY, _('Saturday')),
+    (DAY_SUNDAY, _('Sunday')),
 )
 
+WORK_DAYS = [
+    DAY_MONDAY,
+    DAY_TUESDAY,
+    DAY_WEDNESDAY,
+    DAY_THURSDAY,
+    DAY_FRIDAY
+]
+
+PERIOD_WORK_DAYS = 8
+PERIOD_PUBLIC_HOLIDAY = 9
+
 PERIODS = WEEKDAYS + (
-    (8, _('Work days')),
-    (9, _('Public holiday')),
+    (PERIOD_WORK_DAYS, _('Work days')),
+    (PERIOD_PUBLIC_HOLIDAY, _('Public holiday')),
 )
 
 
@@ -37,6 +56,19 @@ def get_weekday_date(today, weekday):
 
 def get_block_start(block):
     return block['start']
+
+
+def add_block_to_work_days(weekdays, block):
+    for tup in weekdays.items():
+        print(tup[1], tup[1].work_day)
+        if tup[1].work_day:
+            tup[1].add_hours(block)
+
+
+def add_block_to_public_holiday(weekdays, block):
+    for tup in weekdays.items():
+        if tup[1].holiday:
+            tup[1].add_hours(block)
 
 
 class WeekDay:
@@ -89,6 +121,7 @@ class WeekDay:
             self.closed_for_reason = closing_rule.reason
         else:
             self.blocks.append(block)
+            self.blocks.sort(key=get_block_start)
 
     @property
     def empty(self):
@@ -105,6 +138,10 @@ class WeekDay:
     @property
     def today(self):
         return self.date == date.today()
+
+    @property
+    def work_day(self):
+        return self.weekday in WORK_DAYS
 
     @property
     def holiday(self):
@@ -137,7 +174,11 @@ class BusinessHours(Model):
         hours = cls.objects.all()
         weekdays = WeekDay.all(closing_hours)
         for block in hours:
-            if block.weekday in weekdays and not weekdays[block.weekday].holiday:
+            if block.weekday == PERIOD_WORK_DAYS:
+                add_block_to_work_days(weekdays, block)
+            elif block.weekday == PERIOD_PUBLIC_HOLIDAY:
+                add_block_to_public_holiday(weekdays, block)
+            elif not weekdays[block.weekday].holiday:
                 weekdays[block.weekday].add_hours(block)
         return weekdays
 
