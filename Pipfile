@@ -4,16 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
-sentry-sdk = "*"
-django-storages = "*"
 boto3 = "*"
-psycopg2-binary = "*"
+django = "*"
+django-compressor = "*"
+django-storages = "*"
 gunicorn = "*"
 holidays = "*"
+psycopg2-binary = "*"
+sentry-sdk = "*"
 
 [dev-packages]
-django-compressor = "*"
 libsass = "*"
 prospector = "*"
 pytest = "*"
