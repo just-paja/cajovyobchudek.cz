@@ -163,8 +163,8 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 )
 
-COMPRESS_ENABLED = True
-COMPRESS_OFFLINE = not DEBUG
+COMPRESS_OFFLINE = bool(AWS_ACCESS_KEY_ID)
+COMPRESS_STORAGE = 'compressor.storage.GzipCompressorFileStorage'
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
