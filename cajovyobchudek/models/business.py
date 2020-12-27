@@ -9,6 +9,8 @@ from django.db.models import (
     TimeField
 )
 
+import holidays
+
 WEEKDAYS = (
     (1, _('Monday')),
     (2, _('Tuesday')),
@@ -38,6 +40,8 @@ def get_block_start(block):
 
 
 class WeekDay:
+    holidays = holidays.Czechia()
+
     @classmethod
     def all(cls, closing_hours):
         items = {}
@@ -57,7 +61,7 @@ class WeekDay:
         self.blocks = []
         self.closing_hours = closing_hours if closing_hours else []
         self.date = day_date
-        self.closed_for = None
+        self.closed_for_reason = None
 
     def get_closing_rule(self, block):
         for closed in self.closing_hours:
@@ -82,7 +86,7 @@ class WeekDay:
         }
         closing_rule = self.get_closing_rule(block)
         if closing_rule:
-            self.closed_for = closing_rule.reason
+            self.closed_for_reason = closing_rule.reason
         else:
             self.blocks.append(block)
 
@@ -91,8 +95,20 @@ class WeekDay:
         return len(self.blocks) == 0
 
     @property
+    def closed_for(self):
+        if self.closed_for_reason:
+            return self.closed_for_reason
+        if self.holiday:
+            return self.holidays.get(self.date)
+        return None
+
+    @property
     def today(self):
         return self.date == date.today()
+
+    @property
+    def holiday(self):
+        return self.date in self.holidays
 
 
 class BusinessHours(Model):
@@ -121,7 +137,8 @@ class BusinessHours(Model):
         hours = cls.objects.all()
         weekdays = WeekDay.all(closing_hours)
         for block in hours:
-            weekdays[block.weekday].add_hours(block)
+            if block.weekday in weekdays and not weekdays[block.weekday].holiday:
+                weekdays[block.weekday].add_hours(block)
         return weekdays
 
     @staticmethod
