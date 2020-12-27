@@ -164,7 +164,6 @@ STATICFILES_FINDERS = (
 )
 
 COMPRESS_OFFLINE = bool(AWS_ACCESS_KEY_ID)
-COMPRESS_STORAGE = 'compressor.storage.GzipCompressorFileStorage'
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
@@ -179,6 +178,7 @@ if AWS_ACCESS_KEY_ID:
     DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     DBBACKUP_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    COMPRESS_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     DBBACKUP_STORAGE_OPTIONS = {
         "access_key": AWS_ACCESS_KEY_ID,
         "secret_key": AWS_SECRET_ACCESS_KEY,
