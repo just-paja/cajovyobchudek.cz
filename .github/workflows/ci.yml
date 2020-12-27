@@ -167,12 +167,10 @@ jobs:
         with:
           python-version: 3.9
       - uses: ./.github/actions/setup-ci
-      - name: Compress scripts and styles
-        run: pipenv run ./manage.py compress
-        env:
-          DEBUG: 'false'
       - name: Collect static files
-        run: pipenv run ./manage.py collectstatic --no-input
+        run: |
+          pipenv run ./manage.py compress
+          pipenv run ./manage.py collectstatic --no-input
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -182,6 +180,7 @@ jobs:
           DB_NAME: ${{ secrets.DB_NAME }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           DB_USER: ${{ secrets.DB_USER }}
+          DEBUG: 'false'
           DJANGO_ENVIRONMENT: staging
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
