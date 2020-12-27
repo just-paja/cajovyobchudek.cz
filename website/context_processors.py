@@ -32,8 +32,7 @@ v čokoládě nebo bez, bylinky, med, medoviny, porcelán a další.',
 
 
 def site_alerts(request):
-    site_alerts = SiteAlert.objects.get_active()
-    print(site_alerts)
+    alerts = SiteAlert.objects.get_active()
     return {
-        'site_alerts': site_alerts,
+        'site_alerts': alerts,
     }

@@ -65,8 +65,6 @@ class WeekDay:
                 closed.start <= block['start'] <= closed.end or
                 closed.start <= block['end'] <= closed.end
             ):
-                print("A: <%s, %s>" % (closed.start, closed.end))
-                print("B: <%s, %s>" % (block['start'], block['end']))
                 return closed
         return None
 
