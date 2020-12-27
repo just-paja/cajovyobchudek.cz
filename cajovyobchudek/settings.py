@@ -36,9 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sass_processor',
     'cajovyobchudek',
     'website.WebsiteConfig',
+    'compressor',
 ]
 
 MIDDLEWARE = [
@@ -158,10 +158,15 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_FINDERS = (
-    'cajovyobchudek.finders.CssFinder',
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'sass_processor.finders.CssFinder',
+    'compressor.finders.CompressorFinder',
+)
+
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = not DEBUG
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
 )
 
 RAVEN_DSN = os.environ.get('RAVEN_DSN', None)

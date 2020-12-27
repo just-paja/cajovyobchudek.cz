@@ -11,10 +11,6 @@ const locale = {
   }
 }
 
-const fuzzy = {
-
-}
-
 function getMapStr(map, value) {
   if (value === 1) {
     return map.single

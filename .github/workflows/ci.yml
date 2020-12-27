@@ -167,8 +167,8 @@ jobs:
         with:
           python-version: 3.9
       - uses: ./.github/actions/setup-ci
-      - name: Compile scss
-        run: pipenv run ./manage.py compilescss
+      - name: Compress scripts and styles
+        run: pipenv run ./manage.py compress
         env:
           DEBUG: 'false'
       - name: Collect static files
@@ -285,8 +285,8 @@ jobs:
         with:
           python-version: 3.9
       - uses: ./.github/actions/setup-ci
-      - name: Compile scss
-        run: pipenv run ./manage.py compilescss
+      - name: Compress scripts and styles
+        run: pipenv run ./manage.py compress
         env:
           DEBUG: 'false'
       - name: Collect static files

@@ -1,4 +1,4 @@
-{% load sass_tags %}
+{% load compress %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="cs-CZ">
@@ -16,7 +16,6 @@
   <meta property="og:image" content="{% static 'og/tea-x500.webp' %}" />
   <meta property="og:image" content="{% static 'og/shop-x500.webp' %}" />
   <title>{{page_title}}</title>
-  {% block scripts %}{% endblock %}
 
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -26,10 +25,12 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
-  <script src={% static 'scripts/business.js' %}></script>
-  {% block styles %}{% endblock %}
-
-  <link rel="stylesheet" type="text/css" href="{% sass_src 'styles/site.scss' %}" />
+  {% compress js %}
+    <script src={% static 'scripts/business.js' %}></script>
+  {% endcompress %}
+  {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/site.scss' %}" />
+  {% endcompress %}
 </head>
 <body>
   {% block body %}{% endblock %}

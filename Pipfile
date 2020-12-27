@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 django = "*"
-django-sass-processor = "*"
 sentry-sdk = "*"
 django-storages = "*"
 boto3 = "*"
@@ -20,6 +19,7 @@ prospector = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-django = "*"
+django-libsass = "*"
 
 [requires]
 python_version = "3.9"
