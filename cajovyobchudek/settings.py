@@ -94,6 +94,7 @@ AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', None)
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', None)
 AWS_S3_FILE_OVERWRITE = False
 AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME', None)
+AWS_IS_GZIPPED = True
 
 DB_NAME = os.environ.get('DB_NAME', None)
 
