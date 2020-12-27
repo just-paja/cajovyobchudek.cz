@@ -68,6 +68,7 @@ TEMPLATES = [
                 'website.context_processors.business_hours',
                 'website.context_processors.catalog_categories',
                 'website.context_processors.og_properties',
+                'website.context_processors.site_alerts',
             ],
         },
     },

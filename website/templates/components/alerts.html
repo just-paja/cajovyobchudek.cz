@@ -1,0 +1,7 @@
+{% for alert in site_alerts %}
+<div class="alert alert-{{alert.severity_class}} mb-0">
+  <div class="container">
+    {{alert.text}}
+  </div>
+</div>
+{% endfor %}

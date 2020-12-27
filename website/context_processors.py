@@ -1,4 +1,4 @@
-from cajovyobchudek.models import BusinessHours
+from cajovyobchudek.models import BusinessHours, SiteAlert
 
 from .mapping import catalog_mapping
 
@@ -28,4 +28,12 @@ def og_properties(request):
         'page_description': 'Malý čajový obchůdek v Mnichově Hradišti, \
 který kromě čajů z celého světa prodává kávu, sušené ovoce \
 v čokoládě nebo bez, bylinky, med, medoviny, porcelán a další.',
+    }
+
+
+def site_alerts(request):
+    site_alerts = SiteAlert.objects.get_active()
+    print(site_alerts)
+    return {
+        'site_alerts': site_alerts,
     }
