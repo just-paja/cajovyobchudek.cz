@@ -284,10 +284,6 @@ jobs:
         with:
           python-version: 3.9
       - uses: ./.github/actions/setup-ci
-      - name: Compress scripts and styles
-        run: pipenv run ./manage.py compress
-        env:
-          DEBUG: 'false'
       - name: Collect static files
         run: |
           pipenv run ./manage.py collectstatic --no-input
