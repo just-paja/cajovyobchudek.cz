@@ -1,4 +1,4 @@
-from django.contrib.admin import ModelAdmin, register
+from django.contrib.admin import ModelAdmin, register, TabularInline
 from django.utils.timezone import now
 
 from . import models
@@ -24,3 +24,16 @@ class SiteAlertAdmin(ModelAdmin):
             (item.publish_at is None or item.publish_at <= now_dt) and
             (item.hide_at is None or now_dt <= item.hide_at)
         )
+
+
+class TagConnection(TabularInline):
+    model = models.TagConnection
+    fk_name = 'parent'
+
+
+@register(models.Tag)
+class TagAdmin(ModelAdmin):
+    list_display = ('name', 'public')
+    inlines = [
+        TagConnection,
+    ]
