@@ -1,0 +1,23 @@
+{% extends 'content.html' %}
+
+{% block content %}
+<main>
+  <div class="container mt-3 mt-md-4 mt-lg-5">
+    <h1>{{ tag.name }}</h1>
+
+    {% if tag.description_rendered %}
+      <div class="lead">
+        {{tag.description_rendered | safe}}
+      </div>
+    {% endif %}
+
+    {% if subordinates %}
+      <ul>
+      {% for child in subordinates %}
+        <li><a href="{% url 'website:catalog_tag' child.slug %}">{{ child.name }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</main>
+{% endblock %}

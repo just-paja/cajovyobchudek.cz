@@ -34,12 +34,12 @@
             role="button"
           >Nabídka</a>
           <ul class="dropdown-menu" aria-labelledby="catalogDropdownLink">
-            {% for category, item in catalog_categories %}
+            {% for tag in catalog_categories %}
               <li>
                 <a
                   class="dropdown-item"
-                  href="{% url 'website:catalog_category' category %}"
-                >{{ item.name }}</a>
+                  href="{% url 'website:catalog_tag' tag.slug %}"
+                >{{ tag.name }}</a>
               </li>
             {% endfor %}
           </ul>

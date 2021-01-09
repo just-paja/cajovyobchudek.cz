@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-21 09:23+0000\n"
+"POT-Creation-Date: 2021-01-09 17:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,100 +17,144 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: cajovyobchudek/settings.py:153
-msgid "Czech"
-msgstr ""
+#: cajovyobchudek/models/alerts.py:18
+msgid "Informative"
+msgstr "Informativní"
 
-#: cajovyobchudek/settings.py:154
+#: cajovyobchudek/models/alerts.py:19
+msgid "Warning"
+msgstr "Varování"
+
+#: cajovyobchudek/models/alerts.py:20
+msgid "Danger"
+msgstr "Nebezpečí"
+
+#: cajovyobchudek/models/business.py:23
+msgid "Monday"
+msgstr "Pondělí"
+
+#: cajovyobchudek/models/business.py:24
+msgid "Tuesday"
+msgstr "Úterý"
+
+#: cajovyobchudek/models/business.py:25
+msgid "Wednesday"
+msgstr "Středa"
+
+#: cajovyobchudek/models/business.py:26
+msgid "Thursday"
+msgstr "Čtvrtek"
+
+#: cajovyobchudek/models/business.py:27
+msgid "Friday"
+msgstr "Pátek"
+
+#: cajovyobchudek/models/business.py:28
+msgid "Saturday"
+msgstr "Sobota"
+
+#: cajovyobchudek/models/business.py:29
+msgid "Sunday"
+msgstr "Neděle"
+
+#: cajovyobchudek/models/business.py:44
+msgid "Work days"
+msgstr "Pracovní dny"
+
+#: cajovyobchudek/models/business.py:45
+msgid "Public holiday"
+msgstr "Státní svátky"
+
+#: cajovyobchudek/models/business.py:153 cajovyobchudek/models/business.py:154
+msgid "Business Hours"
+msgstr "Otevírací hodiny"
+
+#: cajovyobchudek/models/business.py:158
+msgid "Weekday"
+msgstr "Den v týdnu"
+
+#: cajovyobchudek/models/business.py:161
+msgid "Opening"
+msgstr "Otevřeno"
+
+#: cajovyobchudek/models/business.py:162
+msgid "Closing"
+msgstr "Zavřeno"
+
+#: cajovyobchudek/models/business.py:165
+#, python-format
+msgid "Open on %(weekday)s from (%(from_hour)s - %(to_hour)s)"
+msgstr "Otevřeno v %(weekday)s od (%(from_hour)s - %(to_hour)s)"
+
+#: cajovyobchudek/models/business.py:226
+msgid "Closing Rule"
+msgstr "Zavírací pravidlo"
+
+#: cajovyobchudek/models/business.py:227
+msgid "Closing Rules"
+msgstr "Zavírací pravidla"
+
+#: cajovyobchudek/models/business.py:230
+msgid "Start"
+msgstr "Začátek"
+
+#: cajovyobchudek/models/business.py:231
+msgid "End"
+msgstr "Konec"
+
+#: cajovyobchudek/models/business.py:232
+msgid "Reason"
+msgstr "Důvod"
+
+#: cajovyobchudek/models/business.py:235
+#, python-format
+msgid "Closed from %(start)s to %(end)s"
+msgstr "Zavřeno od %(start)s do %(end)s"
+
+#: cajovyobchudek/models/tags.py:16
+msgid "Tag"
+msgstr "Značka"
+
+#: cajovyobchudek/models/tags.py:17
+msgid "Tags"
+msgstr "Značky"
+
+#: cajovyobchudek/models/tags.py:21
+msgid "Name"
+msgstr "Název"
+
+#: cajovyobchudek/models/tags.py:26
+msgid "Description"
+msgstr "Popis"
+
+#: cajovyobchudek/models/tags.py:30
+msgid "Public"
+msgstr "Veřejné"
+
+#: cajovyobchudek/models/tags.py:40
+msgid "Tag Connection"
+msgstr "Spojení značek"
+
+#: cajovyobchudek/models/tags.py:41
+msgid "Tag Connections"
+msgstr "Spojení značek"
+
+#: cajovyobchudek/models/tags.py:47
+msgid "Parent Tag"
+msgstr "Nadřazená značka"
+
+#: cajovyobchudek/models/tags.py:53
+msgid "Child Tag"
+msgstr "Podřazená značka"
+
+#: cajovyobchudek/settings.py:137
+msgid "Czech"
+msgstr "Česky"
+
+#: cajovyobchudek/settings.py:138
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: website/__init__.py:7
 msgid "Website"
-msgstr ""
-
-#: website/models/business.py:11
-msgid "Monday"
-msgstr ""
-
-#: website/models/business.py:12
-msgid "Tuesday"
-msgstr ""
-
-#: website/models/business.py:13
-msgid "Wednesday"
-msgstr ""
-
-#: website/models/business.py:14
-msgid "Thursday"
-msgstr ""
-
-#: website/models/business.py:15
-msgid "Friday"
-msgstr ""
-
-#: website/models/business.py:16
-msgid "Saturday"
-msgstr ""
-
-#: website/models/business.py:17
-msgid "Sunday"
-msgstr ""
-
-#: website/models/business.py:18
-msgid "Weekend"
-msgstr ""
-
-#: website/models/business.py:19
-msgid "Workweek"
-msgstr ""
-
-#: website/models/business.py:20
-msgid "Public holiday"
-msgstr ""
-
-#: website/models/business.py:26 website/models/business.py:27
-msgid "Business Hours"
-msgstr ""
-
-#: website/models/business.py:31
-msgid "Weekday"
-msgstr ""
-
-#: website/models/business.py:34
-msgid "Opening"
-msgstr ""
-
-#: website/models/business.py:35
-msgid "Closing"
-msgstr ""
-
-#: website/models/business.py:38
-#, python-format
-msgid "Open on %(weekday)s from (%(from_hour)s - %(to_hour)s)"
-msgstr ""
-
-#: website/models/business.py:47
-msgid "Closing Rule"
-msgstr ""
-
-#: website/models/business.py:48
-msgid "Closing Rules"
-msgstr ""
-
-#: website/models/business.py:51
-msgid "Start"
-msgstr ""
-
-#: website/models/business.py:52
-msgid "End"
-msgstr ""
-
-#: website/models/business.py:53
-msgid "Reason"
-msgstr ""
-
-#: website/models/business.py:56
-#, python-format
-msgid "Closed from %(start)s to %(end)s"
-msgstr ""
+msgstr "Web"

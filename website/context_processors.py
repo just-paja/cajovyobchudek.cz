@@ -1,6 +1,4 @@
-from cajovyobchudek.models import BusinessHours, SiteAlert
-
-from .mapping import catalog_mapping
+from cajovyobchudek.models import BusinessHours, SiteAlert, Tag
 
 
 def business_hours(request):
@@ -17,7 +15,7 @@ def business_hours(request):
 
 def catalog_categories(request):
     return {
-        'catalog_categories': catalog_mapping.items(),
+        'catalog_categories': Tag.objects.get_top_level(),
     }
 
 

@@ -12,6 +12,7 @@ gunicorn = "*"
 holidays = "*"
 psycopg2-binary = "*"
 sentry-sdk = "*"
+django-markdownfield = "*"
 
 [dev-packages]
 libsass = "*"

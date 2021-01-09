@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'cajovyobchudek',
     'website.WebsiteConfig',
     'compressor',
+    'markdownfield',
 ]
 
 MIDDLEWARE = [

@@ -1,22 +1,22 @@
-from django.template.exceptions import TemplateDoesNotExist
 from django.views.decorators.http import require_http_methods
 from django.http import Http404
 from django.shortcuts import render
 
-from ..mapping import catalog_mapping
+from cajovyobchudek.models import Tag
 
 
 @require_http_methods(['GET'])
 def home(req):
-    return render(req, 'catalog.html')
+    return render(req, 'catalog/index.html')
 
 
 @require_http_methods(['GET'])
-def category(req, category_id):
-    item = catalog_mapping[category_id]
+def tag(req, tag_id):
     try:
-        if item:
-            return render(req, 'catalog/%s' % item['template'])
-    except TemplateDoesNotExist:
+        tag_item = Tag.objects.get(slug=tag_id, public=True)
+    except Tag.DoesNotExist:
         raise Http404
-    raise Http404
+    return render(req, 'catalog/tag.html', {
+        'tag': tag_item,
+        'subordinates': tag_item.subordinate_tags
+    })
