@@ -135,7 +135,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'cs-cz'
 LANGUAGES = [
-    ('cs', _('Czech')),
+    ('cs-cz', _('Czech')),
     ('en', _('English')),
 ]
 
