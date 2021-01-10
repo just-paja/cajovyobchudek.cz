@@ -1,5 +1,6 @@
 recursive-include cajovyobchudek *
 recursive-include website *
+recursive-include locale *
 include requirements.txt
 include README.md
 include manage.py
