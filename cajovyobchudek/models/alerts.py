@@ -38,6 +38,10 @@ class AlertsManager(Manager):
 
 
 class SiteAlert(Model):
+    class Meta:
+        verbose_name = _('Site Alert')
+        verbose_name_plural = _('Site Alerts')
+
     name = CharField(max_length=31)
     severity = PositiveIntegerField(choices=SEVERITY_CHOICES, default=SEVERITY_INFO)
     text = TextField()
