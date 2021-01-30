@@ -15,6 +15,7 @@ sentry-sdk = "*"
 django-markdownfield = "*"
 pillow = "*"
 django-mptt = "*"
+django-mptt-admin = "*"
 
 [dev-packages]
 libsass = "*"

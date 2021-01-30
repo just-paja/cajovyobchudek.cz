@@ -1,6 +1,8 @@
 from django.contrib.admin import ModelAdmin, register, TabularInline
 from django.utils.timezone import now
 
+from django_mptt_admin.admin import DjangoMpttAdmin
+
 from . import models
 
 
@@ -61,7 +63,7 @@ class ProductAdmin(ModelAdmin):
 
 
 @register(models.Tag)
-class TagAdmin(ModelAdmin):
+class TagAdmin(DjangoMpttAdmin):
     list_display = ('name', 'weight', 'main_menu', 'public', 'parent')
     list_filter = ('main_menu', 'public')
     prepopulated_fields = {'slug': ('name',)}

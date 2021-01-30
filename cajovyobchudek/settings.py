@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'compressor',
     'markdownfield',
     'mptt',
+    'django_mptt_admin',
 ]
 
 MIDDLEWARE = [
