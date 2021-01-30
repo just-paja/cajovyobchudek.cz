@@ -1,17 +1,20 @@
 from django.utils.translation import gettext_lazy as _
+from django.apps import apps
 from django.db.models import (
     CASCADE,
-    BooleanField,
     ForeignKey,
-    CharField,
     IntegerField,
     Manager,
     Model,
     SlugField,
 )
 
-from markdownfield.models import MarkdownField, RenderedMarkdownField
-from markdownfield.validators import VALIDATOR_STANDARD
+from .fields import (
+    NameField,
+    DescriptionField,
+    RenderedDescriptionField,
+    VisibilityField
+)
 
 
 class TagManager(Manager):
@@ -29,29 +32,16 @@ class Tag(Model):
         verbose_name = _('Tag')
         verbose_name_plural = _('Tags')
 
-    name = CharField(
-        max_length=63,
-        verbose_name=_('Name'),
-    )
+    name = NameField()
     slug = SlugField(
         max_length=63,
         unique=True,
     )
-    description = MarkdownField(
-        blank=True,
-        null=True,
+    description = DescriptionField(
         rendered_field='description_rendered',
-        validator=VALIDATOR_STANDARD,
-        verbose_name=_('Description'),
     )
-    description_rendered = RenderedMarkdownField(
-        null=True,
-        blank=True,
-    )
-    public = BooleanField(
-        default=True,
-        verbose_name=_('Public'),
-    )
+    description_rendered = RenderedDescriptionField()
+    public = VisibilityField()
     objects = TagManager()
 
     def __str__(self):
@@ -59,8 +49,38 @@ class Tag(Model):
 
     @property
     def subordinate_tags(self):
-        connections = self.subordinates.filter(subordinate__public=True).all()
+        connections = self.subordinates.filter(
+            subordinate__public=True
+        ).order_by('weight').all()
         return [connection.subordinate for connection in connections]
+
+    @property
+    def descendants(self):
+        subordinates = self.subordinate_tags
+        result = [] + subordinates
+        for tag in subordinates:
+            result += tag.descendants
+        return result
+
+    @property
+    def descendants_ids(self):
+        return [tag.pk for tag in self.descendants]
+
+    @property
+    def product_tag_model(self):
+        return apps.get_model(self._meta.app_label, 'ProductTag')
+
+    @property
+    def product_model(self):
+        return apps.get_model(self._meta.app_label, 'Product')
+
+    @property
+    def products(self):
+        ids = [self.pk] + self.descendants_ids
+        return self.product_model.objects.filter(
+            public=True,
+            product_tags__pk__in=ids
+        ).distinct()
 
 
 class TagConnection(Model):

@@ -18,5 +18,6 @@ def tag(req, tag_id):
         raise Http404
     return render(req, 'catalog/tag.html', {
         'tag': tag_item,
+        'products': tag_item.products,
         'subordinates': tag_item.subordinate_tags
     })

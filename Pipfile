@@ -13,6 +13,7 @@ holidays = "*"
 psycopg2-binary = "*"
 sentry-sdk = "*"
 django-markdownfield = "*"
+pillow = "*"
 
 [dev-packages]
 libsass = "*"

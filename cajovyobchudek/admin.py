@@ -26,9 +26,41 @@ class SiteAlertAdmin(ModelAdmin):
         )
 
 
-class TagConnection(TabularInline):
+class TagConnectionAdmin(TabularInline):
     model = models.TagConnection
     fk_name = 'superior'
+    extra = 0
+
+
+@register(models.Company)
+class CompanyAdmin(ModelAdmin):
+    list_display = ('name',)
+
+
+class ProductTagAdmin(TabularInline):
+    model = models.ProductTag
+    extra = 0
+
+
+class ProductPhotoAdmin(TabularInline):
+    model = models.ProductPhoto
+    extra = 0
+
+
+@register(models.ProductDescription)
+class ProductDescriptionAdmin(ModelAdmin):
+    pass
+
+
+@register(models.ProductUsage)
+class ProductUsageAdmin(ModelAdmin):
+    pass
+
+
+@register(models.Product)
+class ProductAdmin(ModelAdmin):
+    list_display = ('name', 'local_name', 'product_code', 'public', 'producer')
+    inlines = (ProductTagAdmin, ProductPhotoAdmin,)
 
 
 @register(models.Tag)
@@ -36,5 +68,6 @@ class TagAdmin(ModelAdmin):
     list_display = ('name', 'public')
     prepopulated_fields = {'slug': ('name',)}
     inlines = [
-        TagConnection,
+        TagConnectionAdmin,
+        ProductTagAdmin,
     ]

@@ -3,12 +3,13 @@ from django.utils.translation import gettext_lazy as _
 from django.db.models import (
     DateTimeField,
     Q,
-    CharField,
     Manager,
     Model,
     PositiveIntegerField,
     TextField
 )
+
+from .fields import NameField
 
 SEVERITY_INFO = 1
 SEVERITY_WARNING = 2
@@ -42,7 +43,7 @@ class SiteAlert(Model):
         verbose_name = _('Site Alert')
         verbose_name_plural = _('Site Alerts')
 
-    name = CharField(max_length=31)
+    name = NameField(max_length=31)
     severity = PositiveIntegerField(choices=SEVERITY_CHOICES, default=SEVERITY_INFO)
     text = TextField()
     publish_at = DateTimeField(null=True, blank=True)

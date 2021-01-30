@@ -18,6 +18,17 @@
       {% endfor %}
       </ul>
     {% endif %}
+
+    {% if products %}
+      <ul>
+      {% for product in products %}
+        <li>
+          {{ product.name}}
+        </li>
+      {% endfor %}
+      </ul>
+
+    {% endif %}
   </div>
 </main>
 {% endblock %}
