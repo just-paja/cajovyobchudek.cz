@@ -5,6 +5,26 @@
   <div class="container mt-3 mt-md-4 mt-lg-5">
     <h1>{{ tag.name }}</h1>
 
+    {% if ancestors %}
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          {% for tag in ancestors %}
+            {% url 'website:catalog_tag' tag.slug as tag_url %}
+            <li
+              class="breadcrumb-item{% if request.get_full_path == tag_url %} active{% endif %}"
+              {% if request.get_full_path == tag_url %}aria-current="page"{% endif %}
+            >
+              {% if request.get_full_path == tag_url %}
+                {{ tag.name }}
+              {% else %}
+                <a href="{{ tag_url }}">{{ tag.name }}</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ol>
+      </nav>
+    {% endif %}
+
     {% if tag.description_rendered %}
       <div class="lead">
         {{tag.description_rendered | safe}}

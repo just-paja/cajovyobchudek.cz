@@ -1,6 +1,15 @@
 from cajovyobchudek.models import BusinessHours, SiteAlert, Tag
 
 
+def exclude_admin(func):
+    def inner(request):
+        if '/admin' not in request.META.get('PATH_INFO', ''):
+            return func(request)
+        return {}
+    return inner
+
+
+@exclude_admin
 def business_hours(request):
     business_days = BusinessHours.get_weekdays()
     blocks = BusinessHours.get_weekdays_blocks(business_days)
@@ -13,12 +22,14 @@ def business_hours(request):
     }
 
 
+@exclude_admin
 def catalog_categories(request):
     return {
         'catalog_categories': Tag.objects.get_top_level(),
     }
 
 
+@exclude_admin
 def og_properties(request):
     return {
         'site_name': 'Čaje z celého světa',
@@ -29,8 +40,8 @@ v čokoládě nebo bez, bylinky, med, medoviny, porcelán a další.',
     }
 
 
+@exclude_admin
 def site_alerts(request):
-    alerts = SiteAlert.objects.get_active()
     return {
-        'site_alerts': alerts,
+        'site_alerts': SiteAlert.objects.get_active(),
     }

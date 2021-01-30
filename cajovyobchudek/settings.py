@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'website.WebsiteConfig',
     'compressor',
     'markdownfield',
+    'mptt',
 ]
 
 MIDDLEWARE = [

@@ -40,4 +40,8 @@ class VisibilityField(BooleanField):
     def __init__(self, *args, **kwargs):
         kwargs['default'] = kwargs.get('default', True)
         kwargs['verbose_name'] = kwargs.get('verbose_name', _('Public'))
+        kwargs['help_text'] = kwargs.get(
+            'help_text',
+            _('Public items will appear on the public website')
+        )
         super().__init__(*args, **kwargs)

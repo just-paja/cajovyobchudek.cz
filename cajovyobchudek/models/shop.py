@@ -7,7 +7,8 @@ from django.db.models import (
     Manager,
     RESTRICT,
     CASCADE,
-    PositiveIntegerField
+    PositiveIntegerField,
+    SlugField,
 )
 
 from .fields import (
@@ -37,6 +38,10 @@ class Product(Model):
     local_name = NameField(
         verbose_name=_('Localized Name'),
         help_text=_('Define the localized name, for example "Nefritová Bohyně Milosrdenství"'),
+    )
+    slug = SlugField(
+        max_length=127,
+        unique=True,
     )
     public = VisibilityField()
     producer = FaculativeForeignKey(
