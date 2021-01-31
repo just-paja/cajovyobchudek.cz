@@ -1,23 +1,16 @@
 from django.views.decorators.http import require_http_methods
 from django.http import Http404
 from django.shortcuts import render
-from django.urls import reverse
 
 from cajovyobchudek.models import Product, Tag
+
+from ..products import get_product_breadcrumbs, get_tag_breadcrumbs
+from ..title import get_page_title
 
 
 @require_http_methods(['GET'])
 def home(req):
     return render(req, 'catalog/index.html')
-
-
-def get_breadcrumbs(tags):
-    return [
-        {
-            'label': tag.name,
-            'url': reverse('website:catalog_tag', kwargs={'tag_id': tag.slug}),
-        } for tag in tags
-    ]
 
 
 @require_http_methods(['GET'])
@@ -36,30 +29,12 @@ def tag(req, tag_id):
         product_tags__tag__rght__lte=tag_item.rght,
     ).distinct()
     return render(req, 'catalog/tag.html', {
-        'tag': tag_item,
+        'breadcrumbs': get_tag_breadcrumbs(ancestors),
         'products': products,
-        'breadcrumbs': get_breadcrumbs(ancestors),
         'subordinates': subordinates,
+        'page_title': get_page_title(tag_item.name),
+        'tag': tag_item,
     })
-
-
-def get_main_ancestor(tag_ancestors):
-    for ancestors in tag_ancestors:
-        if ancestors[0].main_menu:
-            return ancestors
-    return tag_ancestors[0]
-
-
-def get_product_breadcrumbs(product, tag_ancestors):
-    ancestors = get_main_ancestor(tag_ancestors)
-    if not ancestors:
-        return []
-    return get_breadcrumbs(ancestors) + [
-        {
-            'label': product.name,
-            'url': reverse('website:product_detail', kwargs={'product_slug': product.slug}),
-        }
-    ]
 
 
 @require_http_methods(['GET'])
@@ -79,8 +54,9 @@ def product_detail(req, product_slug):
         ).filter(public=True).all() for tag_item in product_tags
     ]
     return render(req, 'catalog/product.html', {
-        'breadcrumbs': get_product_breadcrumbs(product, tag_ancestors),
-        'product': product,
+        'breadcrumbs': get_product_breadcrumbs(tag_ancestors, product),
         'description': product.description,
+        'page_title': get_page_title(product.name),
+        'product': product,
         'usage': product.usage,
     })

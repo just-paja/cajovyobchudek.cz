@@ -1,5 +1,7 @@
 from cajovyobchudek.models import BusinessHours, SiteAlert, Tag
 
+from .title import SITE_NAME
+
 
 def exclude_admin(func):
     def inner(request):
@@ -32,8 +34,8 @@ def catalog_categories(request):
 @exclude_admin
 def og_properties(request):
     return {
-        'site_name': 'Čaje z celého světa',
-        'page_title': 'Čaje z celého světa',
+        'site_name': SITE_NAME,
+        'page_title': SITE_NAME,
         'page_description': 'Malý čajový obchůdek v Mnichově Hradišti, \
 který kromě čajů z celého světa prodává kávu, sušené ovoce \
 v čokoládě nebo bez, bylinky, med, medoviny, porcelán a další.',
