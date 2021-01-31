@@ -2,53 +2,35 @@
 
 {% block content %}
 <main>
-  <div class="container mt-3 mt-md-4 mt-lg-5">
-    <h1>{{ tag.name }}</h1>
+  <div class="container mt-3 mt-md-4">
+      <h1>{{ tag.name }}</h1>
 
-    {% if ancestors %}
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          {% for tag in ancestors %}
-            {% url 'website:catalog_tag' tag.slug as tag_url %}
-            <li
-              class="breadcrumb-item{% if request.get_full_path == tag_url %} active{% endif %}"
-              {% if request.get_full_path == tag_url %}aria-current="page"{% endif %}
-            >
-              {% if request.get_full_path == tag_url %}
-                {{ tag.name }}
-              {% else %}
-                <a href="{{ tag_url }}">{{ tag.name }}</a>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ol>
-      </nav>
-    {% endif %}
+      {% if tag.description_rendered %}
+        <div class="lead">
+          {{tag.description_rendered | safe}}
+        </div>
+      {% endif %}
 
-    {% if tag.description_rendered %}
-      <div class="lead">
-        {{tag.description_rendered | safe}}
-      </div>
-    {% endif %}
+      {% if subordinates %}
+        <ul>
+        {% for child in subordinates %}
+          <li><a href="{% url 'website:catalog_tag' child.slug %}">{{ child.name }}</a></li>
+        {% endfor %}
+        </ul>
+      {% endif %}
 
-    {% if subordinates %}
-      <ul>
-      {% for child in subordinates %}
-        <li><a href="{% url 'website:catalog_tag' child.slug %}">{{ child.name }}</a></li>
-      {% endfor %}
-      </ul>
-    {% endif %}
+      {% if products %}
+        <ul>
+        {% for product in products %}
+          <li>
+            <a href="{% url 'website:product_detail' product.slug %}">
+              {{ product.name}}
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
 
-    {% if products %}
-      <ul>
-      {% for product in products %}
-        <li>
-          {{ product.name}}
-        </li>
-      {% endfor %}
-      </ul>
-
-    {% endif %}
+      {% endif %}
   </div>
 </main>
 {% endblock %}

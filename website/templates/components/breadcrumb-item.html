@@ -1,0 +1,10 @@
+<li
+  class="breadcrumb-item{% if request.get_full_path == url %} active{% endif %}"
+  {% if request.get_full_path == tag_url %}aria-current="page"{% endif %}
+>
+  {% if request.get_full_path == url %}
+    {{ label }}
+  {% else %}
+    <a href="{{ url }}">{{ label }}</a>
+  {% endif %}
+</li>

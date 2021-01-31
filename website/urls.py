@@ -8,4 +8,5 @@ urlpatterns = [
     path('kontakt', contact.home, name='contact'),
     path('katalog', catalog.home, name='catalog'),
     path('katalog/<str:tag_id>', catalog.tag, name='catalog_tag'),
+    path('zbozi/<str:product_slug>', catalog.product_detail, name='product_detail'),
 ]
