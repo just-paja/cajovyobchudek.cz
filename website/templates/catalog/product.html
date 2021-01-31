@@ -18,8 +18,20 @@
     {% endif %}
     {% if usage.text_rendered %}
       <div>
+        <h2>Příprava</h2>
         {{usage.text_rendered | safe}}
       </div>
+    {% endif %}
+
+    {% if variants %}
+      <h2>Varianty</h2>
+      <ul>
+        {% for variant in variants %}
+          <li>
+            <a href="{% url 'website:product_detail' product_slug=variant.slug %}">{{ variant.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     {% endif %}
   </div>
 </main>

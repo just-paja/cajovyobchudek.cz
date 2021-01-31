@@ -5,6 +5,7 @@ from django.db.models import (
     ForeignKey,
     Model,
     Manager,
+    ManyToManyField,
     RESTRICT,
     CASCADE,
     PositiveIntegerField,
@@ -73,6 +74,7 @@ class Product(Model):
         on_delete=RESTRICT,
         verbose_name=_('Usage'),
     )
+    variants = ManyToManyField('self')
     objects = ProductManager()
 
     def __str__(self):

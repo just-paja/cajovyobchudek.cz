@@ -53,10 +53,12 @@ def product_detail(req, product_slug):
             include_self=True
         ).filter(public=True).all() for tag_item in product_tags
     ]
+    variants = product.variants.filter(public=True).all()
     return render(req, 'catalog/product.html', {
         'breadcrumbs': get_product_breadcrumbs(tag_ancestors, product),
         'description': product.description,
         'page_title': get_page_title(product.name),
         'product': product,
         'usage': product.usage,
+        'variants': variants,
     })
