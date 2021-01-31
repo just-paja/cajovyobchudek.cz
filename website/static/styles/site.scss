@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, strong {
   color: $primary;
 }
 
+h1 small {
+  font-size: $h1-font-size / 2;
+}
+
 p {
   max-width: 38rem;
 }

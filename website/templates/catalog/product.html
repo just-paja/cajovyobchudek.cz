@@ -6,20 +6,15 @@
     <h1>
       {{ product.name }}
       {% if product.local_name %}
-        <br />
-        <small>{{ product.local_name }}</small>
+        <small class="d-block">
+          {{ product.local_name }}
+        </small>
       {% endif %}
     </h1>
 
     {% if description.text_rendered %}
       <div>
         {{description.text_rendered | safe}}
-      </div>
-    {% endif %}
-    {% if usage.text_rendered %}
-      <div>
-        <h2>Příprava</h2>
-        {{usage.text_rendered | safe}}
       </div>
     {% endif %}
 
@@ -32,6 +27,13 @@
           </li>
         {% endfor %}
       </ul>
+    {% endif %}
+
+    {% if usage.text_rendered %}
+      <div>
+        <h2>Příprava</h2>
+        {{usage.text_rendered | safe}}
+      </div>
     {% endif %}
   </div>
 </main>
