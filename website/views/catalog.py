@@ -35,8 +35,6 @@ def tag(req, tag_id):
         product_tags__tag__lft__gte=tag_item.lft,
         product_tags__tag__rght__lte=tag_item.rght,
     ).distinct()
-    if len(ancestors) == 1:
-        ancestors = []
     return render(req, 'catalog/tag.html', {
         'tag': tag_item,
         'products': products,

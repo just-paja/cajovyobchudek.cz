@@ -1,10 +1,10 @@
 <li
-  class="breadcrumb-item{% if request.get_full_path == url %} active{% endif %}"
+  class="breadcrumb-item breadcrumb-icon{% if request.get_full_path == url %} active{% endif %}"
   {% if request.get_full_path == tag_url %}aria-current="page"{% endif %}
 >
-  {% if request.get_full_path == url %}
-    {{ label }}
+  {% if not url or request.get_full_path == url %}
+    {% include 'components/icon-label.html' %}
   {% else %}
-    <a href="{{ url }}">{{ label }}</a>
+    <a class="breadcrumb-icon" href="{{ url }}">{% include 'components/icon-label.html' %}</a>
   {% endif %}
 </li>

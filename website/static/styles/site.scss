@@ -27,6 +27,11 @@ img.mw {
   max-width: 100%;
 }
 
+.breadcrumb-icon {
+  display: flex;
+  align-items: center;
+}
+
 @import "./header.scss";
 @import "./footer.scss";
 
