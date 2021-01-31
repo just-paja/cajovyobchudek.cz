@@ -11,26 +11,29 @@
         </div>
       {% endif %}
 
-      {% if subordinates %}
-        <ul>
-        {% for child in subordinates %}
-          <li><a href="{% url 'website:catalog_tag' child.slug %}">{{ child.name }}</a></li>
-        {% endfor %}
-        </ul>
-      {% endif %}
-
-      {% if products %}
-        <ul>
-        {% for product in products %}
-          <li>
-            <a href="{% url 'website:product_detail' product.slug %}">
-              {{ product.name}}
-            </a>
-          </li>
-        {% endfor %}
-        </ul>
-
-      {% endif %}
+      <div class="row">
+        <div class="col-md-4">
+          {% if subordinates %}
+            <ul>
+            {% for child in subordinates %}
+              <li><a href="{% url 'website:catalog_tag' child.slug %}">{{ child.name }}</a></li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+        <div class="col-md-8">
+          {% if products %}
+            <ul>
+            {% for product in products %}
+              <li>
+                <a href="{% url 'website:product_detail' product.slug %}">
+                  {{ product.name}}
+                </a>
+              </li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
   </div>
 </main>
 {% endblock %}
