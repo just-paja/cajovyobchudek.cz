@@ -37,6 +37,8 @@ class Product(Model):
         help_text=_('Define the original product name, for example "Yu Guan Yin"'),
     )
     local_name = NameField(
+        null=True,
+        blank=True,
         verbose_name=_('Localized Name'),
         help_text=_('Define the localized name, for example "Nefritová Bohyně Milosrdenství"'),
     )
@@ -68,11 +70,13 @@ class Product(Model):
         'ProductDescription',
         on_delete=RESTRICT,
         verbose_name=_('Description'),
+        related_name='products',
     )
     usage = FaculativeForeignKey(
         'ProductUsage',
         on_delete=RESTRICT,
         verbose_name=_('Usage'),
+        related_name='products',
     )
     variants = ManyToManyField('self')
     objects = ProductManager()
@@ -121,14 +125,14 @@ class ProductNarrative(Model):
     class Meta:
         abstract = True
 
-    name = NameField()
+    name = NameField(blank=True, null=True)
     text = DescriptionField(
         rendered_field='text_rendered',
     )
     text_rendered = RenderedDescriptionField()
 
     def __str__(self):
-        return str(self.pk)
+        return str(self.name or self.pk)
 
 
 class ProductDescription(ProductNarrative):

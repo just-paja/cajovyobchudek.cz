@@ -1,0 +1,5049 @@
+[
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 1,
+    "fields": {
+      "text": "Složení: pravé bílé čaje Shou Mei, Pai Mu Tan a Snow Buds (min.61%), pravý zelený čaj Bancha, kousky zázvoru (min.6%) a citrónu (min.4,6%), vousatka citrónová, květy pomerančovníku, přírodní aroma.",
+      "text_rendered": "Složení: pravé bílé čaje Shou Mei, Pai Mu Tan a Snow Buds (min.61%), pravý zelený čaj Bancha, kousky zázvoru (min.6%) a citrónu (min.4,6%), vousatka citrónová, květy pomerančovníku, přírodní aroma."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 2,
+    "fields": {
+      "text": "Zpracování tohoto bílého čaje se částečně prolíná s výrobou čaje zeleného. Jasný nálev poskytuje svěží chuť s vůní pečených kaštanů.",
+      "text_rendered": "Zpracování tohoto bílého čaje se částečně prolíná s výrobou čaje zeleného. Jasný nálev poskytuje svěží chuť s vůní pečených kaštanů."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 3,
+    "fields": {
+      "text": "Nazývaný \"obočí dlouhověkosti\" pro svou rezavou barvu čajových lístků a pupenů. Bohatý nálev s chutí lehce vanilkovou a bambusovou. Bílý čaj vhodný ke každodenní konzumaci.",
+      "text_rendered": "Nazývaný \"obočí dlouhověkosti\" pro svou rezavou barvu čajových lístků a pupenů. Bohatý nálev s chutí lehce vanilkovou a bambusovou. Bílý čaj vhodný ke každodenní konzumaci."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 4,
+    "fields": {
+      "text": "Klasický bílý čaj produkovaný v jihovýchodní pobřežní provincii Fujian.",
+      "text_rendered": "Klasický bílý čaj produkovaný v jihovýchodní pobřežní provincii Fujian."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 5,
+    "fields": {
+      "text": "Sklizené lístky se nechají mírně zavadnout, lehce se dosuší a poté napaří. Tím získají vláčnost potřebnou pro ruční svinování.Po zalití lístky vytvoří hvězdici s girlandou z květů měsíčku.Jedinečná kombinace bílého čaje a květinové sladkosti.",
+      "text_rendered": "Sklizené lístky se nechají mírně zavadnout, lehce se dosuší a poté napaří. Tím získají vláčnost potřebnou pro ruční svinování.Po zalití lístky vytvoří hvězdici s girlandou z květů měsíčku.Jedinečná kombinace bílého čaje a květinové sladkosti."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 6,
+    "fields": {
+      "text": "Lístky se nechají mírně zavadnout,lehce se dosuší a pak napaří.Tím získají vláčnost potřebnou pro ruční svinování.Po zalití se čajové lístky postupně rozvinou, čímž se obnaží oranžové květy lilií, dávající čaji příchuť po sladkých meruňkách.",
+      "text_rendered": "Lístky se nechají mírně zavadnout,lehce se dosuší a pak napaří.Tím získají vláčnost potřebnou pro ruční svinování.Po zalití se čajové lístky postupně rozvinou, čímž se obnaží oranžové květy lilií, dávající čaji příchuť po sladkých meruňkách."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 7,
+    "fields": {
+      "text": "Lístky se nechají mírně zavadnout, lehce se dosuší a poté napaří. Tím získají vláčnost potřebnou pro ruční svinování. Po zalití se lístky rozevřou a odhalí skryté květy růžového laskavce a lilie. Nálev svůdné chuti, plný jiskrné svěžesti.",
+      "text_rendered": "Lístky se nechají mírně zavadnout, lehce se dosuší a poté napaří. Tím získají vláčnost potřebnou pro ruční svinování. Po zalití se lístky rozevřou a odhalí skryté květy růžového laskavce a lilie. Nálev svůdné chuti, plný jiskrné svěžesti."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 8,
+    "fields": {
+      "text": "Lístky se nechají mírně zavadnout,lehce se dosuší a napaří.Tím získají vláčnost potřebnou pro ruční svinování.Po zalití se z otevřených čajových lístků rozvine oranžový květ lilie s řetězcem jasmínových květů,dávající nálevu medový nádech.",
+      "text_rendered": "Lístky se nechají mírně zavadnout,lehce se dosuší a napaří.Tím získají vláčnost potřebnou pro ruční svinování.Po zalití se z otevřených čajových lístků rozvine oranžový květ lilie s řetězcem jasmínových květů,dávající nálevu medový nádech."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 9,
+    "fields": {
+      "text": "Kvalitní lístky bílého čaje, květy měsíčku a laskavcovky jsou pečlivě sbaleny do ledvinovitého tvaru. Po zalití se květy měsíčku rozvinou a na vrcholku se vynoří kulaté červené květy laskavcovky. Nálev je silný,vůně bohatá a dlouhotrvající.",
+      "text_rendered": "Kvalitní lístky bílého čaje, květy měsíčku a laskavcovky jsou pečlivě sbaleny do ledvinovitého tvaru. Po zalití se květy měsíčku rozvinou a na vrcholku se vynoří kulaté červené květy laskavcovky. Nálev je silný,vůně bohatá a dlouhotrvající."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 10,
+    "fields": {
+      "text": "Složení: ibišek, kousky jablka, listy maliny, listy ostružiníku, nať máty peprné a meduňky, tužebníková nať, květy měsíčku, květy sléze, slunečnice a smilu písečného, oplodí šípku, vřesová nať.",
+      "text_rendered": "Složení: ibišek, kousky jablka, listy maliny, listy ostružiníku, nať máty peprné a meduňky, tužebníková nať, květy měsíčku, květy sléze, slunečnice a smilu písečného, oplodí šípku, vřesová nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 11,
+    "fields": {
+      "text": "Složení: květy heřmánku, nať meduňky, listy černého rybízu, nať máty peprné, květy slunečnice, vřesová nať.",
+      "text_rendered": "Složení: květy heřmánku, nať meduňky, listy černého rybízu, nať máty peprné, květy slunečnice, vřesová nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 12,
+    "fields": {
+      "text": "Složení: mateřídoušková nať, proskurníkový kořen, květy divizny, list jitrocele, tymiánová nať, lišejník islandský.",
+      "text_rendered": "Složení: mateřídoušková nať, proskurníkový kořen, květy divizny, list jitrocele, tymiánová nať, lišejník islandský."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 13,
+    "fields": {
+      "text": "Složení: květy lípy, černého bezu, diviziny, třapatky nachové, tužebníková nať, tymiánová nať.",
+      "text_rendered": "Složení: květy lípy, černého bezu, diviziny, třapatky nachové, tužebníková nať, tymiánová nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 14,
+    "fields": {
+      "text": "Složení:listy ostružiníku,maliníku,slupky šípku,listy jahodníku,kopřivy,ovesná sláma,listy ořešáku,fenyklová semínka,listy meduňky,máty peprné,pampeliška,květy smilu,měsíčku,kořen lékořice,květy sléze.",
+      "text_rendered": "Složení:listy ostružiníku,maliníku,slupky šípku,listy jahodníku,kopřivy,ovesná sláma,listy ořešáku,fenyklová semínka,listy meduňky,máty peprné,pampeliška,květy smilu,měsíčku,kořen lékořice,květy sléze."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 15,
+    "fields": {
+      "text": "Složení: jmelí, fazolové slupky, třezalka, březové listy, ginkgo, listy kopřivy, vousatka citrónová, aroma.",
+      "text_rendered": "Složení: jmelí, fazolové slupky, třezalka, březové listy, ginkgo, listy kopřivy, vousatka citrónová, aroma."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 16,
+    "fields": {
+      "text": "Složení: mate, slupky šípku, verbena citrónová, listy kopřivy, kořen lékořice, kousky zázvoru, květy růže a heřmánku.",
+      "text_rendered": "Složení: mate, slupky šípku, verbena citrónová, listy kopřivy, kořen lékořice, kousky zázvoru, květy růže a heřmánku."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 17,
+    "fields": {
+      "text": "Složení: mučenka, listy meduňky, květy levandule, listy máty peprné.",
+      "text_rendered": "Složení: mučenka, listy meduňky, květy levandule, listy máty peprné."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 18,
+    "fields": {
+      "text": "Složení: zelený rooibos, třapatka nachová, květy heřmánku, zelený oves, listy máty, listy ostružiníku, tymián, květy levandule, verbena citrónová, květy měsíčku, chrpy polní, aroma.",
+      "text_rendered": "Složení: zelený rooibos, třapatka nachová, květy heřmánku, zelený oves, listy máty, listy ostružiníku, tymián, květy levandule, verbena citrónová, květy měsíčku, chrpy polní, aroma."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 19,
+    "fields": {
+      "text": null,
+      "text_rendered": null
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 20,
+    "fields": {
+      "text": "Složení: květy lípy",
+      "text_rendered": "Složení: květy lípy"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 21,
+    "fields": {
+      "text": "Složení: listy meduňky",
+      "text_rendered": "Složení: listy meduňky"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 22,
+    "fields": {
+      "text": "Složení: listy kopřivy",
+      "text_rendered": "Složení: listy kopřivy"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 23,
+    "fields": {
+      "text": "Složení: listy máty",
+      "text_rendered": "Složení: listy máty"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 24,
+    "fields": {
+      "text": "Složení: oplodí šípku",
+      "text_rendered": "Složení: oplodí šípku"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 25,
+    "fields": {
+      "text": "Složení: listy šalvěje",
+      "text_rendered": "Složení: listy šalvěje"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 26,
+    "fields": {
+      "text": "Složení: listy maliníku",
+      "text_rendered": "Složení: listy maliníku"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 27,
+    "fields": {
+      "text": "Složení: květy jasmínu",
+      "text_rendered": "Složení: květy jasmínu"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 28,
+    "fields": {
+      "text": "Složení : nať třezalky.",
+      "text_rendered": "Složení : nať třezalky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 29,
+    "fields": {
+      "text": "Složení: listy nana máty",
+      "text_rendered": "Složení: listy nana máty"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 30,
+    "fields": {
+      "text": "Složení: semena ostropestřce.",
+      "text_rendered": "Složení: semena ostropestřce."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 31,
+    "fields": {
+      "text": "Složení: meduňka list, kontryhel nať, kopřiva list, řebříček, třezalka nať.",
+      "text_rendered": "Složení: meduňka list, kontryhel nať, kopřiva list, řebříček, třezalka nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 32,
+    "fields": {
+      "text": "Složení: meduňková nať, voňatková nať, dobromyslová nať, rozmarýnový list, ženšenový kořen, klanopraškový plod, levandulový květ, diviznový květ.",
+      "text_rendered": "Složení: meduňková nať, voňatková nať, dobromyslová nať, rozmarýnový list, ženšenový kořen, klanopraškový plod, levandulový květ, diviznový květ."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 33,
+    "fields": {
+      "text": "Složení: kopřiva list, bříza list, meduňka list, přeslička nať, mochna husí nať.",
+      "text_rendered": "Složení: kopřiva list, bříza list, meduňka list, přeslička nať, mochna husí nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 34,
+    "fields": {
+      "text": "Složení: kopřiva list, kontryhel nať, měsíček květ, řebříček nať, levandule nať.",
+      "text_rendered": "Složení: kopřiva list, kontryhel nať, měsíček květ, řebříček nať, levandule nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 35,
+    "fields": {
+      "text": "Složení: černý čaj, květy růže (min.3%), rozinky, kousky meruňky a manga, aroma.",
+      "text_rendered": "Složení: černý čaj, květy růže (min.3%), rozinky, kousky meruňky a manga, aroma."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 36,
+    "fields": {
+      "text": "Složení: pravý černý čaj Ceylon, bergamotové aroma.",
+      "text_rendered": "Složení: pravý černý čaj Ceylon, bergamotové aroma."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 37,
+    "fields": {
+      "text": "Složení: pravý černý čaj Ceylon, Assam a Darjeeling, přírodní aroma, květy chryzantémy, kousky pomeranče a pomerančové kůry, květy pivoňky, měsíčku a broskvoně, kousky žen-šenu, květy pomerančovníku, listy kari.",
+      "text_rendered": "Složení: pravý černý čaj Ceylon, Assam a Darjeeling, přírodní aroma, květy chryzantémy, kousky pomeranče a pomerančové kůry, květy pivoňky, měsíčku a broskvoně, kousky žen-šenu, květy pomerančovníku, listy kari."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 38,
+    "fields": {
+      "text": "Složení: pravý černý čaj Ceylon, kousky čokolády, aroma irish cream (min. 2,5%).",
+      "text_rendered": "Složení: pravý černý čaj Ceylon, kousky čokolády, aroma irish cream (min. 2,5%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 39,
+    "fields": {
+      "text": "Složení: pravý černý čaj Ceylon, kávová zrna, aroma, kakaové slupky, modré květy sléze, květy slunečnice.",
+      "text_rendered": "Složení: pravý černý čaj Ceylon, kávová zrna, aroma, kakaové slupky, modré květy sléze, květy slunečnice."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 40,
+    "fields": {
+      "text": "Složení: pravý černý čaj Ceylon (min.65%), kousky broskví (min.8%) a ananasu (min.8%), pravý bílý čaj Pai Mu Tan (min.8%), plátky pomeranče, aroma, listy bambusu.",
+      "text_rendered": "Složení: pravý černý čaj Ceylon (min.65%), kousky broskví (min.8%) a ananasu (min.8%), pravý bílý čaj Pai Mu Tan (min.8%), plátky pomeranče, aroma, listy bambusu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 41,
+    "fields": {
+      "text": "Vydatná ranní směs černých čajů s vysokým podílem Assamu.",
+      "text_rendered": "Vydatná ranní směs černých čajů s vysokým podílem Assamu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 42,
+    "fields": {
+      "text": "Originální směs čaje z Ceylonu, Darjeelingu a Číny.",
+      "text_rendered": "Originální směs čaje z Ceylonu, Darjeelingu a Číny."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 43,
+    "fields": {
+      "text": "Z náhorní plošiny pochází tato opravdu vydařená sklizeň. Značný podíl zlatých tipsů, výrazná vůně nálevu, jemná chuť.",
+      "text_rendered": "Z náhorní plošiny pochází tato opravdu vydařená sklizeň. Značný podíl zlatých tipsů, výrazná vůně nálevu, jemná chuť."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 44,
+    "fields": {
+      "text": "Malebná čajová oblast rozprostírající se v nadmořské výšce od 1000 m do 2000 m v údolí Kurseong (země orchidejí). Produkuje jedny z nejkvalitnějších čajů. Nálev je medově žlutý s nasládlou plnější vůní a táhlou chutí s odstíny sladkých rozinek a datlí.",
+      "text_rendered": "Malebná čajová oblast rozprostírající se v nadmořské výšce od 1000 m do 2000 m v údolí Kurseong (země orchidejí). Produkuje jedny z nejkvalitnějších čajů. Nálev je medově žlutý s nasládlou plnější vůní a táhlou chutí s odstíny sladkých rozinek a datlí."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 45,
+    "fields": {
+      "text": "Čajová zahrada Puttabong patří mezi jedny z nejvýše položených plantáží v Darjeelingu. Jedná se o jedinečný čaj charakterizovaný zdravými lístky a mnoha světlými výhonky. Chuť je harmonická, medově nasládlá s výrazně svěžími odstíny šťavnatého lychee.",
+      "text_rendered": "Čajová zahrada Puttabong patří mezi jedny z nejvýše položených plantáží v Darjeelingu. Jedná se o jedinečný čaj charakterizovaný zdravými lístky a mnoha světlými výhonky. Chuť je harmonická, medově nasládlá s výrazně svěžími odstíny šťavnatého lychee."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 46,
+    "fields": {
+      "text": "Složení: mate (min.72,2%), listy ginkga, kousky guarany, guavy a pomerančové kůry, aroma, květy pomerančovníku, modré květy sléze.",
+      "text_rendered": "Složení: mate (min.72,2%), listy ginkga, kousky guarany, guavy a pomerančové kůry, aroma, květy pomerančovníku, modré květy sléze."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 47,
+    "fields": {
+      "text": "Složení: mate (min.82%), kousky papáji, aroma, plody Goji, kousky malin, květy divizny, listy ginkga, kousky santalového dřeva, květy chrpy.",
+      "text_rendered": "Složení: mate (min.82%), kousky papáji, aroma, plody Goji, kousky malin, květy divizny, listy ginkga, kousky santalového dřeva, květy chrpy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 48,
+    "fields": {
+      "text": "Složení: mate (min.85%), plátky kokosu (min.5,3%), aroma, kousky bílé čokolády, květy heřmánku římského, bambusové výhonky.",
+      "text_rendered": "Složení: mate (min.85%), plátky kokosu (min.5,3%), aroma, kousky bílé čokolády, květy heřmánku římského, bambusové výhonky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 49,
+    "fields": {
+      "text": "Lidový nápoj v latinské Americe, pochází z Brazílie a Argentiny. Původ mate není v čajovníku nýbrž v listu cesmíny paraguajské. Složení: listy mate",
+      "text_rendered": "Lidový nápoj v latinské Americe, pochází z Brazílie a Argentiny. Původ mate není v čajovníku nýbrž v listu cesmíny paraguajské. Složení: listy mate"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 50,
+    "fields": {
+      "text": "Slavný představitel polofermentovaných čajů. Velké, hrubé listy, výrazná a velmi příjemná vůně. Doporučujeme pro každého milovníka kvalitního čínského oolongu.",
+      "text_rendered": "Slavný představitel polofermentovaných čajů. Velké, hrubé listy, výrazná a velmi příjemná vůně. Doporučujeme pro každého milovníka kvalitního čínského oolongu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 51,
+    "fields": {
+      "text": "Tmavě zelené svinuté listy rostlinné vůně dávají po zalití kompaktní, příjemně zaoblenou chuť s lehce praženou notou.",
+      "text_rendered": "Tmavě zelené svinuté listy rostlinné vůně dávají po zalití kompaktní, příjemně zaoblenou chuť s lehce praženou notou."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 52,
+    "fields": {
+      "text": "Základem je kvalitní oolong z jarní sklizně v Anxi ve Fujianu. Před zaschnutím se čajové lístky speciálním způsobem ochucují. Původ jeho výroby je na Taiwanu.",
+      "text_rendered": "Základem je kvalitní oolong z jarní sklizně v Anxi ve Fujianu. Před zaschnutím se čajové lístky speciálním způsobem ochucují. Původ jeho výroby je na Taiwanu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 53,
+    "fields": {
+      "text": "Složení: kousky jablka a mrkve, rozinky, kousky červené řepy, maliny (min.4%), aroma.",
+      "text_rendered": "Složení: kousky jablka a mrkve, rozinky, kousky červené řepy, maliny (min.4%), aroma."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 54,
+    "fields": {
+      "text": "Složení: kousky jablka, rozinky, mrkve, plody rakytníku, kousky ananasu, červené řepy, citrusové kůry (min.3%), vousatka citrónová, kousky citrónu (min.1,8%), aroma, květy měsíčku.",
+      "text_rendered": "Složení: kousky jablka, rozinky, mrkve, plody rakytníku, kousky ananasu, červené řepy, citrusové kůry (min.3%), vousatka citrónová, kousky citrónu (min.1,8%), aroma, květy měsíčku."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 55,
+    "fields": {
+      "text": "Složení: kousky jablek a broskví, oplodí šípku, kousky červené řepy, karamelu a bílé čokolády, růžová poupata, aroma, květy pivoňky a slunečnice.",
+      "text_rendered": "Složení: kousky jablek a broskví, oplodí šípku, kousky červené řepy, karamelu a bílé čokolády, růžová poupata, aroma, květy pivoňky a slunečnice."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 56,
+    "fields": {
+      "text": "Složení: kousky jablek, ibišek, slupky šípku, bezinky, kousky švestek, aroma, borůvky.",
+      "text_rendered": "Složení: kousky jablek, ibišek, slupky šípku, bezinky, kousky švestek, aroma, borůvky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 57,
+    "fields": {
+      "text": "Složení: bezinky, kousky jablka, ibišek, aronie, kousky červené řepy, ostružiny, aroma, červený rybíz, kousky maliny, listy ostružiníku, kousky jahody.",
+      "text_rendered": "Složení: bezinky, kousky jablka, ibišek, aronie, kousky červené řepy, ostružiny, aroma, červený rybíz, kousky maliny, listy ostružiníku, kousky jahody."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 58,
+    "fields": {
+      "text": "Složení: oplodí šípku, kousky ananasu, jablka, ibišek, plátky kokosu, aroma.",
+      "text_rendered": "Složení: oplodí šípku, kousky ananasu, jablka, ibišek, plátky kokosu, aroma."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 59,
+    "fields": {
+      "text": "Složení: ibišek, ostružiny, kousky ananasu, oplodí šípku, rozinky, maliny, višně, rumové aroma (min.1,7%), aroma, květy růže, kousky vanilky.",
+      "text_rendered": "Složení: ibišek, ostružiny, kousky ananasu, oplodí šípku, rozinky, maliny, višně, rumové aroma (min.1,7%), aroma, květy růže, kousky vanilky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 60,
+    "fields": {
+      "text": "Složení: bezinky, rozinky, oplodí šípku, ibišek, kousky jablka, černý rybíz, cukrová srdíčka (min.5%), aroma, plátky jahod, kousky malin, listy maliníku, červený rybíz, modré květy sléze.",
+      "text_rendered": "Složení: bezinky, rozinky, oplodí šípku, ibišek, kousky jablka, černý rybíz, cukrová srdíčka (min.5%), aroma, plátky jahod, kousky malin, listy maliníku, červený rybíz, modré květy sléze."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 61,
+    "fields": {
+      "text": "Složení: bezinky, rozinky, ibišek, brusinky (min.10%), kousky švestek, jablka, karamelu, aroma, listy brusinky, borůvky, kousky malin, květy vřesu.",
+      "text_rendered": "Složení: bezinky, rozinky, ibišek, brusinky (min.10%), kousky švestek, jablka, karamelu, aroma, listy brusinky, borůvky, kousky malin, květy vřesu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 62,
+    "fields": {
+      "text": "Složení: kousky jablka, ibišek, želatinoví medvídci (min.19%), oplodí šípku, aroma, kousky pomerančové kůry, květy měsíčku.",
+      "text_rendered": "Složení: kousky jablka, ibišek, želatinoví medvídci (min.19%), oplodí šípku, aroma, kousky pomerančové kůry, květy měsíčku."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 63,
+    "fields": {
+      "text": "Složení: kousky bio jablka, bio rozinky, bio ibišek, kousky bio meruněk, oplodí bio šípku, kousky bio pomerančové kůry, přírodní aroma kdoule (min.2,9%), květy bio heřmánku pravého.",
+      "text_rendered": "Složení: kousky bio jablka, bio rozinky, bio ibišek, kousky bio meruněk, oplodí bio šípku, kousky bio pomerančové kůry, přírodní aroma kdoule (min.2,9%), květy bio heřmánku pravého."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 64,
+    "fields": {
+      "text": "Složení: kousky jablka, rozinky, brusinky (min.12,6%), pravý černý čaj Ceylon (min.12,6%), oplodí šípku, ibišek, kousky pomerančové kůry, černý rybíz, aroma, listy brusinky.",
+      "text_rendered": "Složení: kousky jablka, rozinky, brusinky (min.12,6%), pravý černý čaj Ceylon (min.12,6%), oplodí šípku, ibišek, kousky pomerančové kůry, černý rybíz, aroma, listy brusinky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 65,
+    "fields": {
+      "text": "Složení: černý čaj Pu-Erh (min.78,3%), kousky skořice, rozinky, kousky švestky, plátky para ořechů, aroma, červený pepř, kardamom neloupaný.",
+      "text_rendered": "Složení: černý čaj Pu-Erh (min.78,3%), kousky skořice, rozinky, kousky švestky, plátky para ořechů, aroma, červený pepř, kardamom neloupaný."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 66,
+    "fields": {
+      "text": "Složení: pravý černý čaj Pu-Erh (min.83%), aroma, růžová poupata, kousky santalového dřeva, kurkumy a třešní, květy jasmínu a růže, listy kari.",
+      "text_rendered": "Složení: pravý černý čaj Pu-Erh (min.83%), aroma, růžová poupata, kousky santalového dřeva, kurkumy a třešní, květy jasmínu a růže, listy kari."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 67,
+    "fields": {
+      "text": "Černý čaj z oblasti Yunnan, zemitá chuť. Výrazná, silná vůně. Rarita degustovaná již čínskými císaři.",
+      "text_rendered": "Černý čaj z oblasti Yunnan, zemitá chuť. Výrazná, silná vůně. Rarita degustovaná již čínskými císaři."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 68,
+    "fields": {
+      "text": "V Číně také známá jako Xiao Tuocha (čaj do misky). Vybrané sorty Pu-Erh Tea jsou lisovány do malých \"vosích hnízd\", které mají překvapivě bohatý a nasládlý nálev s plnou chutí a jemným zakončením.",
+      "text_rendered": "V Číně také známá jako Xiao Tuocha (čaj do misky). Vybrané sorty Pu-Erh Tea jsou lisovány do malých \"vosích hnízd\", které mají překvapivě bohatý a nasládlý nálev s plnou chutí a jemným zakončením."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 69,
+    "fields": {
+      "text": "Čtyřletý pu-erh, který pochází z oblasti Menghai v provincii Yunnan. Nálev je nasládlý, s nádechem sladu a kakaových bobů, pouze lehce zemitý.",
+      "text_rendered": "Čtyřletý pu-erh, který pochází z oblasti Menghai v provincii Yunnan. Nálev je nasládlý, s nádechem sladu a kakaových bobů, pouze lehce zemitý."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 70,
+    "fields": {
+      "text": "Složení: rooibos (min.92,8%), aroma, kousky mléčného karamelu (min.2,3%), kakaové slupky.",
+      "text_rendered": "Složení: rooibos (min.92,8%), aroma, kousky mléčného karamelu (min.2,3%), kakaové slupky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 71,
+    "fields": {
+      "text": "Složení: rooibos (min.90,1%), aroma, kousky pomerančové kůry a malin, květy měsíčku a smilu píšečného.",
+      "text_rendered": "Složení: rooibos (min.90,1%), aroma, kousky pomerančové kůry a malin, květy měsíčku a smilu píšečného."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 72,
+    "fields": {
+      "text": "Složení: rooibos (min.81,9%), rakytník řešetlákový (min.10,2%), aroma, květy slunečnice a bodláku.",
+      "text_rendered": "Složení: rooibos (min.81,9%), rakytník řešetlákový (min.10,2%), aroma, květy slunečnice a bodláku."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 73,
+    "fields": {
+      "text": "Složení: rooibos (min.76,2%), kousky pomerančové kůry (min.5,7%) a papáje, aroma, červený pepř, kousky santalového dřeva, zázvoru (min.1,9%) a ženšenu, květy pomerančovníku, chrpy a levandule.",
+      "text_rendered": "Složení: rooibos (min.76,2%), kousky pomerančové kůry (min.5,7%) a papáje, aroma, červený pepř, kousky santalového dřeva, zázvoru (min.1,9%) a ženšenu, květy pomerančovníku, chrpy a levandule."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 74,
+    "fields": {
+      "text": "Složení: rooibos (min.80,9%), listy maliníku, aroma, růžová poupata, květy pivoňky, růže a sedmikrásky, kousky jahody a maliny.",
+      "text_rendered": "Složení: rooibos (min.80,9%), listy maliníku, aroma, růžová poupata, květy pivoňky, růže a sedmikrásky, kousky jahody a maliny."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 75,
+    "fields": {
+      "text": "Složení: zelený bio rooibos (min.74%), kousky ananasu, pomerančové kůry, myrtovník citrónový, kousky citrónu, aroma, květy bodláku, pivoňky a divizny, listy aloe (min.0,1%).",
+      "text_rendered": "Složení: zelený bio rooibos (min.74%), kousky ananasu, pomerančové kůry, myrtovník citrónový, kousky citrónu, aroma, květy bodláku, pivoňky a divizny, listy aloe (min.0,1%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 76,
+    "fields": {
+      "text": "Složení: rooibos (min.89,7%), kousky citrónu, aroma, kousky citrónové kůry, vousatka citrónová, květy slunečnice.",
+      "text_rendered": "Složení: rooibos (min.89,7%), kousky citrónu, aroma, kousky citrónové kůry, vousatka citrónová, květy slunečnice."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 77,
+    "fields": {
+      "text": "Složení: rooibos (min.69,9%), aroma, plátky pomerančů, badyán, plátky mandlí, cukrové krystaly, kousky skořice, hřebíček, květy růže a pomerančovníku.",
+      "text_rendered": "Složení: rooibos (min.69,9%), aroma, plátky pomerančů, badyán, plátky mandlí, cukrové krystaly, kousky skořice, hřebíček, květy růže a pomerančovníku."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 78,
+    "fields": {
+      "text": "Složení: větvičky a listy rooibosu. Rooibos je keř, tvořen tenkými větvičkami a malými jehličkovitými lístky (asi 1 cm dlouhými). Pěstuje se pouze na plantážích Jižní Afriky o celkové rozloze 25.000 hektarů. Produkt ekologického zemědělství.",
+      "text_rendered": "Složení: větvičky a listy rooibosu. Rooibos je keř, tvořen tenkými větvičkami a malými jehličkovitými lístky (asi 1 cm dlouhými). Pěstuje se pouze na plantážích Jižní Afriky o celkové rozloze 25.000 hektarů. Produkt ekologického zemědělství."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 79,
+    "fields": {
+      "text": "Originální čínský zelený čaj s jasmínovými květy (min. 1%). V Číně velmi oblíbená kombinace.",
+      "text_rendered": "Originální čínský zelený čaj s jasmínovými květy (min. 1%). V Číně velmi oblíbená kombinace."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 80,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, květy chrpy polní, aroma bergamotu.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, květy chrpy polní, aroma bergamotu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 81,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, aroma, květy růže, slunečnice, chrpy polní a bodláku.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, aroma, květy růže, slunečnice, chrpy polní a bodláku."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 82,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, aroma, ostružiny, květy růže, divizny a chrpy polní, kousky jahod.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, aroma, ostružiny, květy růže, divizny a chrpy polní, kousky jahod."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 83,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Gunpowder, nana máta.",
+      "text_rendered": "Složení: pravý zelený čaj Gunpowder, nana máta."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 84,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, kousky ananasu, papáje, lékořice a santalového dřeva, červený pepř, aroma, květy heřmánku římského.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, kousky ananasu, papáje, lékořice a santalového dřeva, červený pepř, aroma, květy heřmánku římského."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 85,
+    "fields": {
+      "text": "Ručně svinovaný zelený čaj z provincie Fujian. Velmi jemné zelené čajové lístky a pupeny jsou svinuty do tvaru jahody a ozdobeny červeným květem laskacovky. Takto vytvarované jahody jsou pak ochuceny jasmínovými květy. Jahoda se po zalití rozvine.",
+      "text_rendered": "Ručně svinovaný zelený čaj z provincie Fujian. Velmi jemné zelené čajové lístky a pupeny jsou svinuty do tvaru jahody a ozdobeny červeným květem laskacovky. Takto vytvarované jahody jsou pak ochuceny jasmínovými květy. Jahoda se po zalití rozvine."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 86,
+    "fields": {
+      "text": "Složení: pravé zelené čaje Sencha, China Bancha a Kukicha, sezamová semínka, bambusové výhonky, plody schizandry, kousky zázvoru, květy růže, aroma.",
+      "text_rendered": "Složení: pravé zelené čaje Sencha, China Bancha a Kukicha, sezamová semínka, bambusové výhonky, plody schizandry, kousky zázvoru, květy růže, aroma."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 87,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, brusinky (min.12,5%), arónie (min.6%), květy heřmánku pravého, aroma, borůvky, listy brusinky.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, brusinky (min.12,5%), arónie (min.6%), květy heřmánku pravého, aroma, borůvky, listy brusinky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 88,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, ostružiny, ginkgo (min.7,5%), plody a květy bezu, malina, aroma, květy růže.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, ostružiny, ginkgo (min.7,5%), plody a květy bezu, malina, aroma, květy růže."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 89,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, rozinky, plátky jahod (min.6,1%), růžová poupata, aroma, květy levandule.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, rozinky, plátky jahod (min.6,1%), růžová poupata, aroma, květy levandule."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 90,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, cukrové krystaly, listy máty peprné, aroma, kousky citrusové kůry, kousky citrónu, květy měsíčku, bodláku a smilu písečného.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, cukrové krystaly, listy máty peprné, aroma, kousky citrusové kůry, kousky citrónu, květy měsíčku, bodláku a smilu písečného."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 91,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, rozinky, brusinky, bezinky, plody Goji (min.2,7%), aroma acai (min.1,7%), květy růže a vřesu, kousky malin, borůvky.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, rozinky, brusinky, bezinky, plody Goji (min.2,7%), aroma acai (min.1,7%), květy růže a vřesu, kousky malin, borůvky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 92,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, oplodí šípku, listy máty (min.5,1%), aroma, maliny (min.3,3%), květy slunečnice a sléze.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, oplodí šípku, listy máty (min.5,1%), aroma, maliny (min.3,3%), květy slunečnice a sléze."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 93,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, brusinky, bezinky, aroma, kousky malin, květy třapatky nachové.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, brusinky, bezinky, aroma, kousky malin, květy třapatky nachové."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 94,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, kousky meruňky, plátky mrkve, květy broskvoně, aroma, kousky kombuchy (min.0,5%).",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, kousky meruňky, plátky mrkve, květy broskvoně, aroma, kousky kombuchy (min.0,5%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 95,
+    "fields": {
+      "text": "Složení: bio pravý zelený čaj Sencha, kousky bio brusinek a bio meruněk, přírodní aroma jahody (min.1,4%) a přírodní aroma kdoule (min.1,4%), bio ibišek.",
+      "text_rendered": "Složení: bio pravý zelený čaj Sencha, kousky bio brusinek a bio meruněk, přírodní aroma jahody (min.1,4%) a přírodní aroma kdoule (min.1,4%), bio ibišek."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 96,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha (min.78%), kousky citrónu, plátky citrónu, listy meduňky a nana-máty, květy slunečnice, aroma limety (min.1,8%), aroma, listy aloe (min.0,1%).",
+      "text_rendered": "Složení: pravý zelený čaj Sencha (min.78%), kousky citrónu, plátky citrónu, listy meduňky a nana-máty, květy slunečnice, aroma limety (min.1,8%), aroma, listy aloe (min.0,1%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 97,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, arónie, brusinky, oplodí šípku, aroma, ostružiny, borůvky, červený rybíz, květy sléze, kousky jahod.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, arónie, brusinky, oplodí šípku, aroma, ostružiny, borůvky, červený rybíz, květy sléze, kousky jahod."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 98,
+    "fields": {
+      "text": "Čaj má původ na ostrově Taiwan. Pouze kvalitní, vybrané čajové lístky jsou srolovány do kuličky. Tento čaj má silný, tmavě zelený nálev s nezapomenutelnou vůní. Jeho chuť je příjemně hořká a dlouhotrvající.",
+      "text_rendered": "Čaj má původ na ostrově Taiwan. Pouze kvalitní, vybrané čajové lístky jsou srolovány do kuličky. Tento čaj má silný, tmavě zelený nálev s nezapomenutelnou vůní. Jeho chuť je příjemně hořká a dlouhotrvající."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 99,
+    "fields": {
+      "text": "Zelený listový čaj z čínské provincie Chun Mee. Světlý, vydatný nálev.",
+      "text_rendered": "Zelený listový čaj z čínské provincie Chun Mee. Světlý, vydatný nálev."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 100,
+    "fields": {
+      "text": "Je proslulý dlouhými, plochými listy. Jemné vůně, žlutá barva nálevu s lehce nasládlým chuťovým pozadím.",
+      "text_rendered": "Je proslulý dlouhými, plochými listy. Jemné vůně, žlutá barva nálevu s lehce nasládlým chuťovým pozadím."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 101,
+    "fields": {
+      "text": "Zelený čaj se v provincii Yunnan produkuje už více než 1.700 let - má zde tedy bohatou tradici. Jeho nálev je voňavý, chuť příjemná.",
+      "text_rendered": "Zelený čaj se v provincii Yunnan produkuje už více než 1.700 let - má zde tedy bohatou tradici. Jeho nálev je voňavý, chuť příjemná."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 102,
+    "fields": {
+      "text": "Čaj je produkován na podzim. Bancha se vyznačuje silnou chutí, která se volně rozlévá do celé ústní dutiny. V závěru je nálev lehký, mírně nahořklý. Je vhodný jako odpolední čaj. Pojmenování Arashiyama je synonymem pro \"bouřlivé hory\".",
+      "text_rendered": "Čaj je produkován na podzim. Bancha se vyznačuje silnou chutí, která se volně rozlévá do celé ústní dutiny. V závěru je nálev lehký, mírně nahořklý. Je vhodný jako odpolední čaj. Pojmenování Arashiyama je synonymem pro \"bouřlivé hory\"."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 103,
+    "fields": {
+      "text": "Čaj z čajové zahrady Ambiok. Tato se rozprostírá ve výšce od 600 do 1770 m nad mořem. Pouze sorta z vyšších poloh této plantáže je označována názvem Hillton. Velmi osvěžující nálev s typickou povzbudivou rostlinnou chutí s lehkými náznaky citrónové trávy.",
+      "text_rendered": "Čaj z čajové zahrady Ambiok. Tato se rozprostírá ve výšce od 600 do 1770 m nad mořem. Pouze sorta z vyšších poloh této plantáže je označována názvem Hillton. Velmi osvěžující nálev s typickou povzbudivou rostlinnou chutí s lehkými náznaky citrónové trávy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 104,
+    "fields": {
+      "text": "Vybraná kávová sorta s aroma whisky se smetanou (min.1,2%).",
+      "text_rendered": "Vybraná kávová sorta s aroma whisky se smetanou (min.1,2%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 105,
+    "fields": {
+      "text": "Vybraná kávová sorta s aroma vaječného koňaku.",
+      "text_rendered": "Vybraná kávová sorta s aroma vaječného koňaku."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 106,
+    "fields": {
+      "text": "Vybraná kávová sorta s aroma karamelu (min.1,2%).",
+      "text_rendered": "Vybraná kávová sorta s aroma karamelu (min.1,2%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 107,
+    "fields": {
+      "text": "Vybraná kávová sorta ochucená aromaty podle tradiční švýcarské receptury.",
+      "text_rendered": "Vybraná kávová sorta ochucená aromaty podle tradiční švýcarské receptury."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 108,
+    "fields": {
+      "text": "Vybraná kávová sorta s aroma klasické karamelové cukrovinky s čokoládou a oříšky.",
+      "text_rendered": "Vybraná kávová sorta s aroma klasické karamelové cukrovinky s čokoládou a oříšky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 109,
+    "fields": {
+      "text": "Vybraná kávová sorta s aroma originálních čokoládových pralinek.",
+      "text_rendered": "Vybraná kávová sorta s aroma originálních čokoládových pralinek."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 110,
+    "fields": {
+      "text": "Vybraná kávová sorta s nápaditým aroma svátečního pečiva se sladkou skořicí, vanilkou a ořechy.",
+      "text_rendered": "Vybraná kávová sorta s nápaditým aroma svátečního pečiva se sladkou skořicí, vanilkou a ořechy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 111,
+    "fields": {
+      "text": "Vybraná kávová sorta s nasládlým rumovým aroma (min.1,9%).",
+      "text_rendered": "Vybraná kávová sorta s nasládlým rumovým aroma (min.1,9%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 112,
+    "fields": {
+      "text": "Santos je zcela jistě nejznámější druh brazilské kávy. Chuť této arabiky je mírně nasládlá, téměř podobná čokoládě.",
+      "text_rendered": "Santos je zcela jistě nejznámější druh brazilské kávy. Chuť této arabiky je mírně nasládlá, téměř podobná čokoládě."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 113,
+    "fields": {
+      "text": "Vulkanická půda v kolumbijském pohoří dává místní kávě výtečnou chuť. Tato arabika má lehce ořechový nádech, elegantní aroma smíšené s příjemnou kyselostí. Odeznívá harmonicky a čistě.",
+      "text_rendered": "Vulkanická půda v kolumbijském pohoří dává místní kávě výtečnou chuť. Tato arabika má lehce ořechový nádech, elegantní aroma smíšené s příjemnou kyselostí. Odeznívá harmonicky a čistě."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 114,
+    "fields": {
+      "text": "Celé vanilkové lusky ve skle. Balení obsahuje 2 ks.",
+      "text_rendered": "Celé vanilkové lusky ve skle. Balení obsahuje 2 ks."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 115,
+    "fields": {
+      "text": "Elegantní čajové sítko nerez ve tvaru čajové konvice.",
+      "text_rendered": "Elegantní čajové sítko nerez ve tvaru čajové konvice."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 116,
+    "fields": {
+      "text": "Čajové sítko nerez ve tvaru koule. Průměr 5 cm.",
+      "text_rendered": "Čajové sítko nerez ve tvaru koule. Průměr 5 cm."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 117,
+    "fields": {
+      "text": "Čajové sítko nerez ve tvaru kleští. Průměr 4,5 cm.",
+      "text_rendered": "Čajové sítko nerez ve tvaru kleští. Průměr 4,5 cm."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 118,
+    "fields": {
+      "text": "Čajové bambusové sítko se 2 držáky.",
+      "text_rendered": "Čajové bambusové sítko se 2 držáky."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 119,
+    "fields": {
+      "text": "Praktické čajové sítko nerez se snadým vyjmutím z hrníčku. Průměr 7,5 cm.",
+      "text_rendered": "Praktické čajové sítko nerez se snadým vyjmutím z hrníčku. Průměr 7,5 cm."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 120,
+    "fields": {
+      "text": "Čajové sítko nerez ve tvaru kleští. Průměr 6,5 cm.",
+      "text_rendered": "Čajové sítko nerez ve tvaru kleští. Průměr 6,5 cm."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 121,
+    "fields": {
+      "text": "Papírový filtr na čaj s přehybem. Velikost \"M\" (medium), balení po 100 ks.",
+      "text_rendered": "Papírový filtr na čaj s přehybem. Velikost \"M\" (medium), balení po 100 ks."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 122,
+    "fields": {
+      "text": "Papírový filtr na čaj s přehybem. Velikost \"S\" (small), balení po 100 ks.",
+      "text_rendered": "Papírový filtr na čaj s přehybem. Velikost \"S\" (small), balení po 100 ks."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 123,
+    "fields": {
+      "text": "Papírový filtr na čaj s přehybem. Velikost \"L\" (large), balení po 100 ks.",
+      "text_rendered": "Papírový filtr na čaj s přehybem. Velikost \"L\" (large), balení po 100 ks."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 124,
+    "fields": {
+      "text": "Čajový papírový filtr s držákem do hrníčku, baleno po 100 ks.",
+      "text_rendered": "Čajový papírový filtr s držákem do hrníčku, baleno po 100 ks."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 125,
+    "fields": {
+      "text": "Složení: rozinky, švestky (min.28%), bezinky, arónie, aroma, květy chrpy.",
+      "text_rendered": "Složení: rozinky, švestky (min.28%), bezinky, arónie, aroma, květy chrpy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 126,
+    "fields": {
+      "text": "Složení: ibišek, bezinky, oplodí šípku, kousky jablka, černý rybíz, borůvky, přírodní aroma, kousky malin a jahod, listy černého rybízu.",
+      "text_rendered": "Složení: ibišek, bezinky, oplodí šípku, kousky jablka, černý rybíz, borůvky, přírodní aroma, kousky malin a jahod, listy černého rybízu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 127,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Gunpowder, plody Goji (min.7,8%), aroma, kousky pomerančové kůry, listy aloe, kousky ženšenu (min.0,8%).",
+      "text_rendered": "Složení: pravý zelený čaj Gunpowder, plody Goji (min.7,8%), aroma, kousky pomerančové kůry, listy aloe, kousky ženšenu (min.0,8%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 128,
+    "fields": {
+      "text": "Složení: pravý černý čaj Ceylon, kousky papájie, plátky pomeranče, listy ginkga (min.5,1%), aroma, kousky ženšenu (min.1,2%), květy slunečnice.",
+      "text_rendered": "Složení: pravý černý čaj Ceylon, kousky papájie, plátky pomeranče, listy ginkga (min.5,1%), aroma, kousky ženšenu (min.1,2%), květy slunečnice."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 129,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, kousky papáji, pravý zelený čaj Formosa Gunpowder, kousky broskví, pravé zelené čaje En Shi Yu Lu, Jade Rings a Yellow Tea Huang Xiao, pravý bílý čaj Shou Mei, plátky citrónu, přírodní aroma, květy měsíčku, kousky kiwi.",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, kousky papáji, pravý zelený čaj Formosa Gunpowder, kousky broskví, pravé zelené čaje En Shi Yu Lu, Jade Rings a Yellow Tea Huang Xiao, pravý bílý čaj Shou Mei, plátky citrónu, přírodní aroma, květy měsíčku, kousky kiwi."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 130,
+    "fields": {
+      "text": "Složení: pravý zelený čaj Sencha, přírodní aroma, kousky vanilky (min.0,9%).",
+      "text_rendered": "Složení: pravý zelený čaj Sencha, přírodní aroma, kousky vanilky (min.0,9%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 131,
+    "fields": {
+      "text": "Žlutozelený nálev, nasládlá svěží vůně čerstvě posečené trávy. Chutná svěže, lehce a příjemně.",
+      "text_rendered": "Žlutozelený nálev, nasládlá svěží vůně čerstvě posečené trávy. Chutná svěže, lehce a příjemně."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 132,
+    "fields": {
+      "text": "Složení: smetánkový kořen s natí, máty peprné list, čekankový kořen, čekanková nať, ostropestřecový plod, fenyklový plod, řepíková nať, třezalková nať.",
+      "text_rendered": "Složení: smetánkový kořen s natí, máty peprné list, čekankový kořen, čekanková nať, ostropestřecový plod, fenyklový plod, řepíková nať, třezalková nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 133,
+    "fields": {
+      "text": "Složení: bezový květ, vřesová nať, pomerančové oplodí sladké, truskavcová nať, šalvějová nať, vrbová kůra, jehlice trnité kořen, pohanková nať.",
+      "text_rendered": "Složení: bezový květ, vřesová nať, pomerančové oplodí sladké, truskavcová nať, šalvějová nať, vrbová kůra, jehlice trnité kořen, pohanková nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 134,
+    "fields": {
+      "text": "Složení: kopřivová nať, bezu černého květ, maliníkový list, měsíčkový květ, březový list, chrpový květ.",
+      "text_rendered": "Složení: kopřivová nať, bezu černého květ, maliníkový list, měsíčkový květ, březový list, chrpový květ."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 135,
+    "fields": {
+      "text": "Složení: kopřiva list, bříza list, heřmánek květ, přeslička nať, řepík nať.",
+      "text_rendered": "Složení: kopřiva list, bříza list, heřmánek květ, přeslička nať, řepík nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 136,
+    "fields": {
+      "text": "Složení: meduňková nať, tykvové semeno, kokošková nať, jmelí nať, srdečníková nať, třezalková nať, komonicová nať, rozrazilová nať, pohanková nať.",
+      "text_rendered": "Složení: meduňková nať, tykvové semeno, kokošková nať, jmelí nať, srdečníková nať, třezalková nať, komonicová nať, rozrazilová nať, pohanková nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 137,
+    "fields": {
+      "text": "Složení: listy máty peprné, květy heřmánku, anýz, fenykl, kmín, květy sléze, květy měsíčku.",
+      "text_rendered": "Složení: listy máty peprné, květy heřmánku, anýz, fenykl, kmín, květy sléze, květy měsíčku."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 138,
+    "fields": {
+      "text": "Složení: ostružiníkový list, jahodníkový list, maliníkový list, yzopová nať, ořešákový list, šalvějová nať, mochny husí nať, angelikový kořen.",
+      "text_rendered": "Složení: ostružiníkový list, jahodníkový list, maliníkový list, yzopová nať, ořešákový list, šalvějová nať, mochny husí nať, angelikový kořen."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 139,
+    "fields": {
+      "text": "Složení: černý bez plod, kopřivový list, truskavcová nať, fazolový plod bez semene, vřesová nať, pýrový kořen, jalovcový plod.",
+      "text_rendered": "Složení: černý bez plod, kopřivový list, truskavcová nať, fazolový plod bez semene, vřesová nať, pýrový kořen, jalovcový plod."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 140,
+    "fields": {
+      "text": "Složení: kopřivový list, bezu černého květ, šalvějová nať, rakytníkový plod, přesličková nať, třapatky nachové květ.",
+      "text_rendered": "Složení: kopřivový list, bezu černého květ, šalvějová nať, rakytníkový plod, přesličková nať, třapatky nachové květ."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 141,
+    "fields": {
+      "text": "Složení: ostružiníkový list, jahodníkový list, truskavcová nať, řepíková nať, borůvkový plod, klanopraškový plod, mrkvový kořen, světlíková nať.",
+      "text_rendered": "Složení: ostružiníkový list, jahodníkový list, truskavcová nať, řepíková nať, borůvkový plod, klanopraškový plod, mrkvový kořen, světlíková nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 142,
+    "fields": {
+      "text": "Složení: violky tříbarevné nať, kopřivová nať, slezový list, proskurníkový kořen, mochna husí nať, řepíková nať, třezalková nať, sporýšová nať.",
+      "text_rendered": "Složení: violky tříbarevné nať, kopřivová nať, slezový list, proskurníkový kořen, mochna husí nať, řepíková nať, třezalková nať, sporýšová nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 143,
+    "fields": {
+      "text": "Složení: borůvková nať, fazolový plod bez semene, smetankový kořen, březový list, chmelová šištice, jestřabinová nať, meduňková nať.",
+      "text_rendered": "Složení: borůvková nať, fazolový plod bez semene, smetankový kořen, březový list, chmelová šištice, jestřabinová nať, meduňková nať."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 144,
+    "fields": {
+      "text": "Složení: kopřivový list, černého rybízu list, zlatobýlová nať, truskavcová nať, klanopraškový plod.",
+      "text_rendered": "Složení: kopřivový list, černého rybízu list, zlatobýlová nať, truskavcová nať, klanopraškový plod."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 145,
+    "fields": {
+      "text": "Složení: listy vousatky",
+      "text_rendered": "Složení: listy vousatky"
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 146,
+    "fields": {
+      "text": "Ručně svinovaný bílý čaj z provincie Fujian.Po zalití se lístky rozvinou a odhalí skryté květy měsíčku propojené s červenou laskavcovkou a završené květy jasmínu.Lehká vůně květin s vydatným čajovým nálevem vytváří harmonickou kombinaci.",
+      "text_rendered": "Ručně svinovaný bílý čaj z provincie Fujian.Po zalití se lístky rozvinou a odhalí skryté květy měsíčku propojené s červenou laskavcovkou a završené květy jasmínu.Lehká vůně květin s vydatným čajovým nálevem vytváří harmonickou kombinaci."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 147,
+    "fields": {
+      "text": "Špičkový bílý čaj produkovaný v severním Fujianu z odrůdy „Da Hao“.Po zalití z čajových lístků vykvetou žluté květy měsíčku završené oranžovými květy lilie.Chuť nálevu skýtá dokonalou vyváženost bílého čaje a květinové sladkosti.",
+      "text_rendered": "Špičkový bílý čaj produkovaný v severním Fujianu z odrůdy „Da Hao“.Po zalití z čajových lístků vykvetou žluté květy měsíčku završené oranžovými květy lilie.Chuť nálevu skýtá dokonalou vyváženost bílého čaje a květinové sladkosti."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 148,
+    "fields": {
+      "text": "Ruční mlýnek na kávu.",
+      "text_rendered": "Ruční mlýnek na kávu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 149,
+    "fields": {
+      "text": "Vybraná kávová sorta s aroma sladkých sušenek.",
+      "text_rendered": "Vybraná kávová sorta s aroma sladkých sušenek."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 150,
+    "fields": {
+      "text": "Vybraná kávová sorta s aroma sladké čokolády a svěží máty (min.2,9%).",
+      "text_rendered": "Vybraná kávová sorta s aroma sladké čokolády a svěží máty (min.2,9%)."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 151,
+    "fields": {
+      "text": "Káva z vyhlášené etiopské oblasti Kebado.Intenzivní ovocné tóny černého rybízu a jahod v chuti, v aroma dominuje především luční kvítí. Káva je intenzivní, šťavnatá a ovocná. Hodí se především na přípravu filtrované kávy, ale překvapí i jako espresso.",
+      "text_rendered": "Káva z vyhlášené etiopské oblasti Kebado.Intenzivní ovocné tóny černého rybízu a jahod v chuti, v aroma dominuje především luční kvítí. Káva je intenzivní, šťavnatá a ovocná. Hodí se především na přípravu filtrované kávy, ale překvapí i jako espresso."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductDescription",
+    "pk": 152,
+    "fields": {
+      "text": "Průměr 5,5 cm.",
+      "text_rendered": "Průměr 5,5 cm."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 1,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 90°C zalejte čaj v poměru 0,6l na 4 polévkové lžíce. Ponechte 4 minuty louhovat. 1l nádobu naplňte do 2/3 kostkami ledu a ihned přelijte připraveným čajem.",
+      "text_rendered": "Příprava: vodou o teplotě 90°C zalejte čaj v poměru 0,6l na 4 polévkové lžíce. Ponechte 4 minuty louhovat. 1l nádobu naplňte do 2/3 kostkami ledu a ihned přelijte připraveným čajem."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 2,
+    "fields": {
+      "text": "Příprava:vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava:vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 3,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 4,
+    "fields": {
+      "text": "Příprava: Vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: Vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 5,
+    "fields": {
+      "text": null,
+      "text_rendered": null
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 6,
+    "fields": {
+      "text": "Příprava: Vodou o teplotě 85°C zalejte čaj v poměru 3 dl na 1kus. Ponechte 3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: Vodou o teplotě 85°C zalejte čaj v poměru 3 dl na 1kus. Ponechte 3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 7,
+    "fields": {
+      "text": "Příprava: Vroucí vodou zalejte čaj v poměru 1 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 8-10 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: Vroucí vodou zalejte čaj v poměru 1 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 8-10 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 8,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 1 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 8-10 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 1 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 8-10 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 9,
+    "fields": {
+      "text": "Doporučená příprava nápoje: vroucí vodou zalejte monodrogu v poměru 1-2 čajové lžičky na 1,5 dcl vody. Ponechte 5-8 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Doporučená příprava nápoje: vroucí vodou zalejte monodrogu v poměru 1-2 čajové lžičky na 1,5 dcl vody. Ponechte 5-8 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 10,
+    "fields": {
+      "text": "Doporučená příprava nápoje: 1-2 čajové lžičky monodrogy zalejte vroucí vodou. Ponechte 5-8 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Doporučená příprava nápoje: 1-2 čajové lžičky monodrogy zalejte vroucí vodou. Ponechte 5-8 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 11,
+    "fields": {
+      "text": "lžička na 1,5 dcl vody. Ponechte 5-8 minut louhovat. Poté přeceďte.",
+      "text_rendered": "lžička na 1,5 dcl vody. Ponechte 5-8 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 12,
+    "fields": {
+      "text": "Doporučená příprava nápoje: 1 čajovou lžičku drcených plodů ostropestřce zalijte 250 ml vroucí vody. Ponechte 10-20 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Doporučená příprava nápoje: 1 čajovou lžičku drcených plodů ostropestřce zalijte 250 ml vroucí vody. Ponechte 10-20 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 13,
+    "fields": {
+      "text": "Příprava: Vroucí vodou zalejte čaj v poměru 4 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 10 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: Vroucí vodou zalejte čaj v poměru 4 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 10 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 14,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalijte čaj v poměru 1-2 lžičky na 1,5 dl, nechejte v zakryté nádobě 15 minut louhovat a sceďte. Nálev se připravuje vždy čerstvý. Pije se 1-2 krát denně.",
+      "text_rendered": "Příprava: vroucí vodou zalijte čaj v poměru 1-2 lžičky na 1,5 dl, nechejte v zakryté nádobě 15 minut louhovat a sceďte. Nálev se připravuje vždy čerstvý. Pije se 1-2 krát denně."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 15,
+    "fields": {
+      "text": "Příprava: Vroucí vodou zalejte čaj v poměru 4 dl na 1 čajovou lžičku, pokud čaj luhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 10 minut luhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: Vroucí vodou zalejte čaj v poměru 4 dl na 1 čajovou lžičku, pokud čaj luhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 10 minut luhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 16,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 17,
+    "fields": {
+      "text": "Příprava: Vroucí vodou zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: Vroucí vodou zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 18,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 0,6l na 4 polévkové lžíce. Ponechte 3 minuty louhovat. 1l nádobu naplňte do 2/3 kostkami ledu a ihned přelijte připraveným čajem.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 0,6l na 4 polévkové lžíce. Ponechte 3 minuty louhovat. 1l nádobu naplňte do 2/3 kostkami ledu a ihned přelijte připraveným čajem."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 19,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici pak navíc 1 lžičku na konvici. Ponechte 3-5 minuty louhovat. Poté přeceďte. Možno připravit 1 nálev.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici pak navíc 1 lžičku na konvici. Ponechte 3-5 minuty louhovat. Poté přeceďte. Možno připravit 1 nálev."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 20,
+    "fields": {
+      "text": "Příprava: Vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici pak navíc 1 lžičku na konvici. Ponechte 3-5 minuty louhovat. Poté přeceďte. Možno připravit 1 nálev.",
+      "text_rendered": "Příprava: Vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici pak navíc 1 lžičku na konvici. Ponechte 3-5 minuty louhovat. Poté přeceďte. Možno připravit 1 nálev."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 21,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 1 nálev.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 1 nálev."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 22,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 80 °C zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 3-5 minut louhovat. Poté přeceďte. Upozornění: Není vhodné pro děti.",
+      "text_rendered": "Příprava: vodou o teplotě 80 °C zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 3-5 minut louhovat. Poté přeceďte. Upozornění: Není vhodné pro děti."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 23,
+    "fields": {
+      "text": "Příprava: Vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 3-4 minuty louhovat. Poté přeceďte. Možno připravit 5 nálevů.",
+      "text_rendered": "Příprava: Vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 3-4 minuty louhovat. Poté přeceďte. Možno připravit 5 nálevů."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 24,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 5 nálevů.",
+      "text_rendered": "Příprava: vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 5 nálevů."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 25,
+    "fields": {
+      "text": "Příprava: Vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte. Možno připravit 5 nálevů.",
+      "text_rendered": "Příprava: Vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte. Možno připravit 5 nálevů."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 26,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 2,5dl na 2 čajové lžičky, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5-8 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 2,5dl na 2 čajové lžičky, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5-8 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 27,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 0,6l na 6 polévkových lžic. Ponechte 6 minut louhovat. 1l nádobu naplňte do 2/3 kostkami ledu a ihned přelijte připraveným čajem.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 0,6l na 6 polévkových lžic. Ponechte 6 minut louhovat. 1l nádobu naplňte do 2/3 kostkami ledu a ihned přelijte připraveným čajem."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 28,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 3-5 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 3-5 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 29,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 3-5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 3-5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 30,
+    "fields": {
+      "text": "Příprava: Vroucí vodou zalejte čaj v poměru 2 dl na 1 kus. Ponechte 3-5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: Vroucí vodou zalejte čaj v poměru 2 dl na 1 kus. Ponechte 3-5 minut louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 31,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 32,
+    "fields": {
+      "text": "Příprava: Vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: Vroucí vodou zalejte čaj v poměru 1,5dl na 1 čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 33,
+    "fields": {
+      "text": "Příprava: vroucí vodou zalejte čaj v poměru 1,5dl na čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: vroucí vodou zalejte čaj v poměru 1,5dl na čajovou lžičku, pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 5 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 34,
+    "fields": {
+      "text": "Příprava: Vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: Vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 35,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 36,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 37,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 3 dl na 1kus. Ponechte 3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 3 dl na 1kus. Ponechte 3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 38,
+    "fields": {
+      "text": "Příprava: Vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: Vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 39,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 85°C zalejte čaj v poměru 0,6l na 4 polévkové lžíce. Ponechte 3 minuty louhovat. 1l nádobu naplňte do 2/3 kostkami ledu a ihned přelijte připraveným čajem.",
+      "text_rendered": "Příprava: vodou o teplotě 85°C zalejte čaj v poměru 0,6l na 4 polévkové lžíce. Ponechte 3 minuty louhovat. 1l nádobu naplňte do 2/3 kostkami ledu a ihned přelijte připraveným čajem."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 40,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 41,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy.",
+      "text_rendered": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 42,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak 1 lžičku na konvici. Ponechte 1 minutu louhovat. Poté přeceďte. Možno připravit 2-3 nálevy.",
+      "text_rendered": "Příprava: vodou o teplotě 90°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak 1 lžičku na konvici. Ponechte 1 minutu louhovat. Poté přeceďte. Možno připravit 2-3 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 43,
+    "fields": {
+      "text": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 1-2 nálevy.",
+      "text_rendered": "Příprava: vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 1-2 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 44,
+    "fields": {
+      "text": "Příprava: hrubost mletí přizpůsobte zvolenému způsobu přípravy kávy. Na 1 porci použijte nejméně 2 zarovnané kávové lžičky (cca 7g) mleté kávy. Kávu zalévejte horkou vodou o teplotě 93-94°C. Po pomletí ji uschovejte v chladu a suchu, bez přístupu vzduchu.",
+      "text_rendered": "Příprava: hrubost mletí přizpůsobte zvolenému způsobu přípravy kávy. Na 1 porci použijte nejméně 2 zarovnané kávové lžičky (cca 7g) mleté kávy. Kávu zalévejte horkou vodou o teplotě 93-94°C. Po pomletí ji uschovejte v chladu a suchu, bez přístupu vzduchu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 45,
+    "fields": {
+      "text": "Na 1 porci použijte nejméně 2 zarovnané kávové lžičky (cca 7g) mleté kávy. Kávu zalévejte horkou vodou o teplotě 93-94°C. Uchovejte v chladu a suchu, bez přístupu vzduchu.",
+      "text_rendered": "Na 1 porci použijte nejméně 2 zarovnané kávové lžičky (cca 7g) mleté kávy. Kávu zalévejte horkou vodou o teplotě 93-94°C. Uchovejte v chladu a suchu, bez přístupu vzduchu."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 46,
+    "fields": {
+      "text": "Příprava: Vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte.",
+      "text_rendered": "Příprava: Vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak navíc 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 47,
+    "fields": {
+      "text": "Příprava: Vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 1-2 nálevy.",
+      "text_rendered": "Příprava: Vodou o teplotě 70-80°C zalejte čaj v poměru 1,5 dl na 1 čajovou lžičku. Pokud čaj louhujete v konvici, pak 1 lžičku na konvici. Ponechte 2-3 minuty louhovat. Poté přeceďte. Možno připravit 1-2 nálevy."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 48,
+    "fields": {
+      "text": "Doporučená příprava nápoje: vroucí vodou zalejte monodrogu v poměru 1-2 čajové lžičky na 1,5 dl vody. Ponechte 5-8 minut louhovat. Poté přeceďte.",
+      "text_rendered": "Doporučená příprava nápoje: vroucí vodou zalejte monodrogu v poměru 1-2 čajové lžičky na 1,5 dl vody. Ponechte 5-8 minut louhovat. Poté přeceďte."
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductUsage",
+    "pk": 49,
+    "fields": {
+      "text": "Příprava: hrubost mletí přizpůsobte zvolenému způsobu přípravy kávy. Na 1 porci použijte nejméně 2 zarovnané kávové lžičky (cca 7g) mleté kávy. Kávu zalévejte horkou vodou o teplotě 93-94°C. Po pomletí ji uschovejte v chladu a suchu, bez přístupu vzduchu",
+      "text_rendered": "Příprava: hrubost mletí přizpůsobte zvolenému způsobu přípravy kávy. Na 1 porci použijte nejméně 2 zarovnané kávové lžičky (cca 7g) mleté kávy. Kávu zalévejte horkou vodou o teplotě 93-94°C. Po pomletí ji uschovejte v chladu a suchu, bez přístupu vzduchu"
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 13,
+    "fields": {
+      "name": "Ledový čaj Citrus - zázvor - bílý,aromatizovaný 50g",
+      "slug": "ledovy-caj-citrus-zazvor-bily-aromatizovany-50g-1",
+      "product_code": 921237,
+      "description": 1,
+      "usage": 1
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 21,
+    "fields": {
+      "name": "Snow Buds",
+      "slug": "snow-buds-1",
+      "product_code": 21210,
+      "description": 2,
+      "usage": 2
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 24,
+    "fields": {
+      "name": "Shou Mei - \"Čaj dlouhověkosti\"",
+      "slug": "shou-mei-caj-dlouhovekosti-1",
+      "product_code": 21217,
+      "description": 3,
+      "usage": 3
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 36,
+    "fields": {
+      "name": "Pai Mu Tan \"Bílá pivoňka\"",
+      "slug": "pai-mu-tan-bila-pivonka-1",
+      "product_code": 921202,
+      "description": 4,
+      "usage": 4
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 57,
+    "fields": {
+      "name": "Bu Bu Gao Sheng \"Lákavé vyhlídky\" 1 ks (kvetoucí čaj)",
+      "slug": "bu-bu-gao-sheng-lakave-vyhlidky-1-ks-kvetouci-caj-1",
+      "product_code": 121234,
+      "description": 5,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 58,
+    "fields": {
+      "name": "Bai He Yu Die \"Motýl a lilie\" 1 ks (kvetoucí čaj)",
+      "slug": "bai-he-yu-die-motyl-a-lilie-1-ks-kvetouci-caj-1",
+      "product_code": 121230,
+      "description": 6,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 59,
+    "fields": {
+      "name": "Xu Ri Dong Sheng \"Vycházející slunce\" 1 ks (kvetoucí čaj)",
+      "slug": "xu-ri-dong-sheng-vychazejici-slunce-1-ks-kvetouci-caj-1",
+      "product_code": 121231,
+      "description": 7,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 60,
+    "fields": {
+      "name": "He Jia Huan Le \"Rodinné štěstí\" 1 ks (kvetoucí čaj)",
+      "slug": "he-jia-huan-le-rodinne-stesti-1-ks-kvetouci-caj-1",
+      "product_code": 121232,
+      "description": 8,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 65,
+    "fields": {
+      "name": "Hao Shi Cheng Shuang \"Nesmírné štěstí\" 1 ks (kvetoucí čaj)",
+      "slug": "hao-shi-cheng-shuang-nesmirne-stesti-1-ks-kvetouci-caj-1",
+      "product_code": 121241,
+      "description": 9,
+      "usage": 6
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 76,
+    "fields": {
+      "name": "Ranní čaj",
+      "slug": "ranni-caj-1",
+      "product_code": 60101,
+      "description": 10,
+      "usage": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 77,
+    "fields": {
+      "name": "Večerní čaj",
+      "slug": "vecerni-caj-1",
+      "product_code": 60102,
+      "description": 11,
+      "usage": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 79,
+    "fields": {
+      "name": "Snadný dech",
+      "slug": "snadny-dech-1",
+      "product_code": 60107,
+      "description": 12,
+      "usage": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 80,
+    "fields": {
+      "name": "Antigrip",
+      "slug": "antigrip-1",
+      "product_code": 60108,
+      "description": 13,
+      "usage": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 81,
+    "fields": {
+      "name": "Štíhlá linie",
+      "slug": "stihla-linie-1",
+      "product_code": 60111,
+      "description": 14,
+      "usage": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 82,
+    "fields": {
+      "name": "Protistres",
+      "slug": "protistres-1",
+      "product_code": 60116,
+      "description": 15,
+      "usage": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 88,
+    "fields": {
+      "name": "Ploché bříško",
+      "slug": "ploche-brisko-1",
+      "product_code": 60139,
+      "description": 16,
+      "usage": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 93,
+    "fields": {
+      "name": "Balzám na nervy",
+      "slug": "balzam-na-nervy-1",
+      "product_code": 60147,
+      "description": 17,
+      "usage": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 102,
+    "fields": {
+      "name": "Dlouhý život 50 g",
+      "slug": "dlouhy-zivot-50-g-1",
+      "product_code": 960117,
+      "description": 18,
+      "usage": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 114,
+    "fields": {
+      "name": "Dětský 50 g",
+      "slug": "detsky-50-g-1",
+      "product_code": 960153,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 115,
+    "fields": {
+      "name": "Revma",
+      "slug": "revma-1",
+      "product_code": 960154,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 118,
+    "fields": {
+      "name": "Stavící 50 g",
+      "slug": "stavici-50-g-1",
+      "product_code": 960157,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 120,
+    "fields": {
+      "name": "Laktace 50 g",
+      "slug": "laktace-50-g-1",
+      "product_code": 960159,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 141,
+    "fields": {
+      "name": "Lípa (květ)",
+      "slug": "lipa-kvet-1",
+      "product_code": 60256,
+      "description": 20,
+      "usage": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 151,
+    "fields": {
+      "name": "Meduňka 40 g",
+      "slug": "medunka-40-g-1",
+      "product_code": 960001,
+      "description": 21,
+      "usage": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 152,
+    "fields": {
+      "name": "Kopřiva (list) 40 g",
+      "slug": "kopriva-list-40-g-1",
+      "product_code": 960002,
+      "description": 22,
+      "usage": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 153,
+    "fields": {
+      "name": "Máta (list) 40 g",
+      "slug": "mata-list-40-g-1",
+      "product_code": 960004,
+      "description": 23,
+      "usage": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 154,
+    "fields": {
+      "name": "Šípek 80 g",
+      "slug": "sipek-80-g-1",
+      "product_code": 960008,
+      "description": 24,
+      "usage": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 160,
+    "fields": {
+      "name": "Šalvěj (list) 20 g",
+      "slug": "salvej-list-20-g-1",
+      "product_code": 960252,
+      "description": 25,
+      "usage": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 163,
+    "fields": {
+      "name": "Maliník (list) 40 g",
+      "slug": "malinik-list-40-g-1",
+      "product_code": 960259,
+      "description": 26,
+      "usage": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 164,
+    "fields": {
+      "name": "Jasmín (květ) 20 g",
+      "slug": "jasmin-kvet-20-g-1",
+      "product_code": 960261,
+      "description": 27,
+      "usage": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 167,
+    "fields": {
+      "name": "Třezalka (nať) 50 g",
+      "slug": "trezalka-nat-50-g-1",
+      "product_code": 960268,
+      "description": 28,
+      "usage": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 170,
+    "fields": {
+      "name": "Hloh (list a květ) 50 g",
+      "slug": "hloh-list-a-kvet-50-g-1",
+      "product_code": 960271,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 174,
+    "fields": {
+      "name": "Nana - máta (list) BIO 40 g",
+      "slug": "nana-mata-list-bio-40-g-1",
+      "product_code": 9860120,
+      "description": 29,
+      "usage": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 175,
+    "fields": {
+      "name": "Heřmánek (květ) BIO 40 g",
+      "slug": "hermanek-kvet-bio-40-g-1",
+      "product_code": 9860121,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 176,
+    "fields": {
+      "name": "Ibišek (květ) BIO 80 g",
+      "slug": "ibisek-kvet-bio-80-g-1",
+      "product_code": 9860123,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 179,
+    "fields": {
+      "name": "Kontryhel (nať) 50 g",
+      "slug": "kontryhel-nat-50-g-1",
+      "product_code": 960277,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 180,
+    "fields": {
+      "name": "Ostropestřec (plod) 100 g",
+      "slug": "ostropestrec-plod-100-g-1",
+      "product_code": 960278,
+      "description": 30,
+      "usage": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 182,
+    "fields": {
+      "name": "Pro správnou funkci ledvin 50 g",
+      "slug": "pro-spravnou-funkci-ledvin-50-g-1",
+      "product_code": 960200,
+      "description": 31,
+      "usage": 13
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 183,
+    "fields": {
+      "name": "Pro ochranu močových cest 50 g",
+      "slug": "pro-ochranu-mocovych-cest-50-g-1",
+      "product_code": 960201,
+      "description": 32,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 186,
+    "fields": {
+      "name": "Prevence ledvinových kamenů 50 g",
+      "slug": "prevence-ledvinovych-kamenu-50-g-1",
+      "product_code": 960204,
+      "description": 33,
+      "usage": 13
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 187,
+    "fields": {
+      "name": "Urogynekologický 50 g",
+      "slug": "urogynekologicky-50-g-1",
+      "product_code": 960205,
+      "description": 34,
+      "usage": 15
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 189,
+    "fields": {
+      "name": "Růžová zahrada ® - černý,aromatizovaný",
+      "slug": "ruzova-zahrada-cerny-aromatizovany-1",
+      "product_code": 20900,
+      "description": 35,
+      "usage": 16
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 194,
+    "fields": {
+      "name": "Earl Grey - černý,aromatizovaný",
+      "slug": "earl-grey-cerny-aromatizovany-1",
+      "product_code": 30003,
+      "description": 36,
+      "usage": 16
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 211,
+    "fields": {
+      "name": "Horká čokoláda - černý,aromatizovaný",
+      "slug": "horka-cokolada-cerny-aromatizovany-1",
+      "product_code": 30049,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 225,
+    "fields": {
+      "name": "Pět Tibeťanů - černý,aromatizovaný",
+      "slug": "pet-tibetanu-cerny-aromatizovany-1",
+      "product_code": 30093,
+      "description": 37,
+      "usage": 16
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 234,
+    "fields": {
+      "name": "Irish Cream",
+      "slug": "irish-cream-1",
+      "product_code": 930013,
+      "description": 38,
+      "usage": 17
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 239,
+    "fields": {
+      "name": "Vzpomínky na Afriku",
+      "slug": "vzpominky-na-afriku-1",
+      "product_code": 930028,
+      "description": 39,
+      "usage": 17
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 260,
+    "fields": {
+      "name": "Ledový čaj Broskev - ananas - černý,aromatizovaný 50g",
+      "slug": "ledovy-caj-broskev-ananas-cerny-aromatizovany-50g-1",
+      "product_code": 930109,
+      "description": 40,
+      "usage": 18
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 280,
+    "fields": {
+      "name": "Assam OP Exquisite",
+      "slug": "assam-op-exquisite-1",
+      "product_code": 20211,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 284,
+    "fields": {
+      "name": "Nepal Maloom SFTGFOP 1 SPL",
+      "slug": "nepal-maloom-sftgfop-1-spl-1",
+      "product_code": 20306,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 300,
+    "fields": {
+      "name": "English Breakfast Tea \"Anglický snídaňový čaj\"",
+      "slug": "english-breakfast-tea-anglicky-snidanovy-caj-1",
+      "product_code": 20700,
+      "description": 41,
+      "usage": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 307,
+    "fields": {
+      "name": "Ruský listový čaj",
+      "slug": "rusky-listovy-caj-1",
+      "product_code": 21500,
+      "description": 42,
+      "usage": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 313,
+    "fields": {
+      "name": "Assam OP Exquisite",
+      "slug": "assam-op-exquisite-2",
+      "product_code": 920211,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 315,
+    "fields": {
+      "name": "Nepal Maloom SFTGFOP1 SPL 50 g",
+      "slug": "nepal-maloom-sftgfop1-spl-50-g-1",
+      "product_code": 920306,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 318,
+    "fields": {
+      "name": "Kenya GFOP - 1 Milima",
+      "slug": "kenya-gfop-1-milima-1",
+      "product_code": 920503,
+      "description": 43,
+      "usage": 20
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 343,
+    "fields": {
+      "name": "Darjeeling Goomtee FTGFOP1 First Flush",
+      "slug": "darjeeling-goomtee-ftgfop1-first-flush-1",
+      "product_code": 20121,
+      "description": 44,
+      "usage": 21
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 359,
+    "fields": {
+      "name": "Darjeeling Puttabong SFTGFOP1 CL Queen Second Flush",
+      "slug": "darjeeling-puttabong-sftgfop1-cl-queen-second-flush-1",
+      "product_code": 920126,
+      "description": 45,
+      "usage": 21
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 441,
+    "fields": {
+      "name": "Mate IQ ® 50 g",
+      "slug": "mate-iq-50-g-1",
+      "product_code": 910071,
+      "description": 46,
+      "usage": 22
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 444,
+    "fields": {
+      "name": "Mate Elixír mládí",
+      "slug": "mate-elixir-mladi-1",
+      "product_code": 910581,
+      "description": 47,
+      "usage": 22
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 445,
+    "fields": {
+      "name": "Mate Kokosové mléko",
+      "slug": "mate-kokosove-mleko-1",
+      "product_code": 910582,
+      "description": 48,
+      "usage": 22
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 453,
+    "fields": {
+      "name": "Mate Green",
+      "slug": "mate-green-1",
+      "product_code": 910010,
+      "description": 49,
+      "usage": 22
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 456,
+    "fields": {
+      "name": "Ti Kuan Yin - \"Železná bohyně milosrdenství\"",
+      "slug": "ti-kuan-yin-zelezna-bohyne-milosrdenstvi-1",
+      "product_code": 21196,
+      "description": 50,
+      "usage": 23
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 458,
+    "fields": {
+      "name": "Formosa Oolong",
+      "slug": "formosa-oolong-1",
+      "product_code": 21200,
+      "description": 51,
+      "usage": 24
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 459,
+    "fields": {
+      "name": "Milk Oolong - \"Mléčný olong\"",
+      "slug": "milk-oolong-mlecny-olong-1",
+      "product_code": 921193,
+      "description": 52,
+      "usage": 25
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 475,
+    "fields": {
+      "name": "Arabela (čaj pro děti) - ovocný",
+      "slug": "arabela-caj-pro-deti-ovocny-1",
+      "product_code": 11,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 479,
+    "fields": {
+      "name": "Zralé maliny - ovocný",
+      "slug": "zrale-maliny-ovocny-1",
+      "product_code": 30,
+      "description": 53,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 482,
+    "fields": {
+      "name": "Sladký citron - ovocný",
+      "slug": "sladky-citron-ovocny-1",
+      "product_code": 34,
+      "description": 54,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 488,
+    "fields": {
+      "name": "Alberta 50 g",
+      "slug": "alberta-50-g-1",
+      "product_code": 900073,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 493,
+    "fields": {
+      "name": "Tajemná vášeň - ovocný",
+      "slug": "tajemna-vasen-ovocny-1",
+      "product_code": 335,
+      "description": 55,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 503,
+    "fields": {
+      "name": "Indiánské léto ® - ovocný",
+      "slug": "indianske-leto-ovocny-1",
+      "product_code": 16,
+      "description": 56,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 504,
+    "fields": {
+      "name": "Babiččina zahrádka (Granny's Garden) ® - ovocný",
+      "slug": "babiccina-zahradka-grannys-garden-ovocny-1",
+      "product_code": 18,
+      "description": 57,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 505,
+    "fields": {
+      "name": "Piňa Colada - ovocný",
+      "slug": "pina-colada-ovocny-1",
+      "product_code": 20,
+      "description": 58,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 511,
+    "fields": {
+      "name": "Ovoce v rumu - ovocný",
+      "slug": "ovoce-v-rumu-ovocny-1",
+      "product_code": 304,
+      "description": 59,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 513,
+    "fields": {
+      "name": "Srdcová dáma - ovocný",
+      "slug": "srdcova-dama-ovocny-1",
+      "product_code": 318,
+      "description": 60,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 514,
+    "fields": {
+      "name": "Brusinkový krém - ovocný",
+      "slug": "brusinkovy-krem-ovocny-1",
+      "product_code": 319,
+      "description": 61,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 518,
+    "fields": {
+      "name": "Medvídek Pú ® (čaj pro děti) - ovocný",
+      "slug": "medvidek-pu-caj-pro-deti-ovocny-1",
+      "product_code": 36,
+      "description": 62,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 532,
+    "fields": {
+      "name": "Kdoule - ovocný BIO",
+      "slug": "kdoule-ovocny-bio-1",
+      "product_code": 800064,
+      "description": 63,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 567,
+    "fields": {
+      "name": "Medovník - ovocný",
+      "slug": "medovnik-ovocny-1",
+      "product_code": 98,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 572,
+    "fields": {
+      "name": "Ledový čaj Brusinka - ovocný",
+      "slug": "ledovy-caj-brusinka-ovocny-1",
+      "product_code": 63,
+      "description": 64,
+      "usage": 27
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 579,
+    "fields": {
+      "name": "Pu-Erh Yetti - černý,aromatizovaný",
+      "slug": "pu-erh-yetti-cerny-aromatizovany-1",
+      "product_code": 20711,
+      "description": 65,
+      "usage": 28
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 582,
+    "fields": {
+      "name": "Pu-Erh Simao - černý,aromatizovaný",
+      "slug": "pu-erh-simao-cerny-aromatizovany-1",
+      "product_code": 20729,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 594,
+    "fields": {
+      "name": "Pu-Erh Jing-Jang - černý,aromatizovaný",
+      "slug": "pu-erh-jing-jang-cerny-aromatizovany-1",
+      "product_code": 20743,
+      "description": 66,
+      "usage": 28
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 596,
+    "fields": {
+      "name": "Pu-Erh",
+      "slug": "pu-erh-1",
+      "product_code": 20702,
+      "description": 67,
+      "usage": 29
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 597,
+    "fields": {
+      "name": "Pu-Erh Mini Tuocha",
+      "slug": "pu-erh-mini-tuocha-1",
+      "product_code": 20704,
+      "description": 68,
+      "usage": 30
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 605,
+    "fields": {
+      "name": "Shu Pu-Erh",
+      "slug": "shu-pu-erh-1",
+      "product_code": 920706,
+      "description": 69,
+      "usage": 29
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 628,
+    "fields": {
+      "name": "Rooibos Toffee",
+      "slug": "rooibos-toffee-1",
+      "product_code": 60060,
+      "description": 70,
+      "usage": 31
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 629,
+    "fields": {
+      "name": "Rooibos Slunce v Buši",
+      "slug": "rooibos-slunce-v-busi-1",
+      "product_code": 60061,
+      "description": 71,
+      "usage": 31
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 634,
+    "fields": {
+      "name": "Rooibos Rakytníkový keř",
+      "slug": "rooibos-rakytnikovy-ker-1",
+      "product_code": 60077,
+      "description": 72,
+      "usage": 31
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 638,
+    "fields": {
+      "name": "Rooibos Citrus-zázvor",
+      "slug": "rooibos-citrus-zazvor-1",
+      "product_code": 60086,
+      "description": 73,
+      "usage": 31
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 639,
+    "fields": {
+      "name": "Rooibos Pretty Woman",
+      "slug": "rooibos-pretty-woman-1",
+      "product_code": 60087,
+      "description": 74,
+      "usage": 31
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 644,
+    "fields": {
+      "name": "Rooibos Magic Aloe",
+      "slug": "rooibos-magic-aloe-1",
+      "product_code": 61036,
+      "description": 75,
+      "usage": 31
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 661,
+    "fields": {
+      "name": "Rooibos Lemonita ®",
+      "slug": "rooibos-lemonita--1",
+      "product_code": 960039,
+      "description": 76,
+      "usage": 32
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 690,
+    "fields": {
+      "name": "Rooibos Hřejivý doušek",
+      "slug": "rooibos-hrejivy-dousek-1",
+      "product_code": 961115,
+      "description": 77,
+      "usage": 32
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 703,
+    "fields": {
+      "name": "Rooibos zelený",
+      "slug": "rooibos-zeleny-1",
+      "product_code": 60015,
+      "description": 78,
+      "usage": 33
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 704,
+    "fields": {
+      "name": "Rooibos červený",
+      "slug": "rooibos-cerveny-1",
+      "product_code": 60020,
+      "description": 78,
+      "usage": 33
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 717,
+    "fields": {
+      "name": "China Jasmin s květy",
+      "slug": "china-jasmin-s-kvety-1",
+      "product_code": 10002,
+      "description": 79,
+      "usage": 34
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 720,
+    "fields": {
+      "name": "Earl Green - zelený,aromatizovaný",
+      "slug": "earl-green-zeleny-aromatizovany-1",
+      "product_code": 10013,
+      "description": 80,
+      "usage": 35
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 721,
+    "fields": {
+      "name": "Jarní - zelený,aromatizovaný",
+      "slug": "jarni-zeleny-aromatizovany-1",
+      "product_code": 10019,
+      "description": 81,
+      "usage": 35
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 728,
+    "fields": {
+      "name": "Rajská zahrada - zelený,aromatizovaný",
+      "slug": "rajska-zahrada-zeleny-aromatizovany-1",
+      "product_code": 10063,
+      "description": 82,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 730,
+    "fields": {
+      "name": "Tuareg - zelený,aromatizovaný",
+      "slug": "tuareg-zeleny-aromatizovany-1",
+      "product_code": 10066,
+      "description": 83,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 735,
+    "fields": {
+      "name": "Malý Buddha ® - zelený,aromatizovaný",
+      "slug": "maly-buddha-zeleny-aromatizovany-1",
+      "product_code": 10086,
+      "description": 84,
+      "usage": 35
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 745,
+    "fields": {
+      "name": "Jasmine Silvery Strawberry Flower – \"Jasmínové stříbrné jahody\"",
+      "slug": "jasmine-silvery-strawberry-flower-jasminove-stribrne-jahody-1",
+      "product_code": 10137,
+      "description": 85,
+      "usage": 37
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 748,
+    "fields": {
+      "name": "Geisha - zelený,aromatizovaný",
+      "slug": "geisha-zeleny-aromatizovany-1",
+      "product_code": 10507,
+      "description": 86,
+      "usage": 35
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 752,
+    "fields": {
+      "name": "Arónie - brusinka - zelený,aromatizovaný",
+      "slug": "aronie-brusinka-zeleny-aromatizovany-1",
+      "product_code": 10522,
+      "description": 87,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 756,
+    "fields": {
+      "name": "Wellness Ginkgo - zelený,aromatizovaný",
+      "slug": "wellness-ginkgo-zeleny-aromatizovany-1",
+      "product_code": 10526,
+      "description": 88,
+      "usage": 35
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 757,
+    "fields": {
+      "name": "Jahoda v šampaňském - zelený,aromatizovaný",
+      "slug": "jahoda-v-sampanskem-zeleny-aromatizovany-1",
+      "product_code": 10527,
+      "description": 89,
+      "usage": 35
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 762,
+    "fields": {
+      "name": "Mojito blues - zelený,aromatizovaný",
+      "slug": "mojito-blues-zeleny-aromatizovany-1",
+      "product_code": 10553,
+      "description": 90,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 765,
+    "fields": {
+      "name": "Acai - Goji - zelený,aromatizovaný",
+      "slug": "acai-goji-zeleny-aromatizovany-1",
+      "product_code": 10557,
+      "description": 91,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 766,
+    "fields": {
+      "name": "Malina - máta - zelený,aromatizovaný",
+      "slug": "malina-mata-zeleny-aromatizovany-1",
+      "product_code": 10575,
+      "description": 92,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 781,
+    "fields": {
+      "name": "Deep Forest ® 70 g",
+      "slug": "deep-forest-70-g-1",
+      "product_code": 910050,
+      "description": 93,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 806,
+    "fields": {
+      "name": "Wellness Kombucha 70 g",
+      "slug": "wellness-kombucha-70-g-1",
+      "product_code": 910537,
+      "description": 94,
+      "usage": 38
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 820,
+    "fields": {
+      "name": "Jahoda - kdoule BIO",
+      "slug": "jahoda-kdoule-bio-1",
+      "product_code": 9810584,
+      "description": 95,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 831,
+    "fields": {
+      "name": "Ledový čaj Limeta - aloe - zelený,aromatizovaný",
+      "slug": "ledovy-caj-limeta-aloe-zeleny-aromatizovany-1",
+      "product_code": 10590,
+      "description": 96,
+      "usage": 39
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 834,
+    "fields": {
+      "name": "Lesní studánka - zelený,aromatizovaný",
+      "slug": "lesni-studanka-zeleny-aromatizovany-1",
+      "product_code": 10597,
+      "description": 97,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 844,
+    "fields": {
+      "name": "Formosa Gunpowder",
+      "slug": "formosa-gunpowder-1",
+      "product_code": 10003,
+      "description": 98,
+      "usage": 40
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 845,
+    "fields": {
+      "name": "Chun Mee \"Vzácné obočí\"",
+      "slug": "chun-mee-vzacne-oboci-1",
+      "product_code": 10004,
+      "description": 99,
+      "usage": 40
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 849,
+    "fields": {
+      "name": "Lung Ching \"Dračí studna\"",
+      "slug": "lung-ching-draci-studna-1",
+      "product_code": 10024,
+      "description": 100,
+      "usage": 41
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 853,
+    "fields": {
+      "name": "Yunnan green",
+      "slug": "yunnan-green-1",
+      "product_code": 10034,
+      "description": 101,
+      "usage": 41
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 862,
+    "fields": {
+      "name": "Xia Zhou Bi Feng \"Úžasné borovicové jehly\"",
+      "slug": "xia-zhou-bi-feng-uzasne-borovicove-jehly-1",
+      "product_code": 10142,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 871,
+    "fields": {
+      "name": "Bancha Arashiyama",
+      "slug": "bancha-arashiyama-1",
+      "product_code": 10160,
+      "description": 102,
+      "usage": 42
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 883,
+    "fields": {
+      "name": "China tea Rolling Clouds \"Valící se mraky\"",
+      "slug": "china-tea-rolling-clouds-valici-se-mraky-1",
+      "product_code": 21209,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 938,
+    "fields": {
+      "name": "Darjeeling Green Hillton SFTGFOP1",
+      "slug": "darjeeling-green-hillton-sftgfop1-1",
+      "product_code": 10180,
+      "description": 103,
+      "usage": 43
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 956,
+    "fields": {
+      "name": "Irish Cream - káva,aromatizovaná",
+      "slug": "irish-cream-kava-aromatizovana-1",
+      "product_code": 80312,
+      "description": 104,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 960,
+    "fields": {
+      "name": "Alžírská - káva,aromatizovaná",
+      "slug": "alzirska-kava-aromatizovana-1",
+      "product_code": 80319,
+      "description": 105,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 962,
+    "fields": {
+      "name": "Karamel - káva,aromatizovaná",
+      "slug": "karamel-kava-aromatizovana-1",
+      "product_code": 80321,
+      "description": 106,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 963,
+    "fields": {
+      "name": "Malibu - káva,aromatizovaná",
+      "slug": "malibu-kava-aromatizovana-1",
+      "product_code": 80322,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 965,
+    "fields": {
+      "name": "Švýcarská - káva,aromatizovaná",
+      "slug": "svycarska-kava-aromatizovana-1",
+      "product_code": 80324,
+      "description": 107,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 980,
+    "fields": {
+      "name": "English Toffee - káva,aromatizovaná",
+      "slug": "english-toffee-kava-aromatizovana-1",
+      "product_code": 80359,
+      "description": 108,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 981,
+    "fields": {
+      "name": "Belgické pralinky - káva,aromatizovaná",
+      "slug": "belgicke-pralinky-kava-aromatizovana-1",
+      "product_code": 80360,
+      "description": 109,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 982,
+    "fields": {
+      "name": "Skořicoví šneci - káva,aromatizovaná",
+      "slug": "skoricovi-sneci-kava-aromatizovana-1",
+      "product_code": 80361,
+      "description": 110,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 985,
+    "fields": {
+      "name": "Rumová - káva,aromatizovaná",
+      "slug": "rumova-kava-aromatizovana-1",
+      "product_code": 80368,
+      "description": 111,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 993,
+    "fields": {
+      "name": "Brazílie Santos 250g - káva mletá",
+      "slug": "brazilie-santos-250g-kava-mleta-1",
+      "product_code": 680211,
+      "description": 112,
+      "usage": 45
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1017,
+    "fields": {
+      "name": "Brazílie Santos - káva",
+      "slug": "brazilie-santos-kava-1",
+      "product_code": 80211,
+      "description": 112,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1018,
+    "fields": {
+      "name": "Kolumbie Excelso - káva",
+      "slug": "kolumbie-excelso-kava-1",
+      "product_code": 80212,
+      "description": 113,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1020,
+    "fields": {
+      "name": "Mexico Altura - káva",
+      "slug": "mexico-altura-kava-1",
+      "product_code": 80214,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1045,
+    "fields": {
+      "name": "Kandysový cukr na dřívku - bílý",
+      "slug": "kandysovy-cukr-na-drivku-bily-1",
+      "product_code": 50013,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1046,
+    "fields": {
+      "name": "Kandysový cukr na dřívku - hnědý",
+      "slug": "kandysovy-cukr-na-drivku-hnedy-1",
+      "product_code": 50014,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1051,
+    "fields": {
+      "name": "Kandys hnědý v krabičce 400g",
+      "slug": "kandys-hnedy-v-krabicce-400g-1",
+      "product_code": 80106,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1078,
+    "fields": {
+      "name": "Vanilkové lusky ve skle",
+      "slug": "vanilkove-lusky-ve-skle-1",
+      "product_code": 80139,
+      "description": 114,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1347,
+    "fields": {
+      "name": "Konvička - čajové sítko nerez",
+      "slug": "konvicka-cajove-sitko-nerez-1",
+      "product_code": 50005,
+      "description": 115,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1348,
+    "fields": {
+      "name": "Koule - čajové sítko nerez",
+      "slug": "koule-cajove-sitko-nerez-1",
+      "product_code": 50011,
+      "description": 116,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1352,
+    "fields": {
+      "name": "Kleště malé - čajové sítko nerez",
+      "slug": "kleste-male-cajove-sitko-nerez-1",
+      "product_code": 50024,
+      "description": 117,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1354,
+    "fields": {
+      "name": "Lžička - čajové sítko nerez",
+      "slug": "lzicka-cajove-sitko-nerez-1",
+      "product_code": 50029,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1355,
+    "fields": {
+      "name": "Bambusové sítko se 2 držáky",
+      "slug": "bambusove-sitko-se-2-drzaky-1",
+      "product_code": 50059,
+      "description": 118,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1362,
+    "fields": {
+      "name": "Filtr do hrnku - čajové sítko nerez",
+      "slug": "filtr-do-hrnku-cajove-sitko-nerez-1",
+      "product_code": 50130,
+      "description": 119,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1363,
+    "fields": {
+      "name": "Kleště velké - čajové sítko nerez",
+      "slug": "kleste-velke-cajove-sitko-nerez-1",
+      "product_code": 50153,
+      "description": 120,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1364,
+    "fields": {
+      "name": "Papírový filtr,velikost M",
+      "slug": "papirovy-filtr-velikost-m-1",
+      "product_code": 50042,
+      "description": 121,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1365,
+    "fields": {
+      "name": "Papírový filtr s přehybem,velikost S",
+      "slug": "papirovy-filtr-s-prehybem-velikost-s-1",
+      "product_code": 50276,
+      "description": 122,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1366,
+    "fields": {
+      "name": "Papírový filtr s přehybem, velikost L",
+      "slug": "papirovy-filtr-s-prehybem-velikost-l-1",
+      "product_code": 50277,
+      "description": 123,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 1367,
+    "fields": {
+      "name": "Papírový filtr do hrníčku s držákem",
+      "slug": "papirovy-filtr-do-hrnicku-s-drzakem-1",
+      "product_code": 50289,
+      "description": 124,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3726,
+    "fields": {
+      "name": "Valašská švestka - ovocný",
+      "slug": "valasska-svestka-ovocny-1",
+      "product_code": 337,
+      "description": 125,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3727,
+    "fields": {
+      "name": "Sladké snění  - ovocný",
+      "slug": "sladke-sneni-ovocny-1",
+      "product_code": 361,
+      "description": 126,
+      "usage": 26
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3728,
+    "fields": {
+      "name": "Kouzelná třešeň",
+      "slug": "kouzelna-tresen-1",
+      "product_code": 308,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3730,
+    "fields": {
+      "name": "Ženšen - goji 70 g",
+      "slug": "zensen-goji-70-g-1",
+      "product_code": 910723,
+      "description": 127,
+      "usage": 35
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3731,
+    "fields": {
+      "name": "Ženšen - ginkgo 60g",
+      "slug": "zensen-ginkgo-60g-1",
+      "product_code": 930102,
+      "description": 128,
+      "usage": 16
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3732,
+    "fields": {
+      "name": "Pramen života 70 g",
+      "slug": "pramen-zivota-70-g-1",
+      "product_code": 910580,
+      "description": 129,
+      "usage": 36
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3733,
+    "fields": {
+      "name": "Vanilka",
+      "slug": "vanilka-1",
+      "product_code": 910012,
+      "description": 130,
+      "usage": 46
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3734,
+    "fields": {
+      "name": "Nepal Green Tea Super Fine",
+      "slug": "nepal-green-tea-super-fine-1",
+      "product_code": 910165,
+      "description": 131,
+      "usage": 47
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3738,
+    "fields": {
+      "name": "Jaterní",
+      "slug": "jaterni-1",
+      "product_code": 960177,
+      "description": 132,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3739,
+    "fields": {
+      "name": "Lymfatický 50 g",
+      "slug": "lymfaticky-50-g-1",
+      "product_code": 960179,
+      "description": 133,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3740,
+    "fields": {
+      "name": "Čistící čaj 50 g",
+      "slug": "cistici-caj-50-g-1",
+      "product_code": 960173,
+      "description": 134,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3741,
+    "fields": {
+      "name": "Odvodňovací-čistící 50 g",
+      "slug": "odvodnovaci-cistici-50-g-1",
+      "product_code": 960202,
+      "description": 135,
+      "usage": 13
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3742,
+    "fields": {
+      "name": "Při vyšším krevním tlaku 50 g",
+      "slug": "pri-vyssim-krevnim-tlaku-50-g-1",
+      "product_code": 960188,
+      "description": 136,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3743,
+    "fields": {
+      "name": "Bylinný čaj na zažívání 50 g",
+      "slug": "bylinny-caj-na-zazivani-50-g-1",
+      "product_code": 960106,
+      "description": 137,
+      "usage": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3744,
+    "fields": {
+      "name": "Při pocení 50 g",
+      "slug": "pri-poceni-50-g-1",
+      "product_code": 960187,
+      "description": 138,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3745,
+    "fields": {
+      "name": "Kloubní 50 g",
+      "slug": "kloubni-50-g-1",
+      "product_code": 960180,
+      "description": 139,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3746,
+    "fields": {
+      "name": "Imunitní 50 g",
+      "slug": "imunitni-50-g-1",
+      "product_code": 960176,
+      "description": 140,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3747,
+    "fields": {
+      "name": "Při očních potížích 50 g",
+      "slug": "pri-ocnich-potizich-50-g-1",
+      "product_code": 960186,
+      "description": 141,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3748,
+    "fields": {
+      "name": "Při alergiích 50 g",
+      "slug": "pri-alergiich-50-g-1",
+      "product_code": 960182,
+      "description": 142,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3749,
+    "fields": {
+      "name": "Při cukrovce 50 g",
+      "slug": "pri-cukrovce-50-g-1",
+      "product_code": 960183,
+      "description": 143,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3750,
+    "fields": {
+      "name": "Při zvýšené funkci štítné žlázy 50 g",
+      "slug": "pri-zvysene-funkci-stitne-zlazy-50-g-1",
+      "product_code": 960189,
+      "description": 144,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3751,
+    "fields": {
+      "name": "Pro lepší náladu a paměť 50 g",
+      "slug": "pro-lepsi-naladu-a-pamet-50-g-1",
+      "product_code": 960181,
+      "description": 32,
+      "usage": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3753,
+    "fields": {
+      "name": "Vousatka citronová (list) BIO 40 g",
+      "slug": "vousatka-citronova-list-bio-40-g-1",
+      "product_code": 9860263,
+      "description": 145,
+      "usage": 48
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3767,
+    "fields": {
+      "name": "Man Tian Xian Tao \"Posvátné květy\" 1 ks (kvetoucí čaj)",
+      "slug": "man-tian-xian-tao-posvatne-kvety-1-ks-kvetouci-caj-1",
+      "product_code": 121251,
+      "description": 146,
+      "usage": 6
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3768,
+    "fields": {
+      "name": "Huang Jia Bai He \"Císařská lilie\" 1 ks (kvetoucí čaj)",
+      "slug": "huang-jia-bai-he-cisarska-lilie-1-ks-kvetouci-caj-1",
+      "product_code": 121252,
+      "description": 147,
+      "usage": 6
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3772,
+    "fields": {
+      "name": "Kávový mlýnek COFFEE",
+      "slug": "kavovy-mlynek-coffee-1",
+      "product_code": 1774,
+      "description": 148,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3836,
+    "fields": {
+      "name": "Cookies - káva,aromatizovaná 1 kg",
+      "slug": "cookies-kava-aromatizovana-1-kg-1",
+      "product_code": 80372,
+      "description": 149,
+      "usage": 49
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3837,
+    "fields": {
+      "name": "Choco - Mint - káva,aromatizovaná 1 kg",
+      "slug": "choco-mint-kava-aromatizovana-1-kg-1",
+      "product_code": 80371,
+      "description": 150,
+      "usage": 44
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3843,
+    "fields": {
+      "name": "Etiopie Sidamo - káva,100 g",
+      "slug": "etiopie-sidamo-kava-100-g-1",
+      "product_code": 980263,
+      "description": 151,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3859,
+    "fields": {
+      "name": "Čajové kleště - mušle",
+      "slug": "cajove-kleste-musle-1",
+      "product_code": 50103,
+      "description": 19,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.Product",
+    "pk": 3861,
+    "fields": {
+      "name": "Čajové nerezové sítko s dřevěným držákem",
+      "slug": "cajove-nerezove-sitko-s-drevenym-drzakem-1",
+      "product_code": 50131,
+      "description": 152,
+      "usage": 5
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 1,
+    "fields": {
+      "product": 13,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 2,
+    "fields": {
+      "product": 21,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 3,
+    "fields": {
+      "product": 24,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 4,
+    "fields": {
+      "product": 36,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 5,
+    "fields": {
+      "product": 57,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 6,
+    "fields": {
+      "product": 58,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 7,
+    "fields": {
+      "product": 59,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 8,
+    "fields": {
+      "product": 60,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 9,
+    "fields": {
+      "product": 65,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 10,
+    "fields": {
+      "product": 76,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 11,
+    "fields": {
+      "product": 77,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 12,
+    "fields": {
+      "product": 79,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 13,
+    "fields": {
+      "product": 80,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 14,
+    "fields": {
+      "product": 81,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 15,
+    "fields": {
+      "product": 82,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 16,
+    "fields": {
+      "product": 88,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 17,
+    "fields": {
+      "product": 93,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 18,
+    "fields": {
+      "product": 102,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 19,
+    "fields": {
+      "product": 114,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 20,
+    "fields": {
+      "product": 115,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 21,
+    "fields": {
+      "product": 118,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 22,
+    "fields": {
+      "product": 120,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 23,
+    "fields": {
+      "product": 141,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 24,
+    "fields": {
+      "product": 151,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 25,
+    "fields": {
+      "product": 152,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 26,
+    "fields": {
+      "product": 153,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 27,
+    "fields": {
+      "product": 154,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 28,
+    "fields": {
+      "product": 160,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 29,
+    "fields": {
+      "product": 163,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 30,
+    "fields": {
+      "product": 164,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 31,
+    "fields": {
+      "product": 167,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 32,
+    "fields": {
+      "product": 170,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 33,
+    "fields": {
+      "product": 174,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 34,
+    "fields": {
+      "product": 175,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 35,
+    "fields": {
+      "product": 176,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 36,
+    "fields": {
+      "product": 179,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 37,
+    "fields": {
+      "product": 180,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 38,
+    "fields": {
+      "product": 182,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 39,
+    "fields": {
+      "product": 183,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 40,
+    "fields": {
+      "product": 186,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 41,
+    "fields": {
+      "product": 187,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 42,
+    "fields": {
+      "product": 189,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 43,
+    "fields": {
+      "product": 194,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 44,
+    "fields": {
+      "product": 211,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 45,
+    "fields": {
+      "product": 225,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 46,
+    "fields": {
+      "product": 234,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 47,
+    "fields": {
+      "product": 239,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 48,
+    "fields": {
+      "product": 260,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 49,
+    "fields": {
+      "product": 280,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 50,
+    "fields": {
+      "product": 284,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 51,
+    "fields": {
+      "product": 300,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 52,
+    "fields": {
+      "product": 307,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 53,
+    "fields": {
+      "product": 313,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 54,
+    "fields": {
+      "product": 315,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 55,
+    "fields": {
+      "product": 318,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 56,
+    "fields": {
+      "product": 343,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 57,
+    "fields": {
+      "product": 359,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 58,
+    "fields": {
+      "product": 441,
+      "tag": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 59,
+    "fields": {
+      "product": 444,
+      "tag": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 60,
+    "fields": {
+      "product": 445,
+      "tag": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 61,
+    "fields": {
+      "product": 453,
+      "tag": 14
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 62,
+    "fields": {
+      "product": 456,
+      "tag": 13
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 63,
+    "fields": {
+      "product": 458,
+      "tag": 13
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 64,
+    "fields": {
+      "product": 459,
+      "tag": 13
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 65,
+    "fields": {
+      "product": 475,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 66,
+    "fields": {
+      "product": 479,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 67,
+    "fields": {
+      "product": 482,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 68,
+    "fields": {
+      "product": 488,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 69,
+    "fields": {
+      "product": 493,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 70,
+    "fields": {
+      "product": 503,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 71,
+    "fields": {
+      "product": 504,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 72,
+    "fields": {
+      "product": 505,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 73,
+    "fields": {
+      "product": 511,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 74,
+    "fields": {
+      "product": 513,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 75,
+    "fields": {
+      "product": 514,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 76,
+    "fields": {
+      "product": 518,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 77,
+    "fields": {
+      "product": 532,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 78,
+    "fields": {
+      "product": 567,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 79,
+    "fields": {
+      "product": 572,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 80,
+    "fields": {
+      "product": 579,
+      "tag": 46
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 81,
+    "fields": {
+      "product": 582,
+      "tag": 46
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 82,
+    "fields": {
+      "product": 594,
+      "tag": 46
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 83,
+    "fields": {
+      "product": 596,
+      "tag": 46
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 84,
+    "fields": {
+      "product": 597,
+      "tag": 46
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 85,
+    "fields": {
+      "product": 605,
+      "tag": 46
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 86,
+    "fields": {
+      "product": 628,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 87,
+    "fields": {
+      "product": 629,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 88,
+    "fields": {
+      "product": 634,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 89,
+    "fields": {
+      "product": 638,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 90,
+    "fields": {
+      "product": 639,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 91,
+    "fields": {
+      "product": 644,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 92,
+    "fields": {
+      "product": 661,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 93,
+    "fields": {
+      "product": 690,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 94,
+    "fields": {
+      "product": 703,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 95,
+    "fields": {
+      "product": 704,
+      "tag": 12
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 96,
+    "fields": {
+      "product": 717,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 97,
+    "fields": {
+      "product": 720,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 98,
+    "fields": {
+      "product": 721,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 99,
+    "fields": {
+      "product": 728,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 100,
+    "fields": {
+      "product": 730,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 101,
+    "fields": {
+      "product": 735,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 102,
+    "fields": {
+      "product": 745,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 103,
+    "fields": {
+      "product": 748,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 104,
+    "fields": {
+      "product": 752,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 105,
+    "fields": {
+      "product": 756,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 106,
+    "fields": {
+      "product": 757,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 107,
+    "fields": {
+      "product": 762,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 108,
+    "fields": {
+      "product": 765,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 109,
+    "fields": {
+      "product": 766,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 110,
+    "fields": {
+      "product": 781,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 111,
+    "fields": {
+      "product": 806,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 112,
+    "fields": {
+      "product": 820,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 113,
+    "fields": {
+      "product": 831,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 114,
+    "fields": {
+      "product": 834,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 115,
+    "fields": {
+      "product": 844,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 116,
+    "fields": {
+      "product": 845,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 117,
+    "fields": {
+      "product": 849,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 118,
+    "fields": {
+      "product": 853,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 119,
+    "fields": {
+      "product": 862,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 120,
+    "fields": {
+      "product": 871,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 121,
+    "fields": {
+      "product": 883,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 122,
+    "fields": {
+      "product": 938,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 123,
+    "fields": {
+      "product": 956,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 124,
+    "fields": {
+      "product": 960,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 125,
+    "fields": {
+      "product": 962,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 126,
+    "fields": {
+      "product": 963,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 127,
+    "fields": {
+      "product": 965,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 128,
+    "fields": {
+      "product": 980,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 129,
+    "fields": {
+      "product": 981,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 130,
+    "fields": {
+      "product": 982,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 131,
+    "fields": {
+      "product": 985,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 132,
+    "fields": {
+      "product": 993,
+      "tag": 18
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 133,
+    "fields": {
+      "product": 1017,
+      "tag": 18
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 134,
+    "fields": {
+      "product": 1018,
+      "tag": 18
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 135,
+    "fields": {
+      "product": 1020,
+      "tag": 18
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 136,
+    "fields": {
+      "product": 1045,
+      "tag": 47
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 137,
+    "fields": {
+      "product": 1046,
+      "tag": 47
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 138,
+    "fields": {
+      "product": 1051,
+      "tag": 47
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 139,
+    "fields": {
+      "product": 1078,
+      "tag": 40
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 140,
+    "fields": {
+      "product": 1347,
+      "tag": 50
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 141,
+    "fields": {
+      "product": 1348,
+      "tag": 50
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 142,
+    "fields": {
+      "product": 1352,
+      "tag": 50
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 143,
+    "fields": {
+      "product": 1354,
+      "tag": 50
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 144,
+    "fields": {
+      "product": 1355,
+      "tag": 50
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 145,
+    "fields": {
+      "product": 1362,
+      "tag": 50
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 146,
+    "fields": {
+      "product": 1363,
+      "tag": 50
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 147,
+    "fields": {
+      "product": 1364,
+      "tag": 51
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 148,
+    "fields": {
+      "product": 1365,
+      "tag": 51
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 149,
+    "fields": {
+      "product": 1366,
+      "tag": 51
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 150,
+    "fields": {
+      "product": 1367,
+      "tag": 51
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 151,
+    "fields": {
+      "product": 3726,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 152,
+    "fields": {
+      "product": 3727,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 153,
+    "fields": {
+      "product": 3728,
+      "tag": 9
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 154,
+    "fields": {
+      "product": 3730,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 155,
+    "fields": {
+      "product": 3731,
+      "tag": 7
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 156,
+    "fields": {
+      "product": 3732,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 157,
+    "fields": {
+      "product": 3733,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 158,
+    "fields": {
+      "product": 3734,
+      "tag": 8
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 159,
+    "fields": {
+      "product": 3738,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 160,
+    "fields": {
+      "product": 3739,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 161,
+    "fields": {
+      "product": 3740,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 162,
+    "fields": {
+      "product": 3741,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 163,
+    "fields": {
+      "product": 3742,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 164,
+    "fields": {
+      "product": 3743,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 165,
+    "fields": {
+      "product": 3744,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 166,
+    "fields": {
+      "product": 3745,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 167,
+    "fields": {
+      "product": 3746,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 168,
+    "fields": {
+      "product": 3747,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 169,
+    "fields": {
+      "product": 3748,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 170,
+    "fields": {
+      "product": 3749,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 171,
+    "fields": {
+      "product": 3750,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 172,
+    "fields": {
+      "product": 3751,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 173,
+    "fields": {
+      "product": 3753,
+      "tag": 11
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 174,
+    "fields": {
+      "product": 3767,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 175,
+    "fields": {
+      "product": 3768,
+      "tag": 10
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 176,
+    "fields": {
+      "product": 3772,
+      "tag": 52
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 177,
+    "fields": {
+      "product": 3836,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 178,
+    "fields": {
+      "product": 3837,
+      "tag": 19
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 179,
+    "fields": {
+      "product": 3843,
+      "tag": 18
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 180,
+    "fields": {
+      "product": 3859,
+      "tag": 50
+    }
+  },
+  {
+    "model": "cajovyobchudek.ProductTag",
+    "pk": 181,
+    "fields": {
+      "product": 3861,
+      "tag": 50
+    }
+  }
+]
