@@ -128,7 +128,7 @@ class ProductNarrative(Model):
     text_rendered = RenderedDescriptionField()
 
     def __str__(self):
-        return str(self.name)
+        return str(self.pk)
 
 
 class ProductDescription(ProductNarrative):
